@@ -241,6 +241,9 @@ Excellent Samples
 
 [Hands-on Grove Starter Kit for Azure IoT Edge](https://azure-samples.github.io/azure-iot-starter-kits/seeed/)
 
+## Azure Event Hub monitor
+
+Install Visual Studio Code Extention "[Azure Event Hub Explorer](https://marketplace.visualstudio.com/items?itemName=Summer.azure-event-hub-explorer)"
 
 
 ## Install Azure IoT Hub Explorer
@@ -256,3 +259,36 @@ Excellent Samples
 az extension add --name azure-cli-iot-ext
 ```
 
+
+
+## Optional Fritzing
+
+[Fritzing Download Site](http://fritzing.org/download/)
+
+```bash
+cd ~/Downloads && \
+mkdir -p ~/Apps && \
+tar -C $_ -xvjf fritzing-0.9.3b.linux.AMD64.tar.bz2 && \
+sudo ln -s ~/Apps/fritzing-0.9.3b.linux.AMD64/Fritzing /usr/bin/fritzing
+```
+
+Create Fritzing Desktop Resource file
+
+```bash
+cat > ~/.local/share/applications/fritzing.desktop <<EOL
+[Desktop Entry]
+Version=0.9.3b
+Name=Fritzing
+GenericName=Fritzing
+Comment=Electronic Design Automation software
+Exec=fritzing 
+Icon=/home/dave/Apps/fritzing-0.9.3b.linux.AMD64/icons/fritzing_icon.png
+Terminal=false
+Type=Application
+Categories=Development;IDE;Electronics;EDA;
+X-SuSE-translate=false
+StartupNotify=true
+Categories=PCB;
+MimeType=application/x-fritzing-fz;application/x-fritzing-fzz;application/x-fritzing-fzp;application/x-fritzing-fzpz;application/x-fritzing-fzb;application/x-fritzing-fzbz;application/x-fritzing-fzm;
+EOL
+```
