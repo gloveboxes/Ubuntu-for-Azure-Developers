@@ -5,7 +5,7 @@
 |||
 |----|---|
 |Platform| Ubuntu 18.04|
-|Date|May 2018|
+|Date|As at May 2018|
 
 ##
 
@@ -14,7 +14,7 @@
 3. .NET Core 2
 4. Azure CLI
 4. Azure Functions
-5. Azure IoT Edge (Inlcuding cross compiling for ARM)
+5. Azure IoT Edge (Including cross compiling for ARM)
 6. Postman
 
 
@@ -22,7 +22,7 @@
 
 Easy. From Ubuntu Store, search for Visul Studio Code and install.
 
-###$ Install GitHuh Client
+### Install GitHub Client
 
 ```bash
 $ sudo apt install git
@@ -62,25 +62,25 @@ Useful Extensions.
 5. Extract the Storage Explorer .tar.gz file and copy to /opt directory
 
     ```bash
-    $ sudo mkdir -p /opt/StorageExplorer-linux-x64 && \
+    sudo mkdir -p /opt/StorageExplorer-linux-x64 && \
     sudo tar -C $_ -zxvf StorageExplorer-linux-x64.tar.gz && \
     sudo ln -s /opt/StorageExplorer-linux-x64/StorageExplorer /usr/bin/StorageExplorer
     ```
 
 6. Create Storage Explorer Desktop Resource 
 
-```bash
-cat > ~/.local/share/applications/StorageExplorer.desktop <<EOL
-[Desktop Entry]
-Encoding=UTF-8
-Name=Storage Explorer
-Exec=StorageExplorer
-Icon=/opt/StorageExplorer-linux-x64/resources/app/out/app/icon.png
-Terminal=false
-Type=Application
-Categories=Development;
-EOL
-```
+    ```bash
+    cat > ~/.local/share/applications/StorageExplorer.desktop <<EOL
+    [Desktop Entry]
+    Encoding=UTF-8
+    Name=Storage Explorer
+    Exec=StorageExplorer
+    Icon=/opt/StorageExplorer-linux-x64/resources/app/out/app/icon.png
+    Terminal=false
+    Type=Application
+    Categories=Development;
+    EOL
+    ```
 
 ## Install Azure CLI
 
@@ -98,7 +98,7 @@ Follow instruction at [How to Install the Postman Native App in Ubuntu 16.04](ht
 Install library dependency
 
 ```bash
-$ sudo apt install libgconf2-4
+$ sudo apt install libgconf-2-4
 ```
 Download and Install Postman
 
@@ -123,4 +123,20 @@ Terminal=false
 Type=Application
 Categories=Development;
 EOL
+```
+
+### Docker
+
+[How to Install Docker On Ubuntu 18.04 Bionic Beaver](https://linuxconfig.org/how-to-install-docker-on-ubuntu-18-04-bionic-beaver)
+
+```bash
+sudo apt install docker.io && \
+sudo systemctl start docker && \
+sudo systemctl enable docker
+```
+
+It's useful to add your user sudo rights to Docker. Note you'll need to restart your system.
+
+```bash
+sudo usermod <Your User Name> -aG docker
 ```
