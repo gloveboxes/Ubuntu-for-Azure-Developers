@@ -12,8 +12,10 @@
 1. Visual Studio Code 
 2. Azure Storage Explorer
 3. .NET Core 2
+4. Azure CLI
 4. Azure Functions
 5. Azure IoT Edge (Inlcuding cross compiling for ARM)
+6. Postman
 
 
 ### Visual Studio Code
@@ -55,7 +57,7 @@ Useful Extensions.
     $ sudo apt install libgconf-2-4 libcanberra-gtk0 libgnome-keyring0
     ```
 
-4. [Download and Install Storage Explorer (be sure to select Linux)](https://azure.microsoft.com/en-au/features/storage-explorer/)
+4. [Download and Install Storage Explorer. Be sure to select Linux from the dropdown.](https://azure.microsoft.com/en-au/features/storage-explorer/)
 
 5. Extract the Storage Explorer .tar.gz file and copy to /opt directory
 
@@ -76,4 +78,30 @@ Terminal=false
 Type=Application
 Categories=Development;
 EOL
+```
+
+## Install Azure CLI
+
+Install Curl
+```bash
+$ sudo apt install curl
+```
+
+Follow instruction for [Install Azure CLI 2.0 with apt](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest)
+
+## Postman
+
+Follow instruction at [How to Install the Postman Native App in Ubuntu 16.04](https://blog.bluematador.com/posts/postman-how-to-install-on-ubuntu-1604/)
+
+Install library dependency
+
+```bash
+$ sudo apt install libgconf2-4
+```
+```bash
+cd ~Downloads \
+wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz && \
+sudo tar -xzf postman.tar.gz -C /opt && \
+rm postman.tar.gz && \
+sudo ln -s /opt/Postman/Postman /usr/bin/postman
 ```
