@@ -42,32 +42,31 @@ Useful Extensions.
 
 ### Azure Storage Explorer
 
-[Storage Explorer Release Notes](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-relnotes)
+1. [Microsoft Azure Storage Explorer release notes](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-relnotes)
+2. https://answers.launchpad.net/ubuntu/bionic/amd64/libcanberra-gtk0
 
 1. Install [.NET Core 2.0](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-relnotes)
 2. Confim successful installation
     ```bash
     $ dotnet --version
     ```
-3. [Microsoft Azure Storage Explorer release notes](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-relnotes)
-
-https://answers.launchpad.net/ubuntu/bionic/amd64/libcanberra-gtk0
-
-4. $ sudo apt install libgconf-2-4
-5. $ sudo apt install libcanberra-gtk0
-6. $ sudo apt install libgnome-keyring0
-
-4. [Download and Install Storage Explorer](https://go.microsoft.com/fwlink/?LinkId=722418)
-* Extract StorageExplorer-linux-x64.tar.gz
-* Open terminal
+3. Install required dependencies
     ```bash
-    $ sudo cp -r StorageExplorer-linux-x64 /opt/
+    $ sudo apt install libgconf-2-4 libcanberra-gtk0 libgnome-keyring0
     ```
 
-6. 
+4. [Download and Install Storage Explorer](https://www.microsoft.com/net/download/linux-package-manager/ubuntu18-04/sdk-current)
+
+5. untar Storage Explorer .tar.gz file and copy to /opt directory
+
+    ```bash
+    $ sudo mkdir -p /opt/StorageExplorer-linux-x64 && sudo tar -C $_ -zxvf StorageExplorer-linux-x64.tar.gz
+    ```
+
+6. Create Storage Explorer Desktop Resource 
 
 ```bash
-cat > ~/.local/share/applications/postman.desktop <<EOL
+cat > ~/.local/share/applications/StorageExplorer.desktop <<EOL
 [Desktop Entry]
 Encoding=UTF-8
 Name=Storage Explorer
