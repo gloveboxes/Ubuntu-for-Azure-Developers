@@ -17,6 +17,8 @@
 5. Docker (Including cross compiling for ARM)
 5. Azure IoT Edge 
 6. Postman
+7. Microsoft SQL for Linux (and Management Tools)
+
 
 
 ### Visual Studio Code
@@ -150,3 +152,68 @@ docker run --rm --privileged multiarch/qemu-user-static:register --reset
 ```
 
 Otherwise follow the instruction on [How to Build ARM Docker Images on Intel host](http://www.hotblackrobotics.com/en/blog/2018/01/22/docker-images-arm/)
+
+
+## Azure Functions with Visual Studio Code
+
+[Code and test Azure Functions locally](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local)
+
+[Install Node.js using Standard Ubuntu 18.04 Repository](https://linuxconfig.org/how-to-install-node-js-on-ubuntu-18-04-bionic-beaver-linux)
+
+At the time of writting (May 25, 2018) the npm install sucessfully installed the latest Azure Function Core Tools.
+
+#### Install Azure Funcion Core Tools with npm Package Management
+
+```bash
+sudo apt install nodejs && \
+sudo apt install npm && \
+sudo npm install -g azure-functions-core-tools@core
+```
+
+
+#### Install Azure Functions Core Tools with apt Package Management
+
+
+```bash
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-bionic-prod <version> main" > /etc/apt/sources.list.d/dotnetdev.list'
+sudo apt-get update
+
+sudo apt-get install azure-functions-core-tools
+```
+
+## Microsoft SQL Server for Linux
+
+[Install SQL Server and create a database on Ubuntu](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-linux-2017)
+
+### Dockerised MS SQL
+
+Note, running MS SQL in a container does not save data when the container is stopped.
+
+[Run the SQL Server 2017 container image with Docker](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-linux-2017)
+
+```bash
+sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<YourStrong!Passw0rd>' \
+   -p 1433:1433 --name sql1 \
+   -d microsoft/mssql-server-linux:2017-latest
+```
+
+### Microsoft SQL Operations Studio
+
+[Install Microsoft SQL Operations Studio](https://docs.microsoft.com/en-gb/sql/sql-operations-studio/what-is?view=sql-server-linux-2017)
+
+
+### MS SQL Extension for Visual Studio Code
+
+[Use Visual Studio Code to create and run Transact-SQL scripts for SQL Server](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-develop-use-vscode?view=sql-server-linux-2017)
+
+From Visual Studio Code
+
+1. Press CTRL+SHIFT+P (or F1) to open the Command Palette in VS Code.
+2. Select Install Extension and type mssql.
+3. Click install mssql. 
+
+
+### 
