@@ -135,8 +135,17 @@ sudo systemctl start docker && \
 sudo systemctl enable docker
 ```
 
-It's useful to add your user sudo rights to Docker. Note you'll need to restart your system.
+It's useful to add your user sudo rights to Docker. Note, you'll need to restart your system.
 
 ```bash
 sudo usermod <Your User Name> -aG docker
 ```
+### Building ARM Dokcer Images from an x64 Ubuntu Host
+
+If your docker ARM base image is already built to include QEMU then register QEMU in the build agent as follows.
+
+```bash
+docker run --rm --privileged multiarch/qemu-user-static:register --reset
+```
+
+Otherwise follow the instruction on [How to Build ARM Docker Images on Intel host](http://www.hotblackrobotics.com/en/blog/2018/01/22/docker-images-arm/)
