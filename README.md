@@ -252,18 +252,25 @@ Install Visual Studio Code Extention "[Azure Event Hub Explorer](https://marketp
 
 [Microsoft Azure IoT Extension for Azure CLI 2.0](https://github.com/Azure/azure-iot-cli-extension/blob/master/README.md)
 
-[az iot Command Guide](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot?view=azure-cli-latest)
+
 
 
 ```bash
 az extension add --name azure-cli-iot-ext
 ```
 
+[az iot Command Guide](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot?view=azure-cli-latest)
+
+Example IoT Hub command
+
+```bash
+* az iot hub monitor-events --hub-name IotHubName
+```
 
 
 ## Optional Fritzing
 
-[Fritzing Download Site](http://fritzing.org/download/)
+Download from [Fritzing Download Site](http://fritzing.org/download/)
 
 ```bash
 cd ~/Downloads && \
