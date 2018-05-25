@@ -36,9 +36,11 @@ Useful Extensions.
 
 1. Azure Account
 1. Azure Functions
+1. Azure Event Hub Explorer
 1. Azure Cosmos DB
 2. Azure IoT Edge
 3. Azure IoT Toolkit
+3. mssql
 4. C#
 5. Docker
 6. Python
