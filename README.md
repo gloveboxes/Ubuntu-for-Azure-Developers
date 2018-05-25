@@ -94,6 +94,8 @@ $ sudo apt install curl
 
 Follow instruction for [Install Azure CLI 2.0 with apt](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest)
 
+
+
 ## Postman
 
 Follow instruction at [How to Install the Postman Native App in Ubuntu 16.04](https://blog.bluematador.com/posts/postman-how-to-install-on-ubuntu-1604/)
@@ -190,7 +192,7 @@ sudo apt-get install azure-functions-core-tools
 
 ### Dockerised MS SQL
 
-Note, running MS SQL in a container does not save data when the container is stopped.
+Note, running MS SQL in a container does not save data when the container is deleted.
 
 [Run the SQL Server 2017 container image with Docker](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-linux-2017)
 
@@ -199,6 +201,21 @@ sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<YourStrong!Passw0rd>' \
    -p 1433:1433 --name sql1 \
    -d microsoft/mssql-server-linux:2017-latest
 ```
+
+To Stop Docker container
+
+```bash
+docker stop sql1 
+```
+
+To start docker container
+
+```bash
+docker start sql1
+```
+
+Note, you'll lose data if you delete the container.
+
 
 ### Microsoft SQL Operations Studio
 
@@ -216,4 +233,26 @@ From Visual Studio Code
 3. Click install mssql. 
 
 
-### 
+## Azure IoT Edge
+
+[Develop and deploy a C# IoT Edge module to your simulated device - preview](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-csharp-module)
+
+Excellent Samples
+
+[Hands-on Grove Starter Kit for Azure IoT Edge](https://azure-samples.github.io/azure-iot-starter-kits/seeed/)
+
+
+
+## Install Azure IoT Hub Explorer
+
+[Installing and using iothub-explorer](https://github.com/Azure/iothub-explorer)
+
+[Microsoft Azure IoT Extension for Azure CLI 2.0](https://github.com/Azure/azure-iot-cli-extension/blob/master/README.md)
+
+[az iot Command Guide](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot?view=azure-cli-latest)
+
+
+```bash
+az extension add --name azure-cli-iot-ext
+```
+
