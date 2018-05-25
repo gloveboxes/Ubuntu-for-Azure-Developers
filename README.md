@@ -11,10 +11,11 @@
 
 1. Visual Studio Code 
 2. Azure Storage Explorer
-3. .NET Core 2
+3. Lastest .NET Core SDK
 4. Azure CLI
 4. Azure Functions
-5. Azure IoT Edge (Including cross compiling for ARM)
+5. Docker (Including cross compiling for ARM)
+5. Azure IoT Edge 
 6. Postman
 
 
