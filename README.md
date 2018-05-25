@@ -1,6 +1,7 @@
 # Linux for Azure Developers
 
 
+|||
 |----|---|
 |Platform| Ubuntu 18.04|
 |Date|As at May 2018|
