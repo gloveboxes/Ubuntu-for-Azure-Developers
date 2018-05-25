@@ -141,7 +141,7 @@ It's useful to add your user sudo rights to Docker. Note, you'll need to restart
 ```bash
 sudo usermod <Your User Name> -aG docker
 ```
-### Building ARM Dokcer Images from an x64 Ubuntu Host
+#### Building ARM Docker Images from an x64 Ubuntu Host
 
 If your docker ARM base image is already built to include QEMU then register QEMU in the build agent as follows.
 
