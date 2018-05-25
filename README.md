@@ -46,7 +46,7 @@ Useful Extensions.
 2. https://answers.launchpad.net/ubuntu/bionic/amd64/libcanberra-gtk0
 
 1. Install [.NET Core 2.0](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-relnotes)
-2. Confim successful installation
+2. Confim successful installation of .NET Core 2
     ```bash
     $ dotnet --version
     ```
