@@ -57,7 +57,7 @@ Useful Extensions.
 
 4. [Download and Install Storage Explorer](https://www.microsoft.com/net/download/linux-package-manager/ubuntu18-04/sdk-current)
 
-5. untar Storage Explorer .tar.gz file and copy to /opt directory
+5. Extract the Storage Explorer .tar.gz file and copy to /opt directory
 
     ```bash
     $ sudo mkdir -p /opt/StorageExplorer-linux-x64 && sudo tar -C $_ -zxvf StorageExplorer-linux-x64.tar.gz
