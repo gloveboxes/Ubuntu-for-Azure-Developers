@@ -62,7 +62,9 @@ Useful Extensions.
 5. Extract the Storage Explorer .tar.gz file and copy to /opt directory
 
     ```bash
-    $ sudo mkdir -p /opt/StorageExplorer-linux-x64 && sudo tar -C $_ -zxvf StorageExplorer-linux-x64.tar.gz
+    $ sudo mkdir -p /opt/StorageExplorer-linux-x64 && \
+    sudo tar -C $_ -zxvf StorageExplorer-linux-x64.tar.gz && \
+    sudo ln -s /opt/StorageExplorer-linux-x64/StorageExplorer /usr/bin/StorageExplorer
     ```
 
 6. Create Storage Explorer Desktop Resource 
@@ -72,7 +74,7 @@ cat > ~/.local/share/applications/StorageExplorer.desktop <<EOL
 [Desktop Entry]
 Encoding=UTF-8
 Name=Storage Explorer
-Exec=/opt/StorageExplorer-linux-x64/StorageExplorer
+Exec=StorageExplorer
 Icon=/opt/StorageExplorer-linux-x64/resources/app/out/app/icon.png
 Terminal=false
 Type=Application
