@@ -55,7 +55,7 @@ Useful Extensions.
     $ sudo apt install libgconf-2-4 libcanberra-gtk0 libgnome-keyring0
     ```
 
-4. [Download and Install Storage Explorer](https://www.microsoft.com/net/download/linux-package-manager/ubuntu18-04/sdk-current)
+4. [Download and Install Storage Explorer (be sure to select Linux)](https://azure.microsoft.com/en-au/features/storage-explorer/)
 
 5. Extract the Storage Explorer .tar.gz file and copy to /opt directory
 
