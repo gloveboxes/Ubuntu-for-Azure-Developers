@@ -45,8 +45,8 @@ Useful Extensions.
 1. [Microsoft Azure Storage Explorer release notes](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-relnotes)
 2. https://answers.launchpad.net/ubuntu/bionic/amd64/libcanberra-gtk0
 
-1. Install curent release of [.NET Core SDK](https://www.microsoft.com/net/download/linux-package-manager/ubuntu18-04/sdk-current)
-2. Confim successful installation of .NET Core
+1. Install curent release of the [.NET Core SDK](https://www.microsoft.com/net/download/linux-package-manager/ubuntu18-04/sdk-current)
+2. Confim successful installation of .NET Core SDK
     ```bash
     $ dotnet --version
     ```
