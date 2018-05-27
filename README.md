@@ -114,7 +114,7 @@ You'll need to create a GitHub token that you need to store securely. See [Creat
 
 6. Create Storage Explorer Desktop Resource 
 
-    ```bash
+```bash
     cat > ~/.local/share/applications/StorageExplorer.desktop <<EOL
     [Desktop Entry]
     Encoding=UTF-8
@@ -125,7 +125,7 @@ You'll need to create a GitHub token that you need to store securely. See [Creat
     Type=Application
     Categories=Development;
     EOL
-    ```
+```
 
 Notes.
 * [Microsoft Azure Storage Explorer release notes](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-relnotes)
