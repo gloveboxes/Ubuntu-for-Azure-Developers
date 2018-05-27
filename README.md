@@ -150,19 +150,19 @@ At the time of writting (May 25, 2018) I had more success installing the latest 
 
 ### Install Azure Funcion Core Tools with npm Package Management
 
-    ```bash
+    ````bash
     sudo apt install nodejs && \
     sudo apt install npm && \
     sudo npm install -g azure-functions-core-tools@core
-    ```
-    
+    ````
+
 Notes.
 * [Install Node.js using Standard Ubuntu 18.04 Repository](https://linuxconfig.org/how-to-install-node-js-on-ubuntu-18-04-bionic-beaver-linux)
 
 ### Install Azure Functions Core Tools with apt Package Management
 
 
-    ```bash
+    ````bash
     sudo apt install curl
 
     curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
@@ -174,7 +174,7 @@ Notes.
     sudo apt-get update
 
     sudo apt-get install azure-functions-core-tools
-    ```
+    ````
 
 ## Azure Event Hub monitor
 
