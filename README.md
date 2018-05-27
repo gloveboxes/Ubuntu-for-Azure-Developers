@@ -115,7 +115,7 @@ You'll need to create a GitHub token that you need to store securely. See [Creat
 6. Create Storage Explorer Desktop Resource 
 
 ```bash
-    cat > ~/.local/share/applications/StorageExplorer.desktop <<EOL
+    cat &gt; ~/.local/share/applications/StorageExplorer.desktop &lt;&lt;EOL
     [Desktop Entry]
     Encoding=UTF-8
     Name=Storage Explorer
