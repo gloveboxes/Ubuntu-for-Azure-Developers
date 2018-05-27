@@ -115,7 +115,7 @@ You'll need to create a GitHub token that you need to store securely. See [Creat
 6. Create Storage Explorer Desktop Resource 
 
 ```bash
-    cat &gt; ~/.local/share/applications/StorageExplorer.desktop &lt;&lt;EOL
+    cat > ~/.local/share/applications/StorageExplorer.desktop <<EOL
     [Desktop Entry]
     Encoding=UTF-8
     Name=Storage Explorer
@@ -155,6 +155,7 @@ At the time of writting (May 25, 2018) I had more success installing the latest 
     sudo apt install npm && \
     sudo npm install -g azure-functions-core-tools@core
     ```
+    
 Notes.
 * [Install Node.js using Standard Ubuntu 18.04 Repository](https://linuxconfig.org/how-to-install-node-js-on-ubuntu-18-04-bionic-beaver-linux)
 
