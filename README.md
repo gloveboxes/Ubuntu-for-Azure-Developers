@@ -134,20 +134,17 @@ Notes.
 
 ## Azure CLI (Command Line Interface)
 
-    Install Curl
-    ```bash
-    $ sudo apt install curl
-    ```
 
 Notes.
 
 * [Install Azure CLI 2.0 with apt](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest)
 
+
 ## Azure Functions with Visual Studio Code
 
 [Code and test Azure Functions locally](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local)
 
-[Install Node.js using Standard Ubuntu 18.04 Repository](https://linuxconfig.org/how-to-install-node-js-on-ubuntu-18-04-bionic-beaver-linux)
+
 
 At the time of writting (May 25, 2018) I had more success installing the latest Azure Function Core Tools via npm than apt.
 
@@ -158,12 +155,15 @@ At the time of writting (May 25, 2018) I had more success installing the latest 
     sudo apt install npm && \
     sudo npm install -g azure-functions-core-tools@core
     ```
-
+Notes.
+* [Install Node.js using Standard Ubuntu 18.04 Repository](https://linuxconfig.org/how-to-install-node-js-on-ubuntu-18-04-bionic-beaver-linux)
 
 ### Install Azure Functions Core Tools with apt Package Management
 
 
     ```bash
+    sudo apt install curl
+
     curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 
     sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
