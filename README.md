@@ -1,69 +1,105 @@
 # Linux for Azure Developers
 
+Setting up a developer environment to build Azure based solutions is now very well supported across Windows, Mac and Linux. 
+
+I find myself developing more and more for Azure from Ubuntu Desktop. It's a great experience and there is superb first class open source tooling support from Microsoft (and others) for Azure across Windows, Mac and Linux. 
+
+I've tended to stick with the LTS releases of Linux, better support, examples, documentaton etc. With the release of [Ubuntu 18.04 LTS](https://www.ubuntu.com/desktop) I decided is was time to upgrade from Ubuntu 16.04 LTS. Yup, I could have done an inplace upgrade but sometimes it's just better to start afresh.
+
+So here are the applications, command line tools and SDKs that I installed for my Azure centric Ubuntu 18.04 developer desktop.
+
+This guide assumes you have some experience with Linux. Terminal and Ctrl-Shift-V to paste in [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) commands is your friend. 
+
+Given Ubuntu 18.04 is still fresh I documentated the additional libraries you'll need to install.
+
 
 |||
 |----|---|
 |Platform| Ubuntu 18.04|
 |Date|As at May 2018|
 
-##
+## The Essentials
 
-1. Visual Studio Code 
-2. Azure Storage Explorer
-3. Lastest .NET Core SDK
-4. Azure CLI
-4. Azure Functions
-5. Docker (Including cross compiling for ARM)
-5. Azure IoT Edge 
-6. Postman
-7. Microsoft SQL for Linux (and Management Tools)
+1. Visual Studio Code (#1 GitHub project by contributors)
+2. GitHub client
+3. Lastest .NET Core SDK (in top 10 most discussed GitHub projects)
+4. Azure Storage Explorer
+5. Azure CLI
+5. Azure Functions
+6. Azure Event Hub
+
+## Tools
+1. Azure IoT Edge (an Azure CLI Extension)
+
+## Apps
+
+1. Docker
+2. Docker Cross Compiling for ARM
+3. Postman
+4. Fiddler
+
+## Microsoft SQL Server
+7. Microsoft SQL Server for Linux 
+8. Micrsoft SQL Managament tools for Linux
+
+## Embedded Development
+
+1. Arduino
+2. Fritzing
 
 
+## Visual Studio Code
 
-### Visual Studio Code
+[Visual Studio Code](https://code.visualstudio.com/) is a must have IDE, open source, extensible, great language, debugging and tooling support.  
 
-Easy. From Ubuntu Store, search for Visul Studio Code and install.
+installation is easy, in fact it's a [Snap](https://en.wikipedia.org/wiki/Snappy_(package_manager)). From Ubuntu Store, search for Visul Studio Code and install.
 
-### Install GitHub Client
+### Visual Studio Extensions
 
-```bash
-$ sudo apt install git
-```
-
-
-
+There are a stack of great extensions for Visual Studio Code
 Useful Extensions.
 
-1. Azure Account
-1. Azure Functions
-1. Azure Event Hub Explorer
-1. Azure Cosmos DB
-2. Azure IoT Edge
-3. Azure IoT Toolkit
-3. mssql
-4. C#
-5. Docker
-6. Python
+1. Azure Account, Azure Functions, Azure Event Hub Explorer, Azure Cosmos DB, Azure IoT Edge, Azure IoT Toolkit, mssql, C#, Docker, Python, C/C++.
 
 
-### Azure Storage Explorer
+## GitHub Client
 
-1. [Microsoft Azure Storage Explorer release notes](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-relnotes)
-2. https://answers.launchpad.net/ubuntu/bionic/amd64/libcanberra-gtk0
+You'll be prompted what you start Visual Studio Code to install, it's simple too.
 
-1. Install curent release of the [.NET Core SDK](https://www.microsoft.com/net/download/linux-package-manager/ubuntu18-04/sdk-current)
+
+```bash
+sudo apt install git
+```
+
+You'll need to create a GitHub token that you need to store securely. See [Creating a personal access token for the command line](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) for more information. You'll need to use this token in place of your password when pushing changes to GitHub.
+
+
+
+## Latest .NET Core SDK
+
+1. Install the latest release of the [.NET Core SDK](https://www.microsoft.com/net/download/linux-package-manager/ubuntu18-04/sdk-current)
+
 2. Confim successful installation of .NET Core SDK
+
     ```bash
-    $ dotnet --version
-    ```
-3. Install required dependencies
-    ```bash
-    $ sudo apt install libgconf-2-4 libcanberra-gtk0 libgnome-keyring0
+    dotnet --version
     ```
 
-4. [Download and Install Storage Explorer. Be sure to select Linux from the dropdown.](https://azure.microsoft.com/en-au/features/storage-explorer/)
 
-5. Extract the Storage Explorer .tar.gz file and copy to /opt directory
+## Azure Storage Explorer
+
+
+1. Install required dependencies
+
+    ```bash
+    sudo apt install libgconf-2-4 libcanberra-gtk0 libgnome-keyring0
+    ```
+
+
+
+2. [Download and Install Storage Explorer. Be sure to select Linux from the dropdown.](https://azure.microsoft.com/en-au/features/storage-explorer/)
+
+5. Extract the Storage Explorer .tar.gz file, copy to /opt directory, and add a symbolic link to the StorageExplorer executable.
 
     ```bash
     sudo mkdir -p /opt/StorageExplorer-linux-x64 && \
@@ -86,20 +122,26 @@ Useful Extensions.
     EOL
     ```
 
-## Install Azure CLI
+Notes.
+* [Microsoft Azure Storage Explorer release notes](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-relnotes)
+* https://answers.launchpad.net/ubuntu/bionic/amd64/libcanberra-gtk0
+ 
 
-Install Curl
-```bash
-$ sudo apt install curl
-```
+## Install Azure CLI (Command Line Interface)
 
-Follow instruction for [Install Azure CLI 2.0 with apt](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest)
+    Install Curl
+    ```bash
+    $ sudo apt install curl
+    ```
+
+Notes.
+
+* [Install Azure CLI 2.0 with apt](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest)
 
 
 
 ## Postman
 
-Follow instruction at [How to Install the Postman Native App in Ubuntu 16.04](https://blog.bluematador.com/posts/postman-how-to-install-on-ubuntu-1604/)
 
 Install library dependency
 
@@ -131,30 +173,44 @@ Categories=Development;
 EOL
 ```
 
-### Docker
+Notes.
+* Follow instruction at [How to Install the Postman Native App in Ubuntu 16.04](https://blog.bluematador.com/posts/postman-how-to-install-on-ubuntu-1604/)
 
-[How to Install Docker On Ubuntu 18.04 Bionic Beaver](https://linuxconfig.org/how-to-install-docker-on-ubuntu-18-04-bionic-beaver)
+## Fidler
 
-```bash
-sudo apt install docker.io && \
-sudo systemctl start docker && \
-sudo systemctl enable docker
-```
+[Use Fiddler in Ubuntu](https://medium.com/@rajsek/use-fiddler-in-ubuntu-82b1dfd80848)
 
-It's useful to add your user sudo rights to Docker. Note, you'll need to restart your system.
 
-```bash
-sudo usermod <Your User Name> -aG docker
-```
-#### Building ARM Docker Images from an x64 Ubuntu Host
+## Docker
 
-If your docker ARM base image is already built to include QEMU then register QEMU in the build agent as follows.
+
+    ```bash
+    sudo apt install docker.io && \
+    sudo systemctl start docker && \
+    sudo systemctl enable docker
+    ```
+
+It's useful to add your user sudo rights to Docker. Note, you'll need to restart your system for this setting to take effect.
+
+    ```bash
+    sudo usermod <Your User Name> -aG docker
+    ```
+
+Notes.
+
+* [How to Install Docker On Ubuntu 18.04 Bionic Beaver](https://linuxconfig.org/how-to-install-docker-on-ubuntu-18-04-bionic-beaver)
+
+
+## Building ARM Docker Images from an x64 Ubuntu Host
+
 
 ```bash
 docker run --rm --privileged multiarch/qemu-user-static:register --reset
 ```
 
-Otherwise follow the instruction on [How to Build ARM Docker Images on Intel host](http://www.hotblackrobotics.com/en/blog/2018/01/22/docker-images-arm/)
+Notes.
+* If your docker ARM base image is already built to include QEMU then register QEMU in the build agent as follows.
+* Otherwise follow the instruction on [How to Build ARM Docker Images on Intel host](http://www.hotblackrobotics.com/en/blog/2018/01/22/docker-images-arm/)
 
 
 ## Azure Functions with Visual Studio Code
@@ -163,67 +219,68 @@ Otherwise follow the instruction on [How to Build ARM Docker Images on Intel hos
 
 [Install Node.js using Standard Ubuntu 18.04 Repository](https://linuxconfig.org/how-to-install-node-js-on-ubuntu-18-04-bionic-beaver-linux)
 
-At the time of writting (May 25, 2018) the npm install sucessfully installed the latest Azure Function Core Tools.
+At the time of writting (May 25, 2018) I had more success installing the latest Azure Function Core Tools via npm than apt.
 
-#### Install Azure Funcion Core Tools with npm Package Management
+### Install Azure Funcion Core Tools with npm Package Management
 
-```bash
-sudo apt install nodejs && \
-sudo apt install npm && \
-sudo npm install -g azure-functions-core-tools@core
-```
-
-
-#### Install Azure Functions Core Tools with apt Package Management
+    ```bash
+    sudo apt install nodejs && \
+    sudo apt install npm && \
+    sudo npm install -g azure-functions-core-tools@core
+    ```
 
 
-```bash
-curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+### Install Azure Functions Core Tools with apt Package Management
 
-sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-bionic-prod <version> main" > /etc/apt/sources.list.d/dotnetdev.list'
-sudo apt-get update
 
-sudo apt-get install azure-functions-core-tools
-```
+    ```bash
+    curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+
+    sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+
+    sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-bionic-prod <version> main" > /etc/apt/sources.list.d/dotnetdev.list'
+
+    sudo apt-get update
+
+    sudo apt-get install azure-functions-core-tools
+    ```
 
 ## Microsoft SQL Server for Linux
 
 [Install SQL Server and create a database on Ubuntu](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-linux-2017)
 
-### Dockerised MS SQL
+### Dockerised Microsoft SQL Server
 
-Note, running MS SQL in a container does not save data when the container is deleted.
+Note, deleting a Microsoft SQL Server Docker container will also delete its data. So docker run to download and create and run the docker SQL Container and then use docker stop and start to control.
 
-[Run the SQL Server 2017 container image with Docker](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-linux-2017)
+    ```bash
+    sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<YourStrong!Passw0rd>' \
+    -p 1433:1433 --name sql1 \
+    -d microsoft/mssql-server-linux:2017-latest
+    ```
 
-```bash
-sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<YourStrong!Passw0rd>' \
-   -p 1433:1433 --name sql1 \
-   -d microsoft/mssql-server-linux:2017-latest
-```
+To **stop** the Microsoft SQL Server Docker container.
 
-To Stop Docker container
+    ```bash
+    docker stop sql1 
+    ```
 
-```bash
-docker stop sql1 
-```
+To **start** the Microsoft SQL Server Docker container.
 
-To start docker container
+    ```bash
+    docker start sql1
+    ```
 
-```bash
-docker start sql1
-```
-
-Note, you'll lose data if you delete the container.
+Notes.
+* [Run the SQL Server 2017 container image with Docker](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-linux-2017)
 
 
-### Microsoft SQL Operations Studio
+## Microsoft SQL Server Operations Studio
 
 [Install Microsoft SQL Operations Studio](https://docs.microsoft.com/en-gb/sql/sql-operations-studio/what-is?view=sql-server-linux-2017)
 
 
-### MS SQL Extension for Visual Studio Code
+## Microsoft SQL Server Extension for Visual Studio Code
 
 [Use Visual Studio Code to create and run Transact-SQL scripts for SQL Server](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-develop-use-vscode?view=sql-server-linux-2017)
 
@@ -256,47 +313,50 @@ Install Visual Studio Code Extention "[Azure Event Hub Explorer](https://marketp
 
 
 
-```bash
-az extension add --name azure-cli-iot-ext
-```
+    ```bash
+    az extension add --name azure-cli-iot-ext
+    ```
 
 [az iot Command Guide](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot?view=azure-cli-latest)
 
 Example IoT Hub command
 
-```bash
-* az iot hub monitor-events --hub-name IotHubName
-```
+    ```bash
+    * az iot hub monitor-events --hub-name IotHubName
+    ```
 
+
+# Embedded Development
 
 ## Optional Fritzing
 
 Download from [Fritzing Download Site](http://fritzing.org/download/)
 
-```bash
-cd ~/Downloads && \
-mkdir -p ~/Apps && \
-tar -C $_ -xvjf fritzing-0.9.3b.linux.AMD64.tar.bz2 && \
-sudo ln -s ~/Apps/fritzing-0.9.3b.linux.AMD64/Fritzing /usr/bin/fritzing
-```
+    ```bash
+    cd ~/Downloads && \
+    mkdir -p ~/Apps && \
+    tar -C $_ -xvjf fritzing-0.9.3b.linux.AMD64.tar.bz2 && \
+    sudo ln -s ~/Apps/fritzing-0.9.3b.linux.AMD64/Fritzing /usr/bin/fritzing
+    ```
 
 Create Fritzing Desktop Resource file
 
-```bash
-cat > ~/.local/share/applications/fritzing.desktop <<EOL
-[Desktop Entry]
-Version=0.9.3b
-Name=Fritzing
-GenericName=Fritzing
-Comment=Electronic Design Automation software
-Exec=fritzing 
-Icon=/home/dave/Apps/fritzing-0.9.3b.linux.AMD64/icons/fritzing_icon.png
-Terminal=false
-Type=Application
-Categories=Development;IDE;Electronics;EDA;
-X-SuSE-translate=false
-StartupNotify=true
-Categories=PCB;
-MimeType=application/x-fritzing-fz;application/x-fritzing-fzz;application/x-fritzing-fzp;application/x-fritzing-fzpz;application/x-fritzing-fzb;application/x-fritzing-fzbz;application/x-fritzing-fzm;
-EOL
-```
+    ```bash
+    cat > ~/.local/share/applications/fritzing.desktop <<EOL
+    [Desktop Entry]
+    Version=0.9.3b
+    Name=Fritzing
+    GenericName=Fritzing
+    Comment=Electronic Design Automation software
+    Exec=fritzing 
+    Icon=/home/dave/Apps/fritzing-0.9.3b.linux.AMD64/icons/fritzing_icon.png
+    Terminal=false
+    Type=Application
+    Categories=Development;IDE;Electronics;EDA;
+    X-SuSE-translate=false
+    StartupNotify=true
+    Categories=PCB;
+    MimeType=application/x-fritzing-fz;application/x-fritzing-fzz;application/x-fritzing-fzp;application/x-fritzing-fzpz;application/x-fritzing-fzb;application/x-fritzing-fzbz;application/x-fritzing-fzm;
+    EOL
+    ```
+
