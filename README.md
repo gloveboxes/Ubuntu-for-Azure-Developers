@@ -22,31 +22,36 @@ Given Ubuntu 18.04 is still fresh I documentated the additional libraries you'll
 
 1. Visual Studio Code (#1 GitHub project by contributors)
 2. GitHub client
-3. Lastest .NET Core SDK (in top 10 most discussed GitHub projects)
+3. Latest .NET Core SDK (in top 10 most discussed GitHub projects)
 4. Azure Storage Explorer
 5. Azure CLI
 5. Azure Functions
 6. Azure Event Hub
 
-## Tools
-1. Azure IoT Edge (an Azure CLI Extension)
-
-## Apps
+## Toolkit
 
 1. Docker
-2. Docker Cross Compiling for ARM
 3. Postman
 4. Fiddler
 
+## Internet of Things (IoT)
+
+1. Azure IoT Hub Explorer (an Azure CLI Extension)
+2. Azure IoT Edge
+2. Docker Cross Compiling on X86 to create ARM images
+
+
 ## Microsoft SQL Server
-7. Microsoft SQL Server for Linux 
-8. Micrsoft SQL Managament tools for Linux
+
+1. Microsoft SQL Server for Linux 
+2. Micrsoft SQL Managament tools for Linux
 
 ## Embedded Development
 
 1. Arduino
 2. Fritzing
 
+# The Essentials
 
 ## Visual Studio Code
 
@@ -127,7 +132,7 @@ Notes.
 * https://answers.launchpad.net/ubuntu/bionic/amd64/libcanberra-gtk0
  
 
-## Install Azure CLI (Command Line Interface)
+## Azure CLI (Command Line Interface)
 
     Install Curl
     ```bash
@@ -138,6 +143,64 @@ Notes.
 
 * [Install Azure CLI 2.0 with apt](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest)
 
+## Azure Functions with Visual Studio Code
+
+[Code and test Azure Functions locally](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local)
+
+[Install Node.js using Standard Ubuntu 18.04 Repository](https://linuxconfig.org/how-to-install-node-js-on-ubuntu-18-04-bionic-beaver-linux)
+
+At the time of writting (May 25, 2018) I had more success installing the latest Azure Function Core Tools via npm than apt.
+
+### Install Azure Funcion Core Tools with npm Package Management
+
+    ```bash
+    sudo apt install nodejs && \
+    sudo apt install npm && \
+    sudo npm install -g azure-functions-core-tools@core
+    ```
+
+
+### Install Azure Functions Core Tools with apt Package Management
+
+
+    ```bash
+    curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+
+    sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+
+    sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-bionic-prod <version> main" > /etc/apt/sources.list.d/dotnetdev.list'
+
+    sudo apt-get update
+
+    sudo apt-get install azure-functions-core-tools
+    ```
+
+## Azure Event Hub monitor
+
+Install Visual Studio Code Extention "[Azure Event Hub Explorer](https://marketplace.visualstudio.com/items?itemName=Summer.azure-event-hub-explorer)"
+
+
+
+# Toolkit
+
+## Docker
+
+
+    ```bash
+    sudo apt install docker.io && \
+    sudo systemctl start docker && \
+    sudo systemctl enable docker
+    ```
+
+It's useful to add your user sudo rights to Docker. Note, you'll need to restart your system for this setting to take effect.
+
+    ```bash
+    sudo usermod <Your User Name> -aG docker
+    ```
+
+Notes.
+
+* [How to Install Docker On Ubuntu 18.04 Bionic Beaver](https://linuxconfig.org/how-to-install-docker-on-ubuntu-18-04-bionic-beaver)
 
 
 ## Postman
@@ -181,69 +244,53 @@ Notes.
 [Use Fiddler in Ubuntu](https://medium.com/@rajsek/use-fiddler-in-ubuntu-82b1dfd80848)
 
 
-## Docker
 
+# Internet of Things
+
+## Azure IoT Hub Explorer
 
     ```bash
-    sudo apt install docker.io && \
-    sudo systemctl start docker && \
-    sudo systemctl enable docker
+    az extension add --name azure-cli-iot-ext
     ```
 
-It's useful to add your user sudo rights to Docker. Note, you'll need to restart your system for this setting to take effect.
+[az iot Command Guide](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot?view=azure-cli-latest)
+
+Example IoT Hub command
 
     ```bash
-    sudo usermod <Your User Name> -aG docker
+    * az iot hub monitor-events --hub-name IotHubName
     ```
 
 Notes.
 
-* [How to Install Docker On Ubuntu 18.04 Bionic Beaver](https://linuxconfig.org/how-to-install-docker-on-ubuntu-18-04-bionic-beaver)
+* [Installing and using iothub-explorer](https://github.com/Azure/iothub-explorer)
+
+* [Microsoft Azure IoT Extension for Azure CLI 2.0](https://github.com/Azure/azure-iot-cli-extension/blob/master/README.md)
+
+
+## Azure IoT Edge
+
+[Develop and deploy a C# IoT Edge module to your simulated device - preview](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-csharp-module)
+
+Excellent Samples
+
+[Hands-on Grove Starter Kit for Azure IoT Edge](https://azure-samples.github.io/azure-iot-starter-kits/seeed/)
+
 
 
 ## Building ARM Docker Images from an x64 Ubuntu Host
 
 
-```bash
-docker run --rm --privileged multiarch/qemu-user-static:register --reset
-```
+    ```bash
+    docker run --rm --privileged multiarch/qemu-user-static:register --reset
+    ```
 
 Notes.
 * If your docker ARM base image is already built to include QEMU then register QEMU in the build agent as follows.
 * Otherwise follow the instruction on [How to Build ARM Docker Images on Intel host](http://www.hotblackrobotics.com/en/blog/2018/01/22/docker-images-arm/)
 
 
-## Azure Functions with Visual Studio Code
-
-[Code and test Azure Functions locally](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local)
-
-[Install Node.js using Standard Ubuntu 18.04 Repository](https://linuxconfig.org/how-to-install-node-js-on-ubuntu-18-04-bionic-beaver-linux)
-
-At the time of writting (May 25, 2018) I had more success installing the latest Azure Function Core Tools via npm than apt.
-
-### Install Azure Funcion Core Tools with npm Package Management
-
-    ```bash
-    sudo apt install nodejs && \
-    sudo apt install npm && \
-    sudo npm install -g azure-functions-core-tools@core
-    ```
-
-
-### Install Azure Functions Core Tools with apt Package Management
-
-
-    ```bash
-    curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
-
-    sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
-
-    sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-bionic-prod <version> main" > /etc/apt/sources.list.d/dotnetdev.list'
-
-    sudo apt-get update
-
-    sudo apt-get install azure-functions-core-tools
-    ```
+# Microsoft SQL Server
 
 ## Microsoft SQL Server for Linux
 
@@ -291,42 +338,11 @@ From Visual Studio Code
 3. Click install mssql. 
 
 
-## Azure IoT Edge
-
-[Develop and deploy a C# IoT Edge module to your simulated device - preview](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-csharp-module)
-
-Excellent Samples
-
-[Hands-on Grove Starter Kit for Azure IoT Edge](https://azure-samples.github.io/azure-iot-starter-kits/seeed/)
-
-## Azure Event Hub monitor
-
-Install Visual Studio Code Extention "[Azure Event Hub Explorer](https://marketplace.visualstudio.com/items?itemName=Summer.azure-event-hub-explorer)"
-
-
-## Install Azure IoT Hub Explorer
-
-[Installing and using iothub-explorer](https://github.com/Azure/iothub-explorer)
-
-[Microsoft Azure IoT Extension for Azure CLI 2.0](https://github.com/Azure/azure-iot-cli-extension/blob/master/README.md)
-
-
-
-
-    ```bash
-    az extension add --name azure-cli-iot-ext
-    ```
-
-[az iot Command Guide](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot?view=azure-cli-latest)
-
-Example IoT Hub command
-
-    ```bash
-    * az iot hub monitor-events --hub-name IotHubName
-    ```
-
 
 # Embedded Development
+
+
+
 
 ## Optional Fritzing
 
