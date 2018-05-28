@@ -2,6 +2,7 @@
 
 |||
 |----|---|
+|Author|Dave Glover, Microsoft Australia|
 |Platform| Ubuntu 18.04|
 |Date|As at May 2018|
 
@@ -10,7 +11,7 @@
 Setting up a developer environment to build Azure based solutions is now very well supported across Windows, Mac and Linux. 
 
 
-I develop for Azure from both Windows and Linux nowadays. Developing on Linux is a great experience and there is superb first class open source tooling support from Microsoft (and others) for Azure across Windows, Mac and Linux. 
+I develop for Azure from both Windows and Linux nowadays. Developing on Linux is a great experience and there is superb open source tooling support from Microsoft (and others) for Azure across Windows, Mac and Linux. 
 
 I've tended to stick with the LTS releases of Linux, better support, examples, documentation etc. With the release of [Ubuntu 18.04 LTS](https://www.ubuntu.com/desktop) I decided is was time to upgrade from Ubuntu 16.04 LTS. Yup, I could have done an in-place upgrade but sometimes it's just better to start afresh.
 
