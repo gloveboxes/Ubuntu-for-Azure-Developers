@@ -13,6 +13,7 @@ This guide assumes you have some experience with Linux. The guide assumes you'll
 Given Ubuntu 18.04 is still fresh I documentated the additional libraries you'll need to install.
 
 
+
 |||
 |----|---|
 |Platform| Ubuntu 18.04|
