@@ -150,11 +150,11 @@ At the time of writting (May 25, 2018) I had more success installing the latest 
 
 ### Install Azure Funcion Core Tools with npm Package Management
 
-    ````bash
-    sudo apt install nodejs && \
-    sudo apt install npm && \
-    sudo npm install -g azure-functions-core-tools@core
-    ````
+```bash
+sudo apt install nodejs && \
+sudo apt install npm && \
+sudo npm install -g azure-functions-core-tools@core
+```
 
 Notes.
 * [Install Node.js using Standard Ubuntu 18.04 Repository](https://linuxconfig.org/how-to-install-node-js-on-ubuntu-18-04-bionic-beaver-linux)
@@ -162,19 +162,19 @@ Notes.
 ### Install Azure Functions Core Tools with apt Package Management
 
 
-    ````bash
-    sudo apt install curl
+````bash
+sudo apt install curl
 
-    curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
 
-    sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
 
-    sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-bionic-prod <version> main" > /etc/apt/sources.list.d/dotnetdev.list'
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-bionic-prod <version> main" > /etc/apt/sources.list.d/dotnetdev.list'
 
-    sudo apt-get update
+sudo apt-get update
 
-    sudo apt-get install azure-functions-core-tools
-    ````
+sudo apt-get install azure-functions-core-tools
+````
 
 ## Azure Event Hub monitor
 
@@ -187,17 +187,17 @@ Install Visual Studio Code Extention "[Azure Event Hub Explorer](https://marketp
 ## Docker
 
 
-    ```bash
-    sudo apt install docker.io && \
-    sudo systemctl start docker && \
-    sudo systemctl enable docker
-    ```
+```bash
+sudo apt install docker.io && \
+sudo systemctl start docker && \
+sudo systemctl enable docker
+```
 
 It's useful to add your user sudo rights to Docker. Note, you'll need to restart your system for this setting to take effect.
 
-    ```bash
-    sudo usermod <Your User Name> -aG docker
-    ```
+```bash
+sudo usermod <Your User Name> -aG docker
+```
 
 Notes.
 
@@ -210,8 +210,9 @@ Notes.
 Install library dependency
 
 ```bash
-$ sudo apt install libgconf-2-4
+sudo apt install libgconf-2-4
 ```
+
 Download and Install Postman
 
 ```bash
@@ -250,17 +251,17 @@ Notes.
 
 ## Azure IoT Hub Explorer
 
-    ```bash
-    az extension add --name azure-cli-iot-ext
-    ```
+```bash
+az extension add --name azure-cli-iot-ext
+```
 
 [az iot Command Guide](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot?view=azure-cli-latest)
 
 Example IoT Hub command
 
-    ```bash
-    * az iot hub monitor-events --hub-name IotHubName
-    ```
+```bash
+az iot hub monitor-events --hub-name IotHubName
+```
 
 Notes.
 
@@ -282,9 +283,9 @@ Excellent Samples
 ## Building ARM Docker Images from an x64 Ubuntu Host
 
 
-    ```bash
-    docker run --rm --privileged multiarch/qemu-user-static:register --reset
-    ```
+```bash
+docker run --rm --privileged multiarch/qemu-user-static:register --reset
+```
 
 Notes.
 * If your docker ARM base image is already built to include QEMU then register QEMU in the build agent as follows.
@@ -301,23 +302,23 @@ Notes.
 
 Note, deleting a Microsoft SQL Server Docker container will also delete its data. So docker run to download and create and run the docker SQL Container and then use docker stop and start to control.
 
-    ```bash
-    sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<YourStrong!Passw0rd>' \
-    -p 1433:1433 --name sql1 \
-    -d microsoft/mssql-server-linux:2017-latest
-    ```
+```bash
+sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<YourStrong!Passw0rd>' \
+-p 1433:1433 --name sql1 \
+-d microsoft/mssql-server-linux:2017-latest
+```
 
 To **stop** the Microsoft SQL Server Docker container.
 
-    ```bash
-    docker stop sql1 
-    ```
+```bash
+docker stop sql1 
+```
 
 To **start** the Microsoft SQL Server Docker container.
 
-    ```bash
-    docker start sql1
-    ```
+```bash
+docker start sql1
+```
 
 Notes.
 * [Run the SQL Server 2017 container image with Docker](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-linux-2017)
@@ -349,31 +350,31 @@ From Visual Studio Code
 
 Download from [Fritzing Download Site](http://fritzing.org/download/)
 
-    ```bash
-    cd ~/Downloads && \
-    mkdir -p ~/Apps && \
-    tar -C $_ -xvjf fritzing-0.9.3b.linux.AMD64.tar.bz2 && \
-    sudo ln -s ~/Apps/fritzing-0.9.3b.linux.AMD64/Fritzing /usr/bin/fritzing
-    ```
+```bash
+cd ~/Downloads && \
+mkdir -p ~/Apps && \
+tar -C $_ -xvjf fritzing-0.9.3b.linux.AMD64.tar.bz2 && \
+sudo ln -s ~/Apps/fritzing-0.9.3b.linux.AMD64/Fritzing /usr/bin/fritzing
+```
 
 Create Fritzing Desktop Resource file
 
-    ```bash
-    cat > ~/.local/share/applications/fritzing.desktop <<EOL
-    [Desktop Entry]
-    Version=0.9.3b
-    Name=Fritzing
-    GenericName=Fritzing
-    Comment=Electronic Design Automation software
-    Exec=fritzing 
-    Icon=/home/dave/Apps/fritzing-0.9.3b.linux.AMD64/icons/fritzing_icon.png
-    Terminal=false
-    Type=Application
-    Categories=Development;IDE;Electronics;EDA;
-    X-SuSE-translate=false
-    StartupNotify=true
-    Categories=PCB;
-    MimeType=application/x-fritzing-fz;application/x-fritzing-fzz;application/x-fritzing-fzp;application/x-fritzing-fzpz;application/x-fritzing-fzb;application/x-fritzing-fzbz;application/x-fritzing-fzm;
-    EOL
-    ```
+```bash
+cat > ~/.local/share/applications/fritzing.desktop <<EOL
+[Desktop Entry]
+Version=0.9.3b
+Name=Fritzing
+GenericName=Fritzing
+Comment=Electronic Design Automation software
+Exec=fritzing 
+Icon=/home/dave/Apps/fritzing-0.9.3b.linux.AMD64/icons/fritzing_icon.png
+Terminal=false
+Type=Application
+Categories=Development;IDE;Electronics;EDA;
+X-SuSE-translate=false
+StartupNotify=true
+Categories=PCB;
+MimeType=application/x-fritzing-fz;application/x-fritzing-fzz;application/x-fritzing-fzp;application/x-fritzing-fzpz;application/x-fritzing-fzb;application/x-fritzing-fzbz;application/x-fritzing-fzm;
+EOL
+```
 
