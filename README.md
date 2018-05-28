@@ -1,5 +1,10 @@
 # Linux for Azure Developers
 
+|||
+|----|---|
+|Platform| Ubuntu 18.04|
+|Date|As at May 2018|
+
 
 Setting up a developer environment to build Azure based solutions is now very well supported across Windows, Mac and Linux. 
 
@@ -15,10 +20,7 @@ This guide assumes you have some experience with Linux. The guide assumes you'll
 Given Ubuntu 18.04 is still fresh I documented the additional libraries you'll need to install.
 
 
-|||
-|----|---|
-|Platform| Ubuntu 18.04|
-|Date|As at May 2018|
+
 
 ## The Essentials
 
