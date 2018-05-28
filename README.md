@@ -80,10 +80,13 @@ sudo apt install git
 
 You'll need to create a GitHub token that you need to store securely. See [Creating a personal access token for the command line](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) for more information. You'll need to use this token in place of your password when pushing changes to GitHub.
 
-I permanently store my GitHub credentials with the following command
+Check out [Caching your GitHub password in Git](https://help.github.com/articles/caching-your-github-password-in-git/) to cache your GitHub credentials so you won't be asked for your credentials every time you push/sync you repository. 
+
+In summary you need to run the following commands. Personally I use a much bigger number than 3600:)
 
 ```bash
-git config credential.helper store
+git config --global credential.helper cache
+git config --global credential.helper 'cache --timeout=3600'
 ```
 
 
