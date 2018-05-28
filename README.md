@@ -79,6 +79,11 @@ sudo apt install git
 
 You'll need to create a GitHub token that you need to store securely. See [Creating a personal access token for the command line](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) for more information. You'll need to use this token in place of your password when pushing changes to GitHub.
 
+I permanently store my GitHub credientials with the following command
+
+```bash
+git config credential.helper store
+```
 
 
 ## Latest .NET Core SDK
