@@ -85,7 +85,7 @@ You'll need to create a GitHub token that you need to store securely. See [Creat
 
 Check out [Caching your GitHub password in Git](https://help.github.com/articles/caching-your-github-password-in-git/) to cache your GitHub credentials so you won't be asked for your credentials every time you push/sync you repository. 
 
-In summary you need to run the following commands. Personally I use a much bigger number than 3600:)
+In summary you need to run the following commands. Personally I use a much bigger number than 3600.
 
 ```bash
 git config --global credential.helper cache
