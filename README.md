@@ -2,13 +2,13 @@
 
 Setting up a developer environment to build Azure based solutions is now very well supported across Windows, Mac and Linux. 
 
-I find myself developing more and more for Azure from Ubuntu Desktop. It's a great experience and there is superb first class open source tooling support from Microsoft (and others) for Azure across Windows, Mac and Linux. 
+I develop for Azure from both Windows and Linux nowadays. Developing on Linux is a great experience and there is superb first class open source tooling support from Microsoft (and others) for Azure across Windows, Mac and Linux. 
 
 I've tended to stick with the LTS releases of Linux, better support, examples, documentaton etc. With the release of [Ubuntu 18.04 LTS](https://www.ubuntu.com/desktop) I decided is was time to upgrade from Ubuntu 16.04 LTS. Yup, I could have done an inplace upgrade but sometimes it's just better to start afresh.
 
-So here are the applications, command line tools and SDKs that I installed for my Azure centric Ubuntu 18.04 developer desktop.
+So here are the applications, command line tools and SDKs that I installed for my Azure centric Ubuntu 18.04 developer desktop. Enjoy:)
 
-This guide assumes you have some experience with Linux. Terminal and Ctrl-Shift-V to paste in [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) commands is your friend. 
+This guide assumes you have some experience with Linux. The guide assumes you'll open Terminal and Ctrl-Shift-V to paste in [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) commands. 
 
 Given Ubuntu 18.04 is still fresh I documentated the additional libraries you'll need to install.
 
