@@ -1,6 +1,6 @@
 # Ubuntu for Azure Developers
 
-|||
+|Author|Dave Glover, Microsoft Australia|
 |----|---|
 |Author|Dave Glover, Microsoft Australia|
 |Platform| Ubuntu 18.04|
