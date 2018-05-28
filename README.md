@@ -1,4 +1,4 @@
-# Linux for Azure Developers
+# Ubuntu for Azure Developers
 
 |||
 |----|---|
