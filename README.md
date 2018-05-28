@@ -61,7 +61,7 @@ Given Ubuntu 18.04 is still fresh I documented the additional libraries you'll n
 
 installation is easy, in fact it's a [Snap](https://en.wikipedia.org/wiki/Snappy_(package_manager)). From Ubuntu Store, search for Visual Studio Code and install.
 
-### Visual Studio Extensions
+## Visual Studio Extensions
 
 There are a stack of great extensions for Visual Studio Code
 Useful Extensions.
