@@ -5,6 +5,7 @@
 |Platform| Ubuntu 18.04|
 |Date|As at May 2018|
 
+# Introduction
 
 Setting up a developer environment to build Azure based solutions is now very well supported across Windows, Mac and Linux. 
 
