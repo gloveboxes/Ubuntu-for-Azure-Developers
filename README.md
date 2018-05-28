@@ -1,16 +1,18 @@
 # Linux for Azure Developers
 
+
 Setting up a developer environment to build Azure based solutions is now very well supported across Windows, Mac and Linux. 
+
 
 I develop for Azure from both Windows and Linux nowadays. Developing on Linux is a great experience and there is superb first class open source tooling support from Microsoft (and others) for Azure across Windows, Mac and Linux. 
 
-I've tended to stick with the LTS releases of Linux, better support, examples, documentaton etc. With the release of [Ubuntu 18.04 LTS](https://www.ubuntu.com/desktop) I decided is was time to upgrade from Ubuntu 16.04 LTS. Yup, I could have done an inplace upgrade but sometimes it's just better to start afresh.
+I've tended to stick with the LTS releases of Linux, better support, examples, documentation etc. With the release of [Ubuntu 18.04 LTS](https://www.ubuntu.com/desktop) I decided is was time to upgrade from Ubuntu 16.04 LTS. Yup, I could have done an in-place upgrade but sometimes it's just better to start afresh.
 
 So here are the applications, command line tools and SDKs that I installed for my Azure centric Ubuntu 18.04 developer desktop. Enjoy:)
 
 This guide assumes you have some experience with Linux. The guide assumes you'll open Terminal and Ctrl-Shift-V to paste in [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) commands. 
 
-Given Ubuntu 18.04 is still fresh I documentated the additional libraries you'll need to install.
+Given Ubuntu 18.04 is still fresh I documented the additional libraries you'll need to install.
 
 
 |||
@@ -44,7 +46,7 @@ Given Ubuntu 18.04 is still fresh I documentated the additional libraries you'll
 ## Microsoft SQL Server
 
 1. Microsoft SQL Server for Linux 
-2. Micrsoft SQL Managament tools for Linux
+2. Microsoft SQL Management tools for Linux
 
 ## Embedded Development
 
@@ -57,7 +59,7 @@ Given Ubuntu 18.04 is still fresh I documentated the additional libraries you'll
 
 [Visual Studio Code](https://code.visualstudio.com/) is a must have IDE, open source, extensible, great language, debugging and tooling support.  
 
-installation is easy, in fact it's a [Snap](https://en.wikipedia.org/wiki/Snappy_(package_manager)). From Ubuntu Store, search for Visul Studio Code and install.
+installation is easy, in fact it's a [Snap](https://en.wikipedia.org/wiki/Snappy_(package_manager)). From Ubuntu Store, search for Visual Studio Code and install.
 
 ### Visual Studio Extensions
 
@@ -78,7 +80,7 @@ sudo apt install git
 
 You'll need to create a GitHub token that you need to store securely. See [Creating a personal access token for the command line](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) for more information. You'll need to use this token in place of your password when pushing changes to GitHub.
 
-I permanently store my GitHub credientials with the following command
+I permanently store my GitHub credentials with the following command
 
 ```bash
 git config credential.helper store
@@ -89,7 +91,7 @@ git config credential.helper store
 
 1. Install the latest release of the [.NET Core SDK](https://www.microsoft.com/net/download/linux-package-manager/ubuntu18-04/sdk-current)
 
-2. Confim successful installation of .NET Core SDK
+2. Confirm successful installation of .NET Core SDK
 
     ```bash
     dotnet --version
@@ -107,7 +109,7 @@ git config credential.helper store
 
 
 
-2. [Download and Install Storage Explorer. Be sure to select Linux from the dropdown.](https://azure.microsoft.com/en-au/features/storage-explorer/)
+2. [Download and Install Storage Explorer. Be sure to select Linux from the drop-down.](https://azure.microsoft.com/en-au/features/storage-explorer/)
 
 5. Extract the Storage Explorer .tar.gz file, copy to /opt directory, and add a symbolic link to the StorageExplorer executable.
 
@@ -183,7 +185,7 @@ sudo apt-get install azure-functions-core-tools
 
 ## Azure Event Hub monitor
 
-Install Visual Studio Code Extention "[Azure Event Hub Explorer](https://marketplace.visualstudio.com/items?itemName=Summer.azure-event-hub-explorer)"
+Install Visual Studio Code Extension "[Azure Event Hub Explorer](https://marketplace.visualstudio.com/items?itemName=Summer.azure-event-hub-explorer)"
 
 
 
@@ -246,9 +248,9 @@ EOL
 Notes.
 * Follow instruction at [How to Install the Postman Native App in Ubuntu 16.04](https://blog.bluematador.com/posts/postman-how-to-install-on-ubuntu-1604/)
 
-## Fidler
+## Fiddler
 
-[Use Fiddler in Ubuntu](https://medium.com/@rajsek/use-fiddler-in-ubuntu-82b1dfd80848)
+See [Use Fiddler in Ubuntu](https://medium.com/@rajsek/use-fiddler-in-ubuntu-82b1dfd80848)
 
 
 
@@ -340,7 +342,7 @@ Notes.
 
 From Visual Studio Code
 
-1. Press CTRL+SHIFT+P (or F1) to open the Command Palette in VS Code.
+1. Press CTRL+SHIFT+P (or F1) to open the Command Palette in Visual Studio Code.
 2. Select Install Extension and type mssql.
 3. Click install mssql. 
 
