@@ -15,6 +15,26 @@ To start Powershell
 pwsh
 ```
 
+
+[Install and configure Azure PowerShell on macOS and Linux](https://docs.microsoft.com/en-us/powershell/azure/install-azurermps-maclinux?view=azurermps-6.1.0)
+
+In summary
+
+```Powershell
+Install-Module AzureRM.NetCore
+Import-Module AzureRM.Netcore
+Import-Module AzureRM.Profile.Netcore
+```
+
+Test Azure Powershell Module
+
+```
+Connect-AzureRmAccount
+```
+
+
+Add
+
 Be sure to add the Powershell extension in Visual Studio Code.
 
 Notes.
