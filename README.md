@@ -289,7 +289,7 @@ sudo dpkg -i powershell_6.1.0-preview.2-1.ubuntu.17.04_amd64.deb
 Install Azure Powershell module.
 
 ```bash
-sudo pwsh Install-Module AzureRM.NetCore
+sudo pwsh -Command Install-Module AzureRM.NetCore
 ```
 
 Getting out of trouble if you have problems installing Powershell.
