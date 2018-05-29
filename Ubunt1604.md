@@ -73,6 +73,9 @@ Useful Extensions.
 
 1. Azure Account, Azure Functions, Azure Event Hub Explorer, Azure Cosmos DB, Azure IoT Edge, Azure IoT Toolkit, mssql, C#, Docker, Python, C/C++, JSON Tools, Powershell
 
+## ARM Snippets for Visual Studio Code
+
+[Microsoft Azure Cross-Platform Tooling Samples for Windows, Mac and Linux](https://github.com/Azure/azure-xplat-arm-tooling)
 
 ## GitHub Client
 
