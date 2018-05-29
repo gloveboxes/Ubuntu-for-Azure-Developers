@@ -94,6 +94,9 @@ git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=3600'
 ```
 
+[Use Git Credential Managers to Authenticate to VSTS](https://docs.microsoft.com/en-gb/vsts/git/set-up-credential-managers?view=vsts)
+
+
 
 ## Latest .NET Core SDK
 
@@ -161,9 +164,9 @@ Notes.
 
 
 
-At the time of writting (May 25, 2018) I had more success installing the latest Azure Function Core Tools via npm than apt.
+At the time of writing (May 25, 2018) I had more success installing the latest Azure Function Core Tools via npm than apt.
 
-### Install Azure Funcion Core Tools with npm Package Management
+### Install Azure Function Core Tools with npm Package Management
 
 ```bash
 sudo apt install nodejs && \
