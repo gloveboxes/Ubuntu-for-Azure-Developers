@@ -100,13 +100,13 @@ If you are using Visual Studio Team Services then checkout [Use Git Credential M
 
 ## Latest .NET Core SDK
 
-1. Install the latest release of the [.NET Core SDK](https://www.microsoft.com/net/download/linux-package-manager/ubuntu18-04/sdk-current)
+1. Install the latest release of the [.NET Core SDK](https://www.microsoft.com/net/download/linux-package-manager/ubuntu16-04/sdk-current)
 
 2. Confirm successful installation of .NET Core SDK
 
-```bash
-dotnet --version
-```
+    ```bash
+    dotnet --version
+    ```
 
 
 ## Azure Storage Explorer
@@ -114,9 +114,9 @@ dotnet --version
 
 1. Install required dependencies
 
-```bash
-sudo apt install libgconf-2-4 libcanberra-gtk0 libgnome-keyring0
-```
+    ```bash
+    sudo apt install libgconf-2-4 libcanberra-gtk0 libgnome-keyring0
+    ```
 
 
 
@@ -158,26 +158,22 @@ Notes.
 * [Install Azure CLI 2.0 with apt](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest)
 
 
-## Azure Functions with Visual Studio Code
-
-[Code and test Azure Functions locally](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local)
-
-
-
-At the time of writing (May 25, 2018) I had more success installing the latest Azure Function Core Tools via npm than apt.
-
-### Install Azure Function Core Tools with npm Package Management
+### Installing Nodejs and npm
 
 ```bash
-sudo apt install nodejs && \
-sudo apt install npm && \
-sudo npm install -g azure-functions-core-tools@core
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash -
+sudo apt-get install -y nodejs
 ```
 
 Notes.
-* [Install Node.js using Standard Ubuntu 18.04 Repository](https://linuxconfig.org/how-to-install-node-js-on-ubuntu-18-04-bionic-beaver-linux)
+* [Installing Node.js via package manager](https://nodejs.org/en/download/package-manager/#debian-and-ubuntu-based-linux-distributions)
+
+
+## Azure Functions with Visual Studio Code
 
 ### Install Azure Functions Core Tools with apt Package Management
+
+[Code and test Azure Functions locally](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local)
 
 
 ````bash
@@ -187,7 +183,7 @@ curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microso
 
 sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
 
-sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-bionic-prod bionic main" > /etc/apt/sources.list.d/dotnetdev.list'
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-xenial-prod xenial main" > /etc/apt/sources.list.d/dotnetdev.list'
 
 sudo apt-get update
 
@@ -204,12 +200,7 @@ Install Visual Studio Code Extension "[Azure Event Hub Explorer](https://marketp
 
 ## Docker
 
-
-```bash
-sudo apt install docker.io && \
-sudo systemctl start docker && \
-sudo systemctl enable docker
-```
+[Install Docker CE for Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/#set-up-the-repository)
 
 It's useful to add your user sudo rights to Docker. Note, you'll need to restart your system for this setting to take effect.
 
