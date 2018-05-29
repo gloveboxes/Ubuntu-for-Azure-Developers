@@ -71,7 +71,7 @@ installation is easy, in fact it's a [Snap](https://en.wikipedia.org/wiki/Snappy
 There are a stack of great extensions for Visual Studio Code
 Useful Extensions.
 
-1. Azure Account, Azure Functions, Azure Event Hub Explorer, Azure Cosmos DB, Azure IoT Edge, Azure IoT Toolkit, mssql, C#, Docker, Python, C/C++.
+1. Azure Account, Azure Functions, Azure Event Hub Explorer, Azure Cosmos DB, Azure IoT Edge, Azure IoT Toolkit, mssql, C#, Docker, Python, C/C++, JSON Tools, Powershell
 
 
 ## GitHub Client
