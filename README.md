@@ -169,8 +169,9 @@ At the time of writing (May 25, 2018) I had more success installing the latest A
 ### Install Azure Function Core Tools with npm Package Management
 
 ```bash
-sudo apt install nodejs && \
-sudo apt install npm && \
+
+curl -sL https://deb.nodesource.com/setup_8.x | sudo -E bash - && \
+sudo apt-get install -y nodejs && \
 sudo npm install -g azure-functions-core-tools@core
 ```
 
