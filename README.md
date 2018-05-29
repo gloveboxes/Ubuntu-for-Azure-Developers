@@ -278,7 +278,7 @@ This set of bash commands below will automate the installation of the dependenci
 
 ```bash
 cd ~/Downloads && \
-sudo apt install curl3 && \
+sudo apt install libcurl3 && \
 wget http://launchpadlibrarian.net/317614660/libicu57_57.1-6_amd64.deb && \
 sudo apt install ./libicu57_57.1-6_amd64.deb && \
 wget https://github.com/PowerShell/PowerShell/releases/download/v6.1.0-preview.2/powershell_6.1.0-preview.2-1.ubuntu.17.04_amd64.deb && \
