@@ -6,6 +6,9 @@
 |Date|As at May 2018|
 
 
+[Ubuntu 16.04 for Azure Developers](Ubunt1604.md)
+
+
 # Introduction
 
 Setting up a developer environment to build Azure based solutions is now very well supported across Windows, Mac and Linux. 
