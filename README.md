@@ -35,10 +35,9 @@ Table of Contents
         - [Azure IoT Edge](#azure-iot-edge)
             - [Building ARM Docker Images from an x64 Ubuntu Host](#building-arm-docker-images-from-an-x64-ubuntu-host)
     - [Microsoft SQL Server](#microsoft-sql-server)
-        - [Microsoft SQL Server for Linux](#microsoft-sql-server-for-linux)
-        - [Dockerised Microsoft SQL Server](#dockerised-microsoft-sql-server)
-    - [Microsoft SQL Server Operations Studio](#microsoft-sql-server-operations-studio)
-    - [Microsoft SQL Server Extension for Visual Studio Code](#microsoft-sql-server-extension-for-visual-studio-code)
+        - [Microsoft SQL Server for Linux (Dockerised)](#microsoft-sql-server-for-linux-dockerised)
+        - [Microsoft SQL Server Operations Studio](#microsoft-sql-server-operations-studio)
+        - [Microsoft SQL Server Extension for Visual Studio Code](#microsoft-sql-server-extension-for-visual-studio-code)
     - [Embedded Development](#embedded-development)
         - [Optional Fritzing](#optional-fritzing)
 
@@ -279,11 +278,9 @@ Notes.
 
 ## Microsoft SQL Server
 
-### Microsoft SQL Server for Linux
+### Microsoft SQL Server for Linux (Dockerised)
 
 [Install SQL Server and create a database on Ubuntu](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-linux-2017)
-
-### Dockerised Microsoft SQL Server
 
 Note, deleting a Microsoft SQL Server Docker container will also delete its data. So docker run to download and create and run the docker SQL Container and then use docker stop and start to control.
 
@@ -309,19 +306,13 @@ Notes.
 
 * [Run the SQL Server 2017 container image with Docker](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-linux-2017)
 
-## Microsoft SQL Server Operations Studio
+### Microsoft SQL Server Operations Studio
 
 Follow the notes for [Installing Microsoft SQL Operations Studio](https://docs.microsoft.com/en-gb/sql/sql-operations-studio/what-is?view=sql-server-linux-2017)
 
-## Microsoft SQL Server Extension for Visual Studio Code
+### Microsoft SQL Server Extension for Visual Studio Code
 
 [Use Visual Studio Code to create and run Transact-SQL scripts for SQL Server](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-develop-use-vscode?view=sql-server-linux-2017)
-
-From Visual Studio Code
-
-1. Press CTRL+SHIFT+P (or F1) to open the Command Palette in Visual Studio Code.
-2. Select Install Extension and type mssql.
-3. Click install mssql.
 
 ## Embedded Development
 
