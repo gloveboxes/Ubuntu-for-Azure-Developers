@@ -32,7 +32,8 @@
         - [Microsoft SQL Server Operations Studio](#microsoft-sql-server-operations-studio)
         - [Microsoft SQL Server Extension for Visual Studio Code](#microsoft-sql-server-extension-for-visual-studio-code)
     - [Embedded Development](#embedded-development)
-        - [Optional Fritzing](#optional-fritzing)
+        - [Arduino](#arduino)
+        - [Fritzing](#fritzing)
 
 <!-- /TOC -->
 
@@ -309,7 +310,11 @@ Follow the notes for [Installing Microsoft SQL Operations Studio](https://docs.m
 
 ## Embedded Development
 
-### Optional Fritzing
+### Arduino
+
+Download the [Arduino IDE](https://www.arduino.cc/en/Main/Software)
+
+### Fritzing
 
 Download from [Fritzing Download Site](http://fritzing.org/download/).
 
