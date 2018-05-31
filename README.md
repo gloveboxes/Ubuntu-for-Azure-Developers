@@ -66,18 +66,14 @@ There are a stack of great extensions for Visual Studio Code. This are the ones 
 When you start Visual Studio Code for the first time you'll be prompted to install the GitHub client.
 
 ```bash
-
 sudo apt install git
-
 ```
 
 Before you can commit any changes against GitHub you'll need to configure who you are.
 
 ```bash
-
 git config --global user.email "you@example.com"
 git config --global user.name "Your Name"
-
 ```
 
 If you are using GitHub two-factor authentication then you'll need to create a GitHub token that you need to store securely. See [Creating a personal access token for the command line](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) for more information. You'll need to use this token in place of your password when pushing changes to GitHub.
@@ -87,10 +83,8 @@ Check out [Caching your GitHub password in Git](https://help.github.com/articles
 In summary you need to run the following commands. Personally I use a much bigger number than 3600.
 
 ```bash
-
 git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=3600'
-
 ```
 
 If you are using Visual Studio Team Services then checkout [Use Git Credential Managers to Authenticate to VSTS](https://docs.microsoft.com/en-gb/vsts/git/set-up-credential-managers?view=vsts)
@@ -102,9 +96,7 @@ If you are using Visual Studio Team Services then checkout [Use Git Credential M
 2. Confirm successful installation of .NET Core SDK
 
 ```bash
-
 dotnet --version
-
 ```
 
 ### Azure Storage Explorer
@@ -112,9 +104,7 @@ dotnet --version
 1. Install required dependency
 
 ```bash
-
 sudo apt install libgnome-keyring0
-
 ```
 
 2. Next [Download and Install Storage Explorer. Be sure to select Linux from the drop-down.](https://azure.microsoft.com/en-au/features/storage-explorer/)
@@ -122,7 +112,6 @@ sudo apt install libgnome-keyring0
 5. The following Bash commands extract the Storage Explorer .tar.gz file to the /opt directory, and add a symbolic link to the StorageExplorer executable.
 
 ```bash
-
 cd ~/Downloads && \
 sudo mkdir -p /opt/StorageExplorer-linux-x64 && \
 sudo tar -C $_ -zxvf StorageExplorer-linux-x64.tar.gz && \
@@ -133,7 +122,6 @@ sudo ln -s /opt/StorageExplorer-linux-x64/StorageExplorer /usr/bin/StorageExplor
 6. Create Storage Explorer [Ubunutu/KDE](https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html) Desktop Resource
 
 ```bash
-
 mkdir -p ~/.local/share/applications && \
 cat > ~/.local/share/applications/StorageExplorer.desktop <<EOL
 [Desktop Entry]
@@ -167,7 +155,6 @@ Notes.
 At the May 2018 I used the Ubuntu 17.04 (artful) release of the Azure Function Core tools.
 
 ````bash
-
 cd ~/Downloads && \
 sudo apt install curl -y && \
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg && \
@@ -183,19 +170,15 @@ sudo apt-get install azure-functions-core-tools
 ### Docker
 
 ```bash
-
 sudo apt install docker.io && \
 sudo systemctl start docker && \
 sudo systemctl enable docker
-
 ```
 
 It's useful to add your user sudo rights to Docker. Note, you'll need to restart your system for this setting to take effect.
 
 ```bash
-
 sudo usermod <Your User Name> -aG docker
-
 ```
 
 Notes.
@@ -208,15 +191,12 @@ Notes.
 Install library dependency
 
 ```bash
-
 sudo apt install libgconf-2-4
-
 ```
 
 Download and Install Postman
 
 ```bash
-
 cd ~/Downloads && \
 wget https://dl.pstmn.io/download/latest/linux64 -O postman.tar.gz && \
 sudo tar -xzf postman.tar.gz -C /opt && \
@@ -228,7 +208,6 @@ sudo ln -s /opt/Postman/app/Postman /usr/bin/postman
 Create Postman Desktop Resource
 
 ```bash
-
 cat > ~/.local/share/applications/postman.desktop <<EOL
 [Desktop Entry]
 Encoding=UTF-8
@@ -253,9 +232,7 @@ See [Use Fiddler in Ubuntu](https://medium.com/@rajsek/use-fiddler-in-ubuntu-82b
 ### VirtualBox
 
 ```bash
-
 sudo apt-get install virtualbox
-
 ```
 
 ## Internet of Things
@@ -263,9 +240,7 @@ sudo apt-get install virtualbox
 ### Azure IoT Hub Explorer
 
 ```bash
-
 az extension add --name azure-cli-iot-ext
-
 ```
 
 [az iot Command Guide](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot?view=azure-cli-latest)
@@ -273,9 +248,7 @@ az extension add --name azure-cli-iot-ext
 Example IoT Hub command
 
 ```bash
-
 az iot hub monitor-events --hub-name IotHubName
-
 ```
 
 Notes.
@@ -294,9 +267,7 @@ Notes.
 If you are targeting ARM for your Docker builds then you will need to run the following command before you do your Docker build.
 
 ```bash
-
 docker run --rm --privileged multiarch/qemu-user-static:register --reset
-
 ```
 
 Notes.
@@ -313,7 +284,6 @@ Notes.
 Note, deleting a Microsoft SQL Server Docker container will also delete its data. So docker run to download and create and run the docker SQL Container and then use docker stop and start to control.
 
 ```bash
-
 sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<YourStrong!Passw0rd>' \
 -p 1433:1433 --name sql1 \
 -d microsoft/mssql-server-linux:2017-latest
@@ -323,17 +293,13 @@ sudo docker run -e 'ACCEPT_EULA=Y' -e 'SA_PASSWORD=<YourStrong!Passw0rd>' \
 To **stop** the Microsoft SQL Server Docker container.
 
 ```bash
-
-docker stop sql1 
-
+docker stop sql1
 ```
 
 To **start** the Microsoft SQL Server Docker container.
 
 ```bash
-
 docker start sql1
-
 ```
 
 Notes.
@@ -361,7 +327,6 @@ Download from [Fritzing Download Site](http://fritzing.org/download/).
 I install in to a non system directory as Fritzing will complain that it doesn't have access rights to create parts bins.
 
 ```bash
-
 cd ~/Downloads && \
 mkdir -p ~/Apps && \
 tar -C $_ -xvjf fritzing-0.9.3b.linux.AMD64.tar.bz2 && \
@@ -372,7 +337,6 @@ sudo ln -s ~/Apps/fritzing-0.9.3b.linux.AMD64/Fritzing /usr/bin/fritzing
 Create Fritzing Desktop Resource file
 
 ```bash
-
 cat > ~/.local/share/applications/fritzing.desktop <<EOL
 [Desktop Entry]
 Version=0.9.3b
