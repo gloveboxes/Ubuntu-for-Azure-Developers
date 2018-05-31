@@ -6,8 +6,49 @@
 |Date|As at May 2018|
 |System| Lenovo ThinkPad X1 Carbon Gen 1|
 
+Alternate platform instructions.
+
 * [Ubuntu 18.04 for Azure Developers](Ubuntu1804.md)
 * [Ubuntu 16.04 for Azure Developers](Ubuntu1604.md)
+
+Table of Contents
+
+<!-- TOC -->
+
+- [Ubuntu for Azure Developers](#ubuntu-for-azure-developers)
+    - [Introduction](#introduction)
+    - [The Essentials](#the-essentials)
+    - [Toolkit](#toolkit)
+    - [Internet of Things (IoT)](#internet-of-things-iot)
+    - [Microsoft SQL Server](#microsoft-sql-server)
+    - [Embedded Tools](#embedded-tools)
+    - [The Essentials](#the-essentials-1)
+        - [Visual Studio Code](#visual-studio-code)
+        - [Visual Studio Extensions](#visual-studio-extensions)
+        - [GitHub Client](#github-client)
+        - [Installing the latest .NET Core SDK](#installing-the-latest-net-core-sdk)
+        - [Azure Storage Explorer](#azure-storage-explorer)
+        - [Azure CLI (Command Line Interface)](#azure-cli-command-line-interface)
+    - [Azure Functions with Visual Studio Code](#azure-functions-with-visual-studio-code)
+        - [Install Azure Functions Core Tools with apt Package Management](#install-azure-functions-core-tools-with-apt-package-management)
+    - [Toolkit](#toolkit-1)
+        - [Docker](#docker)
+        - [Postman](#postman)
+        - [Fiddler](#fiddler)
+        - [VirtualBox](#virtualbox)
+    - [Internet of Things](#internet-of-things)
+        - [Azure IoT Hub Explorer](#azure-iot-hub-explorer)
+        - [Azure IoT Edge](#azure-iot-edge)
+            - [Building ARM Docker Images from an x64 Ubuntu Host](#building-arm-docker-images-from-an-x64-ubuntu-host)
+    - [Microsoft SQL Server](#microsoft-sql-server-1)
+        - [Microsoft SQL Server for Linux](#microsoft-sql-server-for-linux)
+        - [Dockerised Microsoft SQL Server](#dockerised-microsoft-sql-server)
+    - [Microsoft SQL Server Operations Studio](#microsoft-sql-server-operations-studio)
+    - [Microsoft SQL Server Extension for Visual Studio Code](#microsoft-sql-server-extension-for-visual-studio-code)
+    - [Embedded Development](#embedded-development)
+        - [Optional Fritzing](#optional-fritzing)
+
+<!-- /TOC -->
 
 ## Introduction
 
