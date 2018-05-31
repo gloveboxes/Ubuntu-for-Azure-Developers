@@ -16,7 +16,6 @@ Table of Contents
 <!-- TOC -->
 
 - [Ubuntu for Azure Developers](#ubuntu-for-azure-developers)
-    - [Introduction](#introduction)
     - [The Essentials](#the-essentials)
         - [Visual Studio Code](#visual-studio-code)
         - [Visual Studio Extensions](#visual-studio-extensions)
@@ -45,7 +44,7 @@ Table of Contents
 
 <!-- /TOC -->
 
-## Introduction
+Introduction
 
 Developing on Linux for Azure is a great experience and there is superb open source tooling support from Microsoft (and others) for Azure across Windows, Mac and Linux.
 
@@ -56,39 +55,6 @@ So here are the applications, command line tools and SDKs that I have installed 
 This guide assumes you have some experience with Linux. The guide assumes you'll open Terminal and Ctrl-Shift-V is your friend to paste in [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) commands.
 
 Given Kubuntu 18.04 is still fresh I documented the additional libraries you'll need to install.
-
-**The Essentials**
-
-1. Visual Studio Code (#1 GitHub project by contributors)
-2. GitHub client
-3. Latest .NET Core SDK (in top 10 most discussed GitHub projects)
-4. Azure Storage Explorer
-5. Azure CLI
-6. Azure Functions
-7. Azure Event Hub
-
-**Toolkit**
-
-1. Docker
-2. Postman
-3. Fiddler
-4. Powershell for Linux
-
-**Internet of Things (IoT)**
-
-1. Azure IoT Hub Explorer (an Azure CLI Extension)
-2. Azure IoT Edge
-3. Docker Cross Compiling on X86 to create ARM images
-
-**Microsoft SQL Server**
-
-1. Microsoft SQL Server for Linux 
-2. Microsoft SQL Management tools for Linux
-
-**Embedded Tools**
-
-1. Arduino
-2. Fritzing
 
 ## The Essentials
 
