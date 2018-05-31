@@ -17,7 +17,7 @@
         - [Azure Storage Explorer](#azure-storage-explorer)
         - [Azure CLI (Command Line Interface)](#azure-cli-command-line-interface)
     - [Azure Functions with Visual Studio Code](#azure-functions-with-visual-studio-code)
-        - [Install Azure Functions Core Tools with apt Package Management](#install-azure-functions-core-tools-with-apt-package-management)
+        - [Install Azure Functions Core Tools](#install-azure-functions-core-tools)
     - [Toolkit](#toolkit)
         - [Docker](#docker)
         - [Postman](#postman)
@@ -147,7 +147,7 @@ Notes.
 
 [Code and test Azure Functions locally](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local)
 
-### Install Azure Functions Core Tools with apt Package Management
+### Install Azure Functions Core Tools
 
 At the May 2018 I used the Ubuntu 17.04 (artful) release of the Azure Function Core tools.
 
