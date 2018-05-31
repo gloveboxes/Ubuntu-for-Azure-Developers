@@ -18,11 +18,6 @@ Table of Contents
 - [Ubuntu for Azure Developers](#ubuntu-for-azure-developers)
     - [Introduction](#introduction)
     - [The Essentials](#the-essentials)
-    - [Toolkit](#toolkit)
-    - [Internet of Things (IoT)](#internet-of-things-iot)
-    - [Microsoft SQL Server](#microsoft-sql-server)
-    - [Embedded Tools](#embedded-tools)
-    - [The Essentials](#the-essentials-1)
         - [Visual Studio Code](#visual-studio-code)
         - [Visual Studio Extensions](#visual-studio-extensions)
         - [GitHub Client](#github-client)
@@ -31,7 +26,7 @@ Table of Contents
         - [Azure CLI (Command Line Interface)](#azure-cli-command-line-interface)
     - [Azure Functions with Visual Studio Code](#azure-functions-with-visual-studio-code)
         - [Install Azure Functions Core Tools with apt Package Management](#install-azure-functions-core-tools-with-apt-package-management)
-    - [Toolkit](#toolkit-1)
+    - [Toolkit](#toolkit)
         - [Docker](#docker)
         - [Postman](#postman)
         - [Fiddler](#fiddler)
@@ -40,7 +35,7 @@ Table of Contents
         - [Azure IoT Hub Explorer](#azure-iot-hub-explorer)
         - [Azure IoT Edge](#azure-iot-edge)
             - [Building ARM Docker Images from an x64 Ubuntu Host](#building-arm-docker-images-from-an-x64-ubuntu-host)
-    - [Microsoft SQL Server](#microsoft-sql-server-1)
+    - [Microsoft SQL Server](#microsoft-sql-server)
         - [Microsoft SQL Server for Linux](#microsoft-sql-server-for-linux)
         - [Dockerised Microsoft SQL Server](#dockerised-microsoft-sql-server)
     - [Microsoft SQL Server Operations Studio](#microsoft-sql-server-operations-studio)
@@ -62,7 +57,7 @@ This guide assumes you have some experience with Linux. The guide assumes you'll
 
 Given Kubuntu 18.04 is still fresh I documented the additional libraries you'll need to install.
 
-## The Essentials
+**The Essentials**
 
 1. Visual Studio Code (#1 GitHub project by contributors)
 2. GitHub client
@@ -72,25 +67,25 @@ Given Kubuntu 18.04 is still fresh I documented the additional libraries you'll 
 6. Azure Functions
 7. Azure Event Hub
 
-## Toolkit
+**Toolkit**
 
 1. Docker
 2. Postman
 3. Fiddler
 4. Powershell for Linux
 
-## Internet of Things (IoT)
+**Internet of Things (IoT)**
 
 1. Azure IoT Hub Explorer (an Azure CLI Extension)
 2. Azure IoT Edge
 3. Docker Cross Compiling on X86 to create ARM images
 
-## Microsoft SQL Server
+**Microsoft SQL Server**
 
 1. Microsoft SQL Server for Linux 
 2. Microsoft SQL Management tools for Linux
 
-## Embedded Tools
+**Embedded Tools**
 
 1. Arduino
 2. Fritzing
