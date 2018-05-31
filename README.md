@@ -6,12 +6,12 @@
 |Date|As at May 2018|
 |System| Lenovo ThinkPad X1 Carbon Gen 1|
 
-* [Ubuntu 18.04 for Azure Developers](README.md)
-* [Ubuntu 16.04 for Azure Developers](Ubunt1604.md)
+* [Ubuntu 18.04 for Azure Developers](Ubuntu1804.md)
+* [Ubuntu 16.04 for Azure Developers](Ubuntu1604.md)
 
 ## Introduction
 
-Developing on Linux for Azure is a great experience and there is superb open source tooling support from Microsoft (and others) for Azure across Windows, Mac and Linux. 
+Developing on Linux for Azure is a great experience and there is superb open source tooling support from Microsoft (and others) for Azure across Windows, Mac and Linux.
 
 I've tended to stick with the LTS releases of Linux, better support, examples, documentation etc. With the release of [Ubuntu 18.04 LTS](https://www.ubuntu.com/desktop) I decided it was time to upgrade from Ubuntu 16.04 LTS system. After a few false starts for my system (X1 Carbon) I found [Kubuntu](https://kubuntu.org/) to be more stable and I also like the level of customization.
 
