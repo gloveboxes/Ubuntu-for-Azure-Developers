@@ -27,7 +27,7 @@
         - [Azure IoT Hub Explorer](#azure-iot-hub-explorer)
         - [Azure IoT Edge](#azure-iot-edge)
             - [Building ARM Docker Images from an x64 Ubuntu Host](#building-arm-docker-images-from-an-x64-ubuntu-host)
-    - [Microsoft SQL Server](#microsoft-sql-server)
+    - [Microsoft SQL Server for Linux](#microsoft-sql-server-for-linux)
         - [Microsoft SQL Server for Linux (Dockerised)](#microsoft-sql-server-for-linux-dockerised)
         - [Microsoft SQL Server Operations Studio](#microsoft-sql-server-operations-studio)
         - [Microsoft SQL Server Extension for Visual Studio Code](#microsoft-sql-server-extension-for-visual-studio-code)
@@ -269,7 +269,7 @@ Notes.
 * If your docker ARM base image is already built to include QEMU then register QEMU in the build agent as follows.
 * Otherwise follow the instruction on [How to Build ARM Docker Images on Intel host](http://www.hotblackrobotics.com/en/blog/2018/01/22/docker-images-arm/)
 
-## Microsoft SQL Server
+## Microsoft SQL Server for Linux
 
 ### Microsoft SQL Server for Linux (Dockerised)
 
