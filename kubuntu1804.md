@@ -80,7 +80,14 @@ When you start Visual Studio Code for the first time you'll be prompted to insta
 sudo apt install git
 ```
 
-If you are using GitHab two-factor authentication then you'll need to create a GitHub token that you need to store securely. See [Creating a personal access token for the command line](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) for more information. You'll need to use this token in place of your password when pushing changes to GitHub.
+Before you can commit any changes against GitHub you'll need to configure who you are.
+
+```bash
+git config --global user.email "you@example.com"
+git config --global user.name "Your Name"
+```
+
+If you are using GitHub two-factor authentication then you'll need to create a GitHub token that you need to store securely. See [Creating a personal access token for the command line](https://help.github.com/articles/creating-a-personal-access-token-for-the-command-line/) for more information. You'll need to use this token in place of your password when pushing changes to GitHub.
 
 Check out [Caching your GitHub password in Git](https://help.github.com/articles/caching-your-github-password-in-git/) to cache your GitHub credentials so you won't be asked for your credentials every time you push/sync you repository. 
 
@@ -92,8 +99,6 @@ git config --global credential.helper 'cache --timeout=3600'
 ```
 
 If you are using Visual Studio Team Services then checkout [Use Git Credential Managers to Authenticate to VSTS](https://docs.microsoft.com/en-gb/vsts/git/set-up-credential-managers?view=vsts)
-
-
 
 ### Installing the latest .NET Core SDK
 
@@ -113,7 +118,7 @@ dotnet --version
 sudo apt install libgnome-keyring0
 ```
 
-2. [Download and Install Storage Explorer. Be sure to select Linux from the drop-down.](https://azure.microsoft.com/en-au/features/storage-explorer/)
+2. Next [Download and Install Storage Explorer. Be sure to select Linux from the drop-down.](https://azure.microsoft.com/en-au/features/storage-explorer/)
 
 5. The following Bash commands extract the Storage Explorer .tar.gz file to the /opt directory, and add a symbolic link to the StorageExplorer executable.
 
