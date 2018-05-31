@@ -7,8 +7,8 @@
 |System| Lenovo ThinkPad X1 Carbon Gen 1|
 
 
-[Ubuntu 18.04](README.md)
-[Kubuntu 16.04 for Azure Developers](Ubunt1604.md)
+* [Ubuntu 18.04 for Azure Developers](README.md)
+* [Ubuntu 16.04 for Azure Developers](Ubunt1604.md)
 
 
 
