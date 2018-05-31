@@ -1,4 +1,4 @@
-# Ubuntu for Azure Developers
+# Kubuntu for Azure Developers
 
 |Author|Dave Glover, Microsoft Australia|
 |----|---|
@@ -15,7 +15,7 @@ Table of Contents
 
 <!-- TOC -->
 
-- [Ubuntu for Azure Developers](#ubuntu-for-azure-developers)
+- [Kubuntu for Azure Developers](#kubuntu-for-azure-developers)
     - [The Essentials](#the-essentials)
         - [Visual Studio Code](#visual-studio-code)
         - [Visual Studio Extensions](#visual-studio-extensions)
