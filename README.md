@@ -36,7 +36,7 @@
         - [Fritzing](#fritzing)
     - [Samples](#samples)
         - [Azure IoT Edge Samples](#azure-iot-edge-samples)
-        - [Debugging .NET Core apps in Docker Containers from Visual Studio Code](#debugging-net-core-apps-in-docker-containers-from-visual-studio-code)
+        - [Debugging .NET Core apps in Docker Containers from Visual Studio Code on Linux](#debugging-net-core-apps-in-docker-containers-from-visual-studio-code-on-linux)
 
 <!-- /TOC -->
 
@@ -364,6 +364,6 @@ EOL
 
 [Hands-on Grove Starter Kit for Azure IoT Edge](https://azure-samples.github.io/azure-iot-starter-kits/seeed/)
 
-### Debugging .NET Core apps in Docker Containers from Visual Studio Code
+### Debugging .NET Core apps in Docker Containers from Visual Studio Code on Linux
 
 [This is a sample that demonstrates how to use vscode to build and debug dotnet core 2.0 console application in docker container](https://github.com/gloveboxes/docker.dotnet.debug)
