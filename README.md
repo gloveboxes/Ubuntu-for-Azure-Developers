@@ -34,6 +34,9 @@
     - [Embedded Development](#embedded-development)
         - [Arduino](#arduino)
         - [Fritzing](#fritzing)
+    - [Samples](#samples)
+        - [Azure IoT Edge Samples](#azure-iot-edge-samples)
+        - [Debugging .NET Core apps in Docker Containers from Visual Studio Code](#debugging-net-core-apps-in-docker-containers-from-visual-studio-code)
 
 <!-- /TOC -->
 
@@ -260,7 +263,6 @@ Notes.
 ### Azure IoT Edge
 
 * [Develop and deploy a C# IoT Edge module to your simulated device - preview](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-csharp-module)
-* Excellent Samples can be found at [Hands-on Grove Starter Kit for Azure IoT Edge](https://azure-samples.github.io/azure-iot-starter-kits/seeed/)
 
 #### Building ARM Docker Images from an x64 Ubuntu Host
 
@@ -355,3 +357,13 @@ MimeType=application/x-fritzing-fz;application/x-fritzing-fzz;application/x-frit
 EOL
 
 ```
+
+## Samples
+
+### Azure IoT Edge Samples 
+
+[Hands-on Grove Starter Kit for Azure IoT Edge](https://azure-samples.github.io/azure-iot-starter-kits/seeed/)
+
+### Debugging .NET Core apps in Docker Containers from Visual Studio Code
+
+[This is a sample that demonstrates how to use vscode to build and debug dotnet core 2.0 console application in docker container](https://github.com/gloveboxes/docker.dotnet.debug)
