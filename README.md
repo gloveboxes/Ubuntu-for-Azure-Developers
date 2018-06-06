@@ -157,9 +157,13 @@ Notes.
 
 ### Azure CLI (Command Line Interface)
 
-Notes.
+Be sure that 'curl' is installed.
 
-* [Install Azure CLI 2.0 with apt](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest)
+```bash
+sudo apt install curl
+```
+
+[Install Azure CLI 2.0 with apt](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest)
 
 ## Azure Functions with Visual Studio Code
 
