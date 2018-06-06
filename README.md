@@ -2,7 +2,7 @@
 
 |Author|Dave Glover, Microsoft Australia|
 |----|---|
-|Platform| [Ubuntu 18.04 for Azure Developers](Ubuntu1804.md), [Kubuntu 18.04 for Azure Developers](Kubuntu1804.md), [Ubuntu 16.04 for Azure Developers](https://kubuntu.org/)|
+|Platform| [Ubuntu 18.04 for Azure Developers](Ubuntu1804.md), [Kubuntu 18.04 for Azure Developers](Kubuntu1804.md), [Ubuntu 16.04 for Azure Developers](Ubuntu1604.md)|
 |Date|As at May 2018|
 
 Developing on Linux for Azure is a great experience and there is superb open source tooling support from Microsoft (and others) for Azure across Windows, Mac and Linux.
