@@ -3,7 +3,7 @@
 |Author|Dave Glover, Microsoft Australia|
 |----|---|
 |Platform| [Kubuntu 18.04](https://kubuntu.org/). Also see [Ubuntu 18.04 for Azure Developers](Ubuntu1804.md) and [Ubuntu 16.04 for Azure Developers](Ubuntu1604.md)|
-|Date|As at May 2018|
+|Date|As at June 2018|
 |System| Lenovo ThinkPad X1 Carbon Gen 1|
 
 <!-- TOC -->
@@ -360,7 +360,7 @@ EOL
 
 ## Samples
 
-### Azure IoT Edge Samples 
+### Azure IoT Edge Samples
 
 [Hands-on Grove Starter Kit for Azure IoT Edge](https://azure-samples.github.io/azure-iot-starter-kits/seeed/)
 
