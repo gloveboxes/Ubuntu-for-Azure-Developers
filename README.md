@@ -6,9 +6,7 @@ I've tended to stick with the LTS releases of Ubuntu Linux, better support, exam
 
 I found the [Kubuntu](https://kubuntu.org/) flavour to be the most stable on my laptop (X1 Carbon) and I also like the level of customization. But your milage may vary so I've documented for Ubuntu 18.04, Kubuntu 18.04, and Ubuntu 16.04.
 
-This guide assumes you have some experience with Linux and you will open Terminal and Ctrl-Shift-V to paste in [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) commands.
-
-So here are the applications, command line tools and SDKs that I have installed for my Azure centric Ubuntu developer desktop. Enjoy:)
+The following documents the applications, command line tools and SDKs that I have installed for my Azure centric Ubuntu developer desktop. Enjoy:)
 
 1. [Ubuntu 18.04 for Azure Developers](Ubuntu1804.md)
 1. [Kubuntu 18.04 for Azure Developers](Kubuntu1804.md)

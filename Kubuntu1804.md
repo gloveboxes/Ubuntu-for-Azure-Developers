@@ -11,7 +11,6 @@
 <!-- TOC -->
 
 - [Kubuntu for Azure Developers](#kubuntu-for-azure-developers)
-    - [Getting started with Azure](#getting-started-with-azure)
     - [Installing the Essentials](#installing-the-essentials)
         - [Visual Studio Code](#visual-studio-code)
         - [Visual Studio Extensions](#visual-studio-extensions)
@@ -43,26 +42,11 @@
 
 <!-- /TOC -->
 
-Developing on Linux for Azure is a great experience and there is superb open source tooling support from Microsoft (and others) for Azure across Windows, Mac and Linux.
-
-I've tended to stick with the LTS releases of Linux, better support, examples, documentation etc. With the release of [Ubuntu 18.04 LTS](https://www.ubuntu.com/desktop) I decided it was time to upgrade from Ubuntu 16.04 LTS system. After a few false starts for my system (X1 Carbon) I found the [Kubuntu](https://kubuntu.org/) flavour to be more stable and I also like the level of customization.
-
-So here are the applications, command line tools and SDKs that I have installed for my Azure centric Kubuntu 18.04 developer desktop. Enjoy:)
-
 This guide assumes you have some experience with Linux and you will open Terminal and Ctrl-Shift-V to paste in [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) commands.
 
-Given Kubuntu 18.04 is still fresh I documented the additional libraries you'll need to install.
+Given Kubuntu 18.04 is still fresh I have documented the additional libraries you'll need to install.
 
 **Feel free to contribute to this guide.**
-
-## Getting started with Azure
-
-If you are new to Azure then the following resources are a great place to start.
-
-1. [Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/)
-2. [Architecting Distributed Cloud Applications video series](https://www.youtube.com/watch?v=xJMbkZvuVO0&list=PL9XzOCngAkqs0Q8ZRdafnSYExKQurZrBY)
-3. [Microsoft Azure Blog](https://azure.microsoft.com/en-us/blog/)
-4. [Channel9 Technical Training](https://channel9.msdn.com/)
 
 ## Installing the Essentials
 
