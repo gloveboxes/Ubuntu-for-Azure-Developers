@@ -27,3 +27,7 @@ If you are new to Azure then the following resources are a great place to start.
 2. [Architecting Distributed Cloud Applications video series](https://www.youtube.com/watch?v=xJMbkZvuVO0&list=PL9XzOCngAkqs0Q8ZRdafnSYExKQurZrBY)
 3. [Microsoft Azure Blog](https://azure.microsoft.com/en-us/blog/)
 4. [Channel9 Technical Training](https://channel9.msdn.com/)
+
+## My Kubuntu Azure Developer Desktop
+
+![Kubuntu Desktop](/resources/kubutu-desktop.png)
