@@ -1,6 +1,6 @@
 # Kubuntu 18.04 for Azure Developers
 
-[Ubuntu for Azure Developers](/README.md)
+[Ubuntu for Azure Developers](../README.md)
 
 |Author|Dave Glover, Microsoft Australia|
 |----|---|

@@ -1,10 +1,10 @@
 # Ubuntu 18.04 for Azure Developers
 
-[Ubuntu for Azure Developers](/README.md)
+[Ubuntu for Azure Developers](../README.md)
 
 |Author|Dave Glover, Microsoft Australia|
 |----|---|
-|Platform| [Ubuntu 18.04 for Azure Developers](/docs/Ubuntu1804.md), [Kubuntu 18.04 for Azure Developers](/docs/Kubuntu1804.md), [Ubuntu 16.04 for Azure Developers](/docs/Ubuntu1604.md)|
+|Platform| [Ubuntu 18.04 for Azure Developers](../docs/Ubuntu1804.md), [Kubuntu 18.04 for Azure Developers](../docs/Kubuntu1804.md), [Ubuntu 16.04 for Azure Developers](../docs/Ubuntu1604.md)|
 |Date|As at May 2018|
 |System| Lenovo ThinkPad X1 Carbon Gen 1|
 

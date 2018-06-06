@@ -14,7 +14,7 @@ I found the [Kubuntu](https://kubuntu.org/) flavour to be the most stable on my 
 The following documents the applications, command line tools and SDKs that I have installed for my Azure centric Ubuntu developer desktop. Enjoy:)
 
 1. [Ubuntu 18.04 for Azure Developers](docs/Ubuntu1804.md)
-1. [Kubuntu 18.04 for Azure Developers]docs/Kubuntu1804.md)
+1. [Kubuntu 18.04 for Azure Developers](docs/Kubuntu1804.md)
 1. [Ubuntu 16.04 for Azure Developers](docs/Ubuntu1604.md)
 
 **Feel free to contribute to these guides.**
