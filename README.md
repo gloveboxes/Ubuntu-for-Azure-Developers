@@ -19,7 +19,7 @@ The following documents the applications, command line tools and SDKs that I hav
 
 **Feel free to contribute to these guides.**
 
-## Getting started with Azure
+## Getting started with Azure Resources
 
 If you are new to Azure then the following resources are a great place to start.
 
