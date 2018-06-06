@@ -10,7 +10,7 @@
 
 - [Ubuntu 18.04 for Azure Developers](#ubuntu-1804-for-azure-developers)
     - [Getting started with Azure](#getting-started-with-azure)
-    - [Install the Essentials](#install-the-essentials)
+    - [Installing the Essentials](#installing-the-essentials)
         - [Visual Studio Code](#visual-studio-code)
         - [Visual Studio Extensions](#visual-studio-extensions)
         - [GitHub Client](#github-client)
@@ -45,7 +45,7 @@ Developing on Linux for Azure is a great experience and there is superb open sou
 
 I've tended to stick with the LTS releases of Linux, better support, examples, documentation etc. With the release of [Ubuntu 18.04 LTS](https://www.ubuntu.com/desktop) I decided it was time to upgrade from Ubuntu 16.04 LTS system. So here are the applications, command line tools and SDKs that I have installed for my Azure centric Ubuntu 18.04 developer desktop. Enjoy:)
 
-This guide assumes you have some experience with Linux. The guide assumes you'll open Terminal and Ctrl-Shift-V is your friend to paste in [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) commands.
+This guide assumes you have some experience with Linux and you will open Terminal and Ctrl-Shift-V to paste in [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) commands.
 
 Given Ubuntu 18.04 is still fresh I documented the additional libraries you'll need to install.
 
@@ -60,7 +60,7 @@ If you are new to Azure then the following resources are a great place to start.
 3. [Microsoft Azure Blog](https://azure.microsoft.com/en-us/blog/)
 4. [Channel9 Technical Training](https://channel9.msdn.com/)
 
-## Install the Essentials
+## Installing the Essentials
 
 ### Visual Studio Code
 
