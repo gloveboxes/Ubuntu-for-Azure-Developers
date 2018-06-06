@@ -1,4 +1,4 @@
-# Kubuntu for Azure Developers
+# Kubuntu 18.04 for Azure Developers
 
 [Ubuntu for Azure Developers](README.md)
 
@@ -10,7 +10,7 @@
 
 <!-- TOC -->
 
-- [Kubuntu for Azure Developers](#kubuntu-for-azure-developers)
+- [Kubuntu 18.04 for Azure Developers](#kubuntu-1804-for-azure-developers)
     - [Installing the Essentials](#installing-the-essentials)
         - [Visual Studio Code](#visual-studio-code)
         - [Visual Studio Extensions](#visual-studio-extensions)
