@@ -9,7 +9,7 @@ Developing on Linux for Azure is a great experience and there is superb open sou
 
 I've tended to stick with the LTS releases of Ubuntu Linux, better support, examples, documentation etc. With the release of [Ubuntu 18.04 LTS](https://www.ubuntu.com/desktop) I decided it was time to upgrade from Ubuntu 16.04 LTS system.
 
-I found the [Kubuntu](https://kubuntu.org/) flavour to be the most stable on my laptop (X1 Carbon) and I also like the level of customization. But your milage may vary so I've documented for Ubuntu 18.04, Kubuntu 18.04, and Ubuntu 16.04.
+I found the [Kubuntu](https://kubuntu.org/) flavour to be the most stable on my laptop (X1 Carbon) and I also like the level of customization. But your mileage may vary so I've documented for Ubuntu 18.04, Kubuntu 18.04, and Ubuntu 16.04.
 
 The following documents the applications, command line tools and SDKs that I have installed for my Azure centric Ubuntu developer desktop. Enjoy:)
 
