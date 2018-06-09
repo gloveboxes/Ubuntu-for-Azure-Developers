@@ -44,8 +44,6 @@
 
 This guide assumes you have some experience with Linux and you will open Terminal and Ctrl-Shift-V to paste in [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) commands.
 
-Given Ubuntu 18.04 is still fresh I have documented the additional libraries you'll need to install.
-
 **Feel free to contribute to this guide.**
 
 ## Installing the Essentials
@@ -133,7 +131,6 @@ EOL
 
 Notes.
 * [Microsoft Azure Storage Explorer release notes](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-relnotes)
-* https://answers.launchpad.net/ubuntu/bionic/amd64/libcanberra-gtk0
 
 ### Azure CLI (Command Line Interface)
 
@@ -171,10 +168,6 @@ It's useful to add your user sudo rights to Docker. Note, you'll need to restart
 ```bash
 sudo usermod <Your User Name> -aG docker
 ```
-
-Notes.
-
-* [How to Install Docker On Ubuntu 18.04 Bionic Beaver](https://linuxconfig.org/how-to-install-docker-on-ubuntu-18-04-bionic-beaver)
 
 ### Postman
 
