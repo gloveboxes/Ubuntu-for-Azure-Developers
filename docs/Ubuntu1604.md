@@ -54,11 +54,11 @@ Given Ubuntu 18.04 is still fresh I have documented the additional libraries you
 
 [Visual Studio Code](https://code.visualstudio.com/) is a must have IDE, open source, extensible, great language, debugging and tooling support.  
 
-Head to [Visual Studio Code](https://code.visualstudio.com/) and download the .deb file for Debian and Ubuntu then install with QApt Package Installer.
+Head to [Visual Studio Code](https://code.visualstudio.com/) and download the .deb file for Debian and Ubuntu then install with Software Install.
 
 ### Visual Studio Extensions
 
-There are a stack of great extensions for Visual Studio Code. This are the ones that I find most useful.
+There are a stack of great extensions for Visual Studio Code. These are the ones that I find most useful.
 
 1. Azure Account, Azure Functions, Azure CLI Tools, Azure Event Hub Explorer, Azure Cosmos DB, Azure IoT Edge, Azure IoT Toolkit, mssql, C#, Docker, Python, C/C++, JSON Tools, Powershell, Azure Application Insights, Azure App Services, Arduino, Azure Resource Manager Tools, Azure Storage, Tools for AI and more...
 
@@ -92,7 +92,7 @@ If you are using Visual Studio Team Services then checkout [Use Git Credential M
 
 ### Installing the latest .NET Core SDK
 
-1. Install the latest release of the [.NET Core SDK](https://www.microsoft.com/net/download/linux-package-manager/ubuntu18-04/sdk-current)
+1. Install the latest release of the [.NET Core SDK](https://www.microsoft.com/net/download/linux-package-manager/ubuntu16-04/sdk-current)
 
 2. Confirm successful installation of .NET Core SDK
 
@@ -102,15 +102,9 @@ dotnet --version
 
 ### Azure Storage Explorer
 
-1. Install required dependency
+1. Next [Download and Install Storage Explorer. Be sure to select Linux from the drop-down.](https://azure.microsoft.com/en-au/features/storage-explorer/)
 
-```bash
-sudo apt install libgnome-keyring0
-```
-
-2. Next [Download and Install Storage Explorer. Be sure to select Linux from the drop-down.](https://azure.microsoft.com/en-au/features/storage-explorer/)
-
-5. The following Bash commands extract the Storage Explorer .tar.gz file to the /opt directory, and add a symbolic link to the StorageExplorer executable.
+2. The following Bash commands extract the Storage Explorer .tar.gz file to the /opt directory, and add a symbolic link to the StorageExplorer executable.
 
 ```bash
 cd ~/Downloads && \
@@ -120,7 +114,7 @@ sudo ln -s /opt/StorageExplorer-linux-x64/StorageExplorer /usr/bin/StorageExplor
 
 ```
 
-6. Create Storage Explorer [Ubunutu/KDE](https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html) Desktop Resource
+3. Create Storage Explorer [Ubuntu GNOME/KDE](https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html) Desktop Resource
 
 ```bash
 mkdir -p ~/.local/share/applications && \
@@ -160,7 +154,7 @@ cd ~/Downloads && \
 sudo apt install curl -y && \
 curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg && \
 sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg && \
-sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-artful-prod artful main" > /etc/apt/sources.list.d/dotnetdev.list' && \
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-xenial-artful-prod xenial main" > /etc/apt/sources.list.d/dotnetdev.list' && \
 sudo apt-get update && \
 sudo apt-get install azure-functions-core-tools
 
@@ -170,11 +164,7 @@ sudo apt-get install azure-functions-core-tools
 
 ### Docker
 
-```bash
-sudo apt install docker.io && \
-sudo systemctl start docker && \
-sudo systemctl enable docker
-```
+[Install Docker CE for Ubuntu](https://docs.docker.com/install/linux/docker-ce/ubuntu/#set-up-the-repository)
 
 It's useful to add your user sudo rights to Docker. Note, you'll need to restart your system for this setting to take effect.
 
@@ -186,14 +176,7 @@ Notes.
 
 * [How to Install Docker On Ubuntu 18.04 Bionic Beaver](https://linuxconfig.org/how-to-install-docker-on-ubuntu-18-04-bionic-beaver)
 
-
 ### Postman
-
-Install library dependency
-
-```bash
-sudo apt install libgconf-2-4
-```
 
 Download and Install Postman
 

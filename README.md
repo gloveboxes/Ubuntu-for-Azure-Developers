@@ -11,6 +11,8 @@ I've tended to stick with the LTS releases of Ubuntu Linux, better support, exam
 
 I found the [Kubuntu](https://kubuntu.org/) flavour to be the most stable on my laptop (X1 Carbon) and I also like the level of customization. But your mileage may vary so I've documented for Ubuntu 18.04, Kubuntu 18.04, and Ubuntu 16.04.
 
+**Update**: I suspect my system stability was caused by running out of swap space. I've increased from 2GiB to 5GiG following these [instructions](https://askubuntu.com/questions/927854/how-do-i-increase-the-size-of-swapfile-without-removing-it-in-the-terminal).
+
 The following documents the applications, command line tools and SDKs that I have installed for my Azure centric Ubuntu developer desktop. Enjoy:)
 
 1. [Ubuntu 18.04 for Azure Developers](docs/Ubuntu1804.md)

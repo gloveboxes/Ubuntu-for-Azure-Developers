@@ -58,7 +58,7 @@ Head to [Visual Studio Code](https://code.visualstudio.com/) and download the .d
 
 ### Visual Studio Extensions
 
-There are a stack of great extensions for Visual Studio Code. This are the ones that I find most useful.
+There are a stack of great extensions for Visual Studio Code. These are the ones that I find most useful.
 
 1. Azure Account, Azure Functions, Azure CLI Tools, Azure Event Hub Explorer, Azure Cosmos DB, Azure IoT Edge, Azure IoT Toolkit, mssql, C#, Docker, Python, C/C++, JSON Tools, Powershell, Azure Application Insights, Azure App Services, Arduino, Azure Resource Manager Tools, Azure Storage, Tools for AI and more...
 
