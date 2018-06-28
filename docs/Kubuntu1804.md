@@ -105,7 +105,7 @@ dotnet --version
 1. Install required dependency
 
 ```bash
-sudo apt install libgnome-keyring0
+sudo apt install libgnome-keyring0 gnome-keyring
 ```
 
 2. Next [Download and Install Storage Explorer. Be sure to select Linux from the drop-down.](https://azure.microsoft.com/en-au/features/storage-explorer/)
@@ -119,6 +119,10 @@ sudo tar -C $_ -zxvf StorageExplorer-linux-x64.tar.gz && \
 sudo ln -s /opt/StorageExplorer-linux-x64/StorageExplorer /usr/bin/StorageExplorer
 
 ```
+
+Notes.
+
+* https://dicas-de-linux.blogspot.com/2012/05/gkr-message-secret-service-operation.html
 
 6. Create Storage Explorer [Ubunutu/KDE](https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html) Desktop Resource
 
