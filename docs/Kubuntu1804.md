@@ -122,7 +122,7 @@ sudo ln -s /opt/StorageExplorer-linux-x64/StorageExplorer /usr/bin/StorageExplor
 
 Notes.
 
-* https://dicas-de-linux.blogspot.com/2012/05/gkr-message-secret-service-operation.html
+* [Gkr-Message: secret service operation failed: The name org.freedesktop.secrets was not provided by any .service files](https://dicas-de-linux.blogspot.com/2012/05/gkr-message-secret-service-operation.html)
 
 6. Create Storage Explorer [Ubunutu/KDE](https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html) Desktop Resource
 
