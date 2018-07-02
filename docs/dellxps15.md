@@ -13,7 +13,7 @@ After much testing this is the configuration that works well for me, most import
 
 ## Tips and Tricks
 
-1. You must must add nouveau.modeset=0 when you install Ubuntu and every time you restart Ubuntu until you have installed the nVidia driver otherwise you'll be forced to hard reset the laptop.
+1. **You must must add nouveau.modeset=0 when you install Ubuntu and every time you restart Ubuntu until you have installed the nVidia driver otherwise you'll be forced to hard reset the laptop.**
     1. Boot Ubuntu 18.04 from USB
     2. Cursor to "Install Ubuntu"
     *. ![](../resources/install-ubuntu.jpg) 
@@ -35,5 +35,5 @@ After much testing this is the configuration that works well for me, most import
 4. GNOME Tweaks. I don't like the default Ubuntu 18.04 user experience so tweaked the desktop experience using the Firefox GNOME Shell integration and added "[Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)". It is similar to Windows 10 user experience.
 
     ![Ubuntu Desktop with Dash to Panel](../resources/ubuntu-desktop.png)
-    
+
 5. Increase virtual memory. On this system not so necessary, but your system will become unstable if it runs out of virtual memory. Follow these [instructions](https://askubuntu.com/questions/927854/how-do-i-increase-the-size-of-swapfile-without-removing-it-in-the-terminal) to increase the swap file.
