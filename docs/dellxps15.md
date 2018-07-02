@@ -1,12 +1,12 @@
 # Dell XPS 15 Stable Linux Configuration
 
-After much testing this is the configuration that works well for me. I [upgraded](https://www.youtube.com/watch?v=hAKpjfc2hs8&t=146s) the standard Killer 1535 with an Intel 9260 wireless/bluetooth module. 
+After much testing this is the configuration that works well for me, most importantly wake from sleep worked consistently well.
 
 |Author|Dave Glover, Microsoft Australia|
 |----|---|
 |Date| 2 July 2018|
 |System| [Dell XPS 15](https://www.dell.com/en-au/shop/dell-laptops/new-xps-15/spd/xps-15-9570-laptop/b510521au) 9570 (2018), 8th Generation Intel® Core™ i7-8750H Processor, 16GB RAM, 512 GB SSD
-|WiFi| Updated from standard Killer to [Intel 9260](https://ark.intel.com/products/99445/Intel-Wireless-AC-9260)|
+|WiFi| I [upgraded](https://www.youtube.com/watch?v=hAKpjfc2hs8&t=146s) the standard Killer 1535 with an [Intel 9260]((https://ark.intel.com/products/99445/Intel-Wireless-AC-9260)) wireless/bluetooth module|
 |Kernel| [4.16.18](http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.16.18/)|
 |OS|Ubuntu 18.04|
 |Graphics Driver| nvidia-driver-390|
@@ -17,8 +17,8 @@ After much testing this is the configuration that works well for me. I [upgraded
     1. Boot Ubuntu 18.04 from USB
     2. Cursor to "Install Ubuntu"
     *. ![](../resources/install-ubuntu.jpg) 
-    3. Press 'e' to edit
-    4. Edit line starting with 'linux', add nouveau.modeset=0 after the word 'splash'
+    1. Press 'e' to edit
+    2. Edit line starting with 'linux', add nouveau.modeset=0 after the word 'splash'
     *. ![](../resources/set-boot-options.jpg)
 2. Kernel 4.16.x worked best. 4.15.x did not work well with the Intel 9260 wireless card. 4.17.x did not play well with sleep/wake/resume.
     1. See [How to Install Kernel 4.16 in Ubuntu / Linux Mint](http://ubuntuhandbook.org/index.php/2018/04/install-kernel-4-16-ubuntu-linux-mint/)
