@@ -19,7 +19,8 @@ After much testing this is the configuration that works well for me, most import
     *. ![](../resources/install-ubuntu.jpg) 
     1. Press 'e' to edit
     2. Edit line starting with 'linux', add nouveau.modeset=0 after the word 'splash'
-    *. ![](../resources/set-boot-options.jpg)
+    ![](../resources/set-boot-options.jpg)
+    3. Press F10 to install Ubuntu
 2. Kernel 4.16.x worked best. 4.15.x did not work well with the Intel 9260 wireless card. 4.17.x did not play well with sleep/wake/resume.
     1. See [How to Install Kernel 4.16 in Ubuntu / Linux Mint](http://ubuntuhandbook.org/index.php/2018/04/install-kernel-4-16-ubuntu-linux-mint/)
     2. Download Linux Kernel [4.16.18](http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.16.18/)
