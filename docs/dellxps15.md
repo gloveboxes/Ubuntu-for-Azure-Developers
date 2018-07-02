@@ -1,6 +1,6 @@
 # Dell XPS 15 Stable Linux Configuration
 
-After much testing this is the configuration that works well for me. I upgraded the standard Killer 1535 with an Intel 9260. 
+After much testing this is the configuration that works well for me. I [upgraded](https://www.youtube.com/watch?v=hAKpjfc2hs8&t=146s) the standard Killer 1535 with an Intel 9260 wireless/bluetooth module. 
 
 |Author|Dave Glover, Microsoft Australia|
 |----|---|
@@ -13,7 +13,7 @@ After much testing this is the configuration that works well for me. I upgraded 
 
 ## Tips and Tricks
 
-1. You must must add nouveau.modeset=0 when you install Ubuntu and everytime you restart Ubuntu until you have installed the nVidia driver otherwise you'll be forced to hard reset the laptop.
+1. You must must add nouveau.modeset=0 when you install Ubuntu and every time you restart Ubuntu until you have installed the nVidia driver otherwise you'll be forced to hard reset the laptop.
     1. Boot Ubuntu 18.04 from USB
     2. Cursor to "Install Ubuntu"
     *. ![](../resources/install-ubuntu.jpg) 
