@@ -17,6 +17,7 @@
         - [GitHub Client](#github-client)
         - [Installing the latest .NET Core SDK](#installing-the-latest-net-core-sdk)
         - [Azure Storage Explorer](#azure-storage-explorer)
+        - [Azure Storage Emulator](#azure-storage-emulator)
         - [Azure CLI (Command Line Interface)](#azure-cli-command-line-interface)
     - [Azure Functions with Visual Studio Code](#azure-functions-with-visual-studio-code)
         - [Install Azure Functions Core Tools](#install-azure-functions-core-tools)
@@ -139,6 +140,14 @@ EOL
 Notes.
 * [Microsoft Azure Storage Explorer release notes](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-relnotes)
 * https://answers.launchpad.net/ubuntu/bionic/amd64/libcanberra-gtk0
+
+### Azure Storage Emulator
+
+Install [Azurite](https://github.com/azure/azurite), a lightweight server clone of Azure Blob, Queue, and Table Storage that simulates most of the commands supported by it with minimal dependencies.
+
+Notes.
+* [Configure Azure Storage connection strings](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)
+* [Connect to the emulator account using the well-known account name and key](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string#connect-to-the-emulator-account-using-the-well-known-account-name-and-key)
 
 ### Azure CLI (Command Line Interface)
 
