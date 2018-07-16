@@ -83,7 +83,7 @@ sudo update-grub
 
 7. Increase virtual memory. On this system not so necessary, but your system will become unstable if it runs out of virtual memory. Follow these [instructions](https://askubuntu.com/questions/927854/how-do-i-increase-the-size-of-swapfile-without-removing-it-in-the-terminal) to increase the swap file.
 
-### Enable Touchpad Rght Click
+### Enable Touchpad Right Click
 
 8. Enable Right mouse click on touchpad. See [No secondary button (right click) on touchpad](https://askubuntu.com/questions/1028776/no-secondary-button-right-click-on-touchpad)
 
