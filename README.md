@@ -30,4 +30,4 @@ If you are new to Azure then the following resources are a great place to start.
 
 ## My Kubuntu Azure Developer Desktop
 
-![Ubuntu Desktop](/resources/ubuntu-desktop.png)
+![Ubuntu Desktop](/resources/ubuntu-desktop.jpg)
