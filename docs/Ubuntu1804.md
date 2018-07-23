@@ -183,9 +183,16 @@ sudo apt-get install azure-functions-core-tools
 ### Docker
 
 ```bash
-sudo apt install docker.io && \
-sudo systemctl start docker && \
-sudo systemctl enable docker
+sudo apt update
+
+sudo apt install -y apt-transport-https ca-certificates curl software-properties-common && \
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add - && \
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu bionic stable"
+
+sudo apt update
+
+sudo apt install -y docker-ce && \
+sudo systemctl status docker
 ```
 
 It's useful to add your user sudo rights to Docker. Note, you'll need to restart your system for this setting to take effect.
@@ -196,7 +203,7 @@ sudo usermod <Your User Name> -aG docker
 
 Notes.
 
-* [How to Install Docker On Ubuntu 18.04 Bionic Beaver](https://linuxconfig.org/how-to-install-docker-on-ubuntu-18-04-bionic-beaver)
+* [How to Install and Use Docker on Ubuntu 18.04 ](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
 
 
 ### Postman
