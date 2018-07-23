@@ -23,6 +23,7 @@
         - [Install Azure Functions Core Tools](#install-azure-functions-core-tools)
     - [Toolkit](#toolkit)
         - [Docker](#docker)
+        - [NVIDIA Container Runtime for Docker](#nvidia-container-runtime-for-docker)
         - [Postman](#postman)
         - [Fiddler](#fiddler)
         - [VirtualBox](#virtualbox)
@@ -204,6 +205,18 @@ sudo usermod <Your User Name> -aG docker
 Notes.
 
 * [How to Install and Use Docker on Ubuntu 18.04 ](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
+
+### NVIDIA Container Runtime for Docker
+
+If your PC has an nVidia GPU and you want to developer with  Docker and TensorFlow-GPU support. Simpler than installing CUDA Driver and Toolkit on to local system.
+
+![](https://cloud.githubusercontent.com/assets/3028125/12213714/5b208976-b632-11e5-8406-38d379ec46aa.png)
+
+
+Notes.
+
+1. [Using TensorFlow via Docker](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/docker/README.md)
+2. [NVIDIA Container Runtime for Docker](https://github.com/NVIDIA/nvidia-docker)
 
 
 ### Postman
