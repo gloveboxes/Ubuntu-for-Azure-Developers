@@ -44,7 +44,6 @@
 
 <!-- /TOC -->
 
-
 This guide assumes you have some experience with Linux and you will open Terminal and Ctrl-Shift-V to paste in [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) commands.
 
 **Feel free to contribute to this guide.**
@@ -61,7 +60,7 @@ Head to [Visual Studio Code](https://code.visualstudio.com/) and download the .d
 
 There are a stack of great extensions for Visual Studio Code. These are the ones that I find most useful.
 
-1. Azure Account, Azure Functions, Azure CLI Tools, Azure Event Hub Explorer, Azure Cosmos DB, Azure IoT Edge, Azure IoT Toolkit, mssql, C#, Docker, Python, C/C++, JSON Tools, Powershell, Azure Application Insights, Azure App Services, Arduino, Azure Resource Manager Tools, Azure Storage, Tools for AI and more...
+1. Azure Account, Azure Functions, Azure CLI Tools, Azure Event Hub Explorer, Azure Cosmos DB, Azure IoT Edge, Azure IoT Toolkit, SQL Server, C#, Docker, Python, C/C++, JSON Tools, JSON Escaper, Powershell, Azure Application Insights, Azure App Services, Arduino, Azure Resource Manager Tools, Azure Storage, Tools for AI, Markdown TOC, Code Spell Checker, Docker  and more...
 
 ### GitHub Client
 
