@@ -28,6 +28,6 @@ If you are new to Azure then the following resources are a great place to start.
 3. [Microsoft Azure Blog](https://azure.microsoft.com/en-us/blog/)
 4. [Channel9 Technical Training](https://channel9.msdn.com/)
 
-## My Kubuntu Azure Developer Desktop
+## My Ubuntu 18.04 Azure Developer Desktop
 
 ![Ubuntu Desktop](/resources/ubuntu-desktop.jpg)
