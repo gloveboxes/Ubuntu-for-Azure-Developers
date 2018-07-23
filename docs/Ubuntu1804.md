@@ -84,7 +84,6 @@ Check out [Caching your GitHub password in Git](https://help.github.com/articles
 In summary you need to run the following commands. Personally I use a much bigger number than 3600.
 
 ```bash
-git config --global credential.helper cache
 git config --global credential.helper 'cache --timeout=3600'
 ```
 
