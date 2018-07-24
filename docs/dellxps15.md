@@ -60,7 +60,7 @@ sudo update-grub
             2. linux-headers-4.16.18-041618-generic_4.16.18-041618.201806252030_amd64.deb
             3. linux-image-unsigned-4.16.18-041618-generic_4.16.18-041618.201806252030_amd64.deb
             4.   linux-modules-4.16.18-041618-generic_4.16.18-041618.201806252030_amd64.deb
-        2.   Install with '***sudo dpkg -i *.deb***'
+        2.   Install with sudo dpkg -i *.deb
         3.   Reboot
 
 ### Update nVidia Driver
