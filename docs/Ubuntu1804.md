@@ -1,4 +1,4 @@
-# Ubuntu 18.04 for Azure Developers
+# 1. Ubuntu 18.04 for Azure Developers
 
 [Ubuntu for Azure Developers](../README.md)
 
@@ -10,59 +10,61 @@
 
 <!-- TOC -->
 
-- [Ubuntu 18.04 for Azure Developers](#ubuntu-1804-for-azure-developers)
-    - [Installing the Essentials](#installing-the-essentials)
-        - [Visual Studio Code](#visual-studio-code)
-        - [Visual Studio Extensions](#visual-studio-extensions)
-        - [GitHub Client](#github-client)
-        - [Installing the latest .NET Core SDK](#installing-the-latest-net-core-sdk)
-        - [Azure Storage Explorer](#azure-storage-explorer)
-        - [Azure Storage Emulator](#azure-storage-emulator)
-        - [Azure CLI (Command Line Interface)](#azure-cli-command-line-interface)
-    - [Azure Functions with Visual Studio Code](#azure-functions-with-visual-studio-code)
-        - [Install Azure Functions Core Tools](#install-azure-functions-core-tools)
-    - [Toolkit](#toolkit)
-        - [Docker](#docker)
-        - [NVIDIA Container Runtime for Docker](#nvidia-container-runtime-for-docker)
-        - [Postman](#postman)
-        - [Fiddler](#fiddler)
-        - [VirtualBox](#virtualbox)
-    - [Internet of Things](#internet-of-things)
-        - [Azure IoT Hub Explorer](#azure-iot-hub-explorer)
-        - [Azure IoT Edge](#azure-iot-edge)
-            - [Building ARM Docker Images from an x64 Ubuntu Host](#building-arm-docker-images-from-an-x64-ubuntu-host)
-    - [Microsoft SQL Server for Linux](#microsoft-sql-server-for-linux)
-        - [Microsoft SQL Server for Linux (Dockerised)](#microsoft-sql-server-for-linux-dockerised)
-        - [Microsoft SQL Server Operations Studio](#microsoft-sql-server-operations-studio)
-        - [Microsoft SQL Server Extension for Visual Studio Code](#microsoft-sql-server-extension-for-visual-studio-code)
-    - [Embedded Development](#embedded-development)
-        - [Arduino](#arduino)
-        - [Fritzing](#fritzing)
-    - [Samples](#samples)
-        - [Azure IoT Edge Samples](#azure-iot-edge-samples)
-        - [Debugging .NET Core apps in Docker Containers from Visual Studio Code on Linux](#debugging-net-core-apps-in-docker-containers-from-visual-studio-code-on-linux)
+- [1. Ubuntu 18.04 for Azure Developers](#1-ubuntu-1804-for-azure-developers)
+    - [1.1. Installing the Essentials](#11-installing-the-essentials)
+        - [1.1.1. Visual Studio Code](#111-visual-studio-code)
+        - [1.1.2. Visual Studio Extensions](#112-visual-studio-extensions)
+        - [1.1.3. GitHub Client](#113-github-client)
+        - [1.1.4. Installing the latest .NET Core SDK](#114-installing-the-latest-net-core-sdk)
+        - [1.1.5. Azure Storage Explorer](#115-azure-storage-explorer)
+        - [1.1.6. Azure Storage Emulator](#116-azure-storage-emulator)
+        - [1.1.7. Azure CLI (Command Line Interface)](#117-azure-cli-command-line-interface)
+    - [1.2. Azure Functions with Visual Studio Code](#12-azure-functions-with-visual-studio-code)
+        - [1.2.1. Install Azure Functions Core Tools](#121-install-azure-functions-core-tools)
+    - [1.3. Toolkit](#13-toolkit)
+        - [1.3.1. Docker](#131-docker)
+        - [1.3.2. NVIDIA Container Runtime for Docker](#132-nvidia-container-runtime-for-docker)
+        - [1.3.3. Postman](#133-postman)
+        - [1.3.4. Fiddler](#134-fiddler)
+        - [1.3.5. VirtualBox](#135-virtualbox)
+    - [1.4. Internet of Things](#14-internet-of-things)
+        - [1.4.1. Azure IoT Hub Explorer](#141-azure-iot-hub-explorer)
+        - [1.4.2. Azure IoT Edge](#142-azure-iot-edge)
+            - [1.4.2.1. Building ARM Docker Images from an x64 Ubuntu Host](#1421-building-arm-docker-images-from-an-x64-ubuntu-host)
+    - [1.5. Microsoft SQL Server for Linux](#15-microsoft-sql-server-for-linux)
+        - [1.5.1. Microsoft SQL Server for Linux (Dockerised)](#151-microsoft-sql-server-for-linux-dockerised)
+        - [1.5.2. Microsoft SQL Server Operations Studio](#152-microsoft-sql-server-operations-studio)
+        - [1.5.3. Microsoft SQL Server Extension for Visual Studio Code](#153-microsoft-sql-server-extension-for-visual-studio-code)
+    - [1.6. Embedded Development](#16-embedded-development)
+        - [1.6.1. Arduino](#161-arduino)
+        - [1.6.2. Fritzing](#162-fritzing)
+    - [1.7. Samples](#17-samples)
+        - [1.7.1. Azure IoT Edge Samples](#171-azure-iot-edge-samples)
+        - [1.7.2. Debugging .NET Core apps in Docker Containers from Visual Studio Code on Linux](#172-debugging-net-core-apps-in-docker-containers-from-visual-studio-code-on-linux)
 
 <!-- /TOC -->
+
+
 
 This guide assumes you have some experience with Linux and you will open Terminal and Ctrl-Shift-V to paste in [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) commands.
 
 **Feel free to contribute to this guide.**
 
-## Installing the Essentials
+## 1.1. Installing the Essentials
 
-### Visual Studio Code
+### 1.1.1. Visual Studio Code
 
 [Visual Studio Code](https://code.visualstudio.com/) is a must have IDE, open source, extensible, great language, debugging and tooling support.  
 
 Head to [Visual Studio Code](https://code.visualstudio.com/) and download the .deb file for Debian and Ubuntu then install with QApt Package Installer.
 
-### Visual Studio Extensions
+### 1.1.2. Visual Studio Extensions
 
 There are a stack of great extensions for Visual Studio Code. These are the ones that I find most useful.
 
 1. Azure Account, Azure Functions, Azure CLI Tools, Azure Event Hub Explorer, Azure Cosmos DB, Azure IoT Edge, Azure IoT Toolkit, SQL Server, C#, Docker, Python, C/C++, JSON Tools, JSON Escaper, Powershell, Azure Application Insights, Azure App Services, Arduino, Azure Resource Manager Tools, Azure Storage, Tools for AI, Markdown TOC, Code Spell Checker, Docker  and more...
 
-### GitHub Client
+### 1.1.3. GitHub Client
 
 When you start Visual Studio Code for the first time you'll be prompted to install the GitHub client.
 
@@ -89,7 +91,7 @@ git config --global credential.helper 'cache --timeout=3600'
 
 If you are using Visual Studio Team Services then checkout [Use Git Credential Managers to Authenticate to VSTS](https://docs.microsoft.com/en-gb/vsts/git/set-up-credential-managers?view=vsts)
 
-### Installing the latest .NET Core SDK
+### 1.1.4. Installing the latest .NET Core SDK
 
 1. Install the latest release of the [.NET Core SDK](https://www.microsoft.com/net/download/linux-package-manager/ubuntu18-04/sdk-current)
 
@@ -99,7 +101,7 @@ If you are using Visual Studio Team Services then checkout [Use Git Credential M
 dotnet --version
 ```
 
-### Azure Storage Explorer
+### 1.1.5. Azure Storage Explorer
 
 1. Install required dependency
 
@@ -140,7 +142,7 @@ Notes.
 * [Microsoft Azure Storage Explorer release notes](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-relnotes)
 * https://answers.launchpad.net/ubuntu/bionic/amd64/libcanberra-gtk0
 
-### Azure Storage Emulator
+### 1.1.6. Azure Storage Emulator
 
 Install [Azurite](https://github.com/azure/azurite), a lightweight server clone of Azure Blob, Queue, and Table Storage that simulates most of the commands supported by it with minimal dependencies.
 
@@ -148,7 +150,7 @@ Notes.
 * [Configure Azure Storage connection strings](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)
 * [Connect to the emulator account using the well-known account name and key](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string#connect-to-the-emulator-account-using-the-well-known-account-name-and-key)
 
-### Azure CLI (Command Line Interface)
+### 1.1.7. Azure CLI (Command Line Interface)
 
 Be sure that 'curl' is installed.
 
@@ -158,11 +160,11 @@ sudo apt install curl
 
 [Install Azure CLI 2.0 with apt](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest)
 
-## Azure Functions with Visual Studio Code
+## 1.2. Azure Functions with Visual Studio Code
 
 [Code and test Azure Functions locally](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local)
 
-### Install Azure Functions Core Tools
+### 1.2.1. Install Azure Functions Core Tools
 
 At the May 2018 I used the Ubuntu 17.04 (artful) release of the Azure Function Core tools.
 
@@ -177,9 +179,9 @@ sudo apt-get install azure-functions-core-tools
 
 ````
 
-## Toolkit
+## 1.3. Toolkit
 
-### Docker
+### 1.3.1. Docker
 
 ```bash
 sudo apt update
@@ -204,7 +206,7 @@ Notes.
 
 * [How to Install and Use Docker on Ubuntu 18.04 ](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
 
-### NVIDIA Container Runtime for Docker
+### 1.3.2. NVIDIA Container Runtime for Docker
 
 If your PC has an nVidia GPU and you want to developer with  Docker and TensorFlow-GPU support. Simpler than installing CUDA Driver and Toolkit on to local system.
 
@@ -217,7 +219,7 @@ Notes.
 2. [NVIDIA Container Runtime for Docker](https://github.com/NVIDIA/nvidia-docker)
 
 
-### Postman
+### 1.3.3. Postman
 
 Install library dependency
 
@@ -256,19 +258,19 @@ Notes.
 
 * Follow instruction at [How to Install the Postman Native App in Ubuntu 16.04](https://blog.bluematador.com/posts/postman-how-to-install-on-ubuntu-1604/)
 
-### Fiddler
+### 1.3.4. Fiddler
 
 See [Use Fiddler in Ubuntu](https://medium.com/@rajsek/use-fiddler-in-ubuntu-82b1dfd80848)
 
-### VirtualBox
+### 1.3.5. VirtualBox
 
 ```bash
 sudo apt-get install virtualbox
 ```
 
-## Internet of Things
+## 1.4. Internet of Things
 
-### Azure IoT Hub Explorer
+### 1.4.1. Azure IoT Hub Explorer
 
 ```bash
 az extension add --name azure-cli-iot-ext
@@ -288,11 +290,11 @@ Notes.
 * [Microsoft Azure IoT Extension for Azure CLI 2.0](https://github.com/Azure/azure-iot-cli-extension/blob/master/README.md)
 
 
-### Azure IoT Edge
+### 1.4.2. Azure IoT Edge
 
 * [Develop and deploy a C# IoT Edge module to your simulated device - preview](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-csharp-module)
 
-#### Building ARM Docker Images from an x64 Ubuntu Host
+#### 1.4.2.1. Building ARM Docker Images from an x64 Ubuntu Host
 
 If you are targeting ARM for your Docker builds then you will need to run the following command before you do your Docker build.
 
@@ -305,9 +307,9 @@ Notes.
 * If your docker ARM base image is already built to include QEMU then register QEMU in the build agent as follows.
 * Otherwise follow the instruction on [How to Build ARM Docker Images on Intel host](http://www.hotblackrobotics.com/en/blog/2018/01/22/docker-images-arm/)
 
-## Microsoft SQL Server for Linux
+## 1.5. Microsoft SQL Server for Linux
 
-### Microsoft SQL Server for Linux (Dockerised)
+### 1.5.1. Microsoft SQL Server for Linux (Dockerised)
 
 [Install SQL Server and create a database on Ubuntu](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-linux-2017)
 
@@ -336,21 +338,21 @@ Notes.
 
 * [Run the SQL Server 2017 container image with Docker](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-linux-2017)
 
-### Microsoft SQL Server Operations Studio
+### 1.5.2. Microsoft SQL Server Operations Studio
 
 Follow the notes for [Installing Microsoft SQL Operations Studio](https://docs.microsoft.com/en-gb/sql/sql-operations-studio/what-is?view=sql-server-linux-2017)
 
-### Microsoft SQL Server Extension for Visual Studio Code
+### 1.5.3. Microsoft SQL Server Extension for Visual Studio Code
 
 [Use Visual Studio Code to create and run Transact-SQL scripts for SQL Server](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-develop-use-vscode?view=sql-server-linux-2017)
 
-## Embedded Development
+## 1.6. Embedded Development
 
-### Arduino
+### 1.6.1. Arduino
 
 Download the [Arduino IDE](https://www.arduino.cc/en/Main/Software)
 
-### Fritzing
+### 1.6.2. Fritzing
 
 Download from [Fritzing Download Site](http://fritzing.org/download/).
 
@@ -386,12 +388,12 @@ EOL
 
 ```
 
-## Samples
+## 1.7. Samples
 
-### Azure IoT Edge Samples
+### 1.7.1. Azure IoT Edge Samples
 
 [Hands-on Grove Starter Kit for Azure IoT Edge](https://azure-samples.github.io/azure-iot-starter-kits/seeed/)
 
-### Debugging .NET Core apps in Docker Containers from Visual Studio Code on Linux
+### 1.7.2. Debugging .NET Core apps in Docker Containers from Visual Studio Code on Linux
 
 [This is a sample that demonstrates how to use vscode to build and debug dotnet core 2.0 console application in docker container](https://github.com/gloveboxes/docker.dotnet.debug)

@@ -9,13 +9,27 @@ After much testing this is the configuration that works well for me, most import
 | WiFi            | I [upgraded](https://www.youtube.com/watch?v=hAKpjfc2hs8&t=146s) the standard Killer 1535 with an [Intel 9260]((https://ark.intel.com/products/99445/Intel-Wireless-AC-9260)) wireless/bluetooth module |
 | Kernel          | [4.16.18](http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.16.18/)                                                                                                                                      |
 | OS              | Ubuntu 18.04                                                                                                                                                                                            |
-| Graphics Driver | nvidia-driver-390                                                                                                                                                                                       |
+<!-- TOC -->
 
-## Tips and Tricks
+- [Dell XPS 15 Stable Linux Configuration](#dell-xps-15-stable-linux-configuration)
+    - [Tips and Tricks](#tips-and-tricks)
+        - [Update BIOS](#update-bios)
+        - [Reboot tip](#reboot-tip)
+    - [Update GRUB](#update-grub)
+    - [Update the Linux Kernel](#update-the-linux-kernel)
+    - [Update nVidia Driver](#update-nvidia-driver)
+    - [GNOME Tweaks](#gnome-tweaks)
+    - [Increase swap file size](#increase-swap-file-size)
+    - [Enable Touchpad Right Click](#enable-touchpad-right-click)
+    - [Cool Apps I install](#cool-apps-i-install)
+
+<!-- /TOC -->
+
+## Tips and Tricks for Dell XPS 15 9570 (2018 Model)
 
 ### Update BIOS
 1. From BIOS Setup
-    1. Change disk from RAID to AHCI
+    1. Change disk from RAID to AHCI. This will cause the Windows Partition to fail. Search the web for tricks to resolve. I personally decided to reinstall Windows as it seemed to be a robust solution than various tricks I read.
     2. Disable secure boot
 
 ### Reboot tip 
@@ -50,7 +64,7 @@ Update GRUB
 sudo update-grub 
 ```
 
-### Update the Linux Kernel
+## Update the Linux Kernel
 
 4. Kernel 4.16.x worked best. 4.15.x did not work well with the Intel 9260 wireless card. 4.17.x did not play well with sleep/wake/resume.
     1. See [How to Install Kernel 4.16 in Ubuntu / Linux Mint](http://ubuntuhandbook.org/index.php/2018/04/install-kernel-4-16-ubuntu-linux-mint/)
@@ -63,7 +77,7 @@ sudo update-grub
         2.   Install with sudo dpkg -i *.deb
         3.   Reboot
 
-### Update nVidia Driver
+## Update nVidia Driver
 
 5. Stick with nvidia graphics driver 360. The latest beta 396 does not play well with wake from sleep. See [Install Latest NVIDIA Drivers In Linux](http://www.linuxandubuntu.com/home/how-to-install-latest-nvidia-drivers-in-linux). In summary:-
 
@@ -73,20 +87,28 @@ sudo update-grub
 
 6. edit the GRUB config file and remove nouveau.modeset=0 and rebuild GRUB
 
-### GNOME Tweaks
+## GNOME Tweaks
 
 7. GNOME Tweaks. I don't like the default Debian/Ubuntu 18.04 user experience so tweaked the desktop experience using the Firefox GNOME Shell integration and added "[Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)". It is similar to Windows 10 user experience.
 
     ![Ubuntu Desktop with Dash to Panel](../resources/ubuntu-desktop.png)
 
-### Increase swap file size
+## Increase swap file size
 
 7. Increase virtual memory. On this system not so necessary, but your system will become unstable if it runs out of virtual memory. Follow these [instructions](https://askubuntu.com/questions/927854/how-do-i-increase-the-size-of-swapfile-without-removing-it-in-the-terminal) to increase the swap file.
 
-### Enable Touchpad Right Click
+## Enable Touchpad Right Click
 
 8. Enable Right mouse click on touchpad. See [No secondary button (right click) on touchpad](https://askubuntu.com/questions/1028776/no-secondary-button-right-click-on-touchpad)
 
     ```bash
     gsettings set org.gnome.desktop.peripherals.touchpad click-method areas
     ```
+
+## Cool Apps I install
+
+1. Sticky Notes
+
+* [How Install Sticky Notes in Ubuntu](https://www.bettertechtips.com/ubuntu/install-sticky-notes-ubuntu/)
+* [5 Cool Sticky Notes Apps for Ubuntu](https://www.bettertechtips.com/ubuntu/sticky-notes-ubuntu/)
+
