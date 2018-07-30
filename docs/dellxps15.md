@@ -28,24 +28,25 @@ After much testing this is the configuration that works well for me, most import
 ## Tips and Tricks for Dell XPS 15 9570 (2018 Model)
 
 ### Update BIOS
+
 1. From BIOS Setup
     1. Change disk from RAID to AHCI. This will cause the Windows Partition to fail. Search the web for tricks to resolve. I personally decided to reinstall Windows as it seemed to be a robust solution than various tricks I read.
     2. Disable secure boot
     3. [Experience setting up Ubuntu 18.04 on Dell XPS 15 9570](https://medium.com/@peterpang_84917/personal-experience-of-installing-ubuntu-18-04-lts-on-xps-15-9570-3e53b6cfeefe)
 
-### Reboot tip 
+### Reboot tip
 
 2. **You must must add nouveau.modeset=0 when you install Ubuntu and every time you restart Ubuntu until you have installed the nVidia driver otherwise you'll be forced to hard reset the laptop.**
     1. Boot Ubuntu 18.04 from USB
     2. Cursor to "Install Ubuntu"
-    *. ![](../resources/install-ubuntu.jpg) 
-    1. Press 'e' to edit
-    2. Edit line starting with 'linux', add nouveau.modeset=0 after the word 'splash'
-    ![](../resources/set-boot-options.jpg)
-    1. Install Ubuntu as you would normally
-    2. Press F10 to install Ubuntu (remember when restarting to add nouveau.modeset=0).
+    ![install](../resources/install-ubuntu.jpg)
+    3. Press 'e' to edit
+    4. Edit line starting with 'linux', add nouveau.modeset=0 after the word 'splash'
+    ![options](../resources/set-boot-options.jpg)
+    5. Install Ubuntu as you would normally
+    6. Press F10 to install Ubuntu (remember when restarting to add nouveau.modeset=0).
 
-## Update GRUB 
+## Update GRUB
 
 ```bash
 sudo nano /etc/default/grub
@@ -62,7 +63,7 @@ save and exit nano
 Update GRUB
 
 ```bash
-sudo update-grub 
+sudo update-grub
 ```
 
 ## Update the Linux Kernel
@@ -74,9 +75,9 @@ sudo update-grub
             1. linux-headers-4.16.18-041618_4.16.18-041618.201806252030_all.deb
             2. linux-headers-4.16.18-041618-generic_4.16.18-041618.201806252030_amd64.deb
             3. linux-image-unsigned-4.16.18-041618-generic_4.16.18-041618.201806252030_amd64.deb
-            4.   linux-modules-4.16.18-041618-generic_4.16.18-041618.201806252030_amd64.deb
-        2.   Install with sudo dpkg -i *.deb
-        3.   Reboot
+            4. linux-modules-4.16.18-041618-generic_4.16.18-041618.201806252030_amd64.deb
+        2. Install with sudo dpkg -i *.deb
+        3. Reboot
 
 ## Update nVidia Driver
 
@@ -110,6 +111,5 @@ sudo update-grub
 
 1. Sticky Notes
 
-* [How Install Sticky Notes in Ubuntu](https://www.bettertechtips.com/ubuntu/install-sticky-notes-ubuntu/)
-* [5 Cool Sticky Notes Apps for Ubuntu](https://www.bettertechtips.com/ubuntu/sticky-notes-ubuntu/)
-
+- [How Install Sticky Notes in Ubuntu](https://www.bettertechtips.com/ubuntu/install-sticky-notes-ubuntu/)
+- [5 Cool Sticky Notes Apps for Ubuntu](https://www.bettertechtips.com/ubuntu/sticky-notes-ubuntu/)
