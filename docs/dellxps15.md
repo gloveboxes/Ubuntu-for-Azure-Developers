@@ -12,7 +12,7 @@ After much testing this is the configuration that works well for me, most import
 <!-- TOC -->
 
 - [Dell XPS 15 Stable Linux Configuration](#dell-xps-15-stable-linux-configuration)
-    - [Tips and Tricks](#tips-and-tricks)
+    - [Tips and Tricks for Dell XPS 15 9570 (2018 Model)](#tips-and-tricks-for-dell-xps-15-9570-2018-model)
         - [Update BIOS](#update-bios)
         - [Reboot tip](#reboot-tip)
     - [Update GRUB](#update-grub)
@@ -31,6 +31,7 @@ After much testing this is the configuration that works well for me, most import
 1. From BIOS Setup
     1. Change disk from RAID to AHCI. This will cause the Windows Partition to fail. Search the web for tricks to resolve. I personally decided to reinstall Windows as it seemed to be a robust solution than various tricks I read.
     2. Disable secure boot
+    3. [Experience setting up Ubuntu 18.04 on Dell XPS 15 9570](https://medium.com/@peterpang_84917/personal-experience-of-installing-ubuntu-18-04-lts-on-xps-15-9570-3e53b6cfeefe)
 
 ### Reboot tip 
 
