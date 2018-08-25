@@ -2,7 +2,7 @@
 
 After much testing this is the configuration that works well for me, most importantly wake from sleep worked consistently well.
 
-| Author          | Dave Glover, Microsoft Australia |
+| Author | Dave Glover, Microsoft Australia |
 | --------------- | ------- |
 | Date            | 24 August 2018 |
 | System          | [Dell XPS 15](https://www.dell.com/en-au/shop/dell-laptops/new-xps-15/spd/xps-15-9570-laptop/b510521au) 9570 (2018), 8th Generation Intel® Core™ i7-8750H Processor, 16GB RAM, 512 GB SSD               |
