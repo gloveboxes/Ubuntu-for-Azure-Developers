@@ -164,6 +164,8 @@ sudo apt install curl
 
 [Code and test Azure Functions locally](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local)
 
+[Azure Functions Core Tools (note updated instructions for Ubuntu 18.04)](https://github.com/Azure/azure-functions-core-tools/blob/master/README.md)
+
 ### 1.2.1. Install Azure Functions Core Tools
 
 At the May 2018 I used the Ubuntu 17.04 (artful) release of the Azure Function Core tools.

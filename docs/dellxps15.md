@@ -79,6 +79,18 @@ sudo update-grub
         2. Install with sudo dpkg -i *.deb
         3. Reboot
 
+    ### Uninstalling a kernel
+
+    1. Boot system to alternate kernel
+    2. From terminal
+
+        ```bash
+        sudo dpkg --purge linux-headers-<version>-generic
+        sudo dpkg --purge linux-headers-<version>
+        sudo dpkg --purge linux-image-unsigned-<version>
+        sudo dpkg --purge linux-modules-<version>-generic
+        ```
+
 ## Update nVidia Driver
 
 5. Stick with nvidia graphics driver 360. The latest beta 396 does not play well with wake from sleep. See [Install Latest NVIDIA Drivers In Linux](http://www.linuxandubuntu.com/home/how-to-install-latest-nvidia-drivers-in-linux). In summary:-
