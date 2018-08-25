@@ -4,10 +4,10 @@ After much testing this is the configuration that works well for me, most import
 
 | Author          | Dave Glover, Microsoft Australia |
 | --------------- | ------- |
-| Date            | 24 August 2018                                                                                                                                                                                             |
+| Date            | 24 August 2018 |
 | System          | [Dell XPS 15](https://www.dell.com/en-au/shop/dell-laptops/new-xps-15/spd/xps-15-9570-laptop/b510521au) 9570 (2018), 8th Generation Intel® Core™ i7-8750H Processor, 16GB RAM, 512 GB SSD               |
 | WiFi            | I [upgraded](https://www.youtube.com/watch?v=hAKpjfc2hs8&t=146s) the standard Killer 1535 with an [Intel 9260]((https://ark.intel.com/products/99445/Intel-Wireless-AC-9260)) wireless/bluetooth module |
-| Kernel          | [4.16.18](http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.16.18/)                                                                                                                                      |
+| Kernel          | [4.17.19](http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.17.19/) |
 | OS              | Ubuntu 18.04                                                                                                                                                                                            |
 <!-- TOC -->
 
@@ -27,6 +27,9 @@ After much testing this is the configuration that works well for me, most import
 <!-- /TOC -->
 
 ## Tips and Tricks for Dell XPS 15 9570 (2018 Model)
+
+Alternative instructions at [DELL XPS 15 9570 Ubuntu 18.04 Respin](https://github.com/JackHack96/dell-xps-9570-ubuntu-respin)
+
 
 ### Update BIOS
 
@@ -80,12 +83,6 @@ sudo update-grub
             4. linux-modules-4.17.19-041719-generic_4.17.19-041719.201808240919_amd64.deb
         2. Install with sudo dpkg -i *.deb
         3. Reboot
-
-Notes.
-
-Alternative instructions at [DELL XPS 15 9570 Ubuntu 18.04 Respin]()https://github.com/JackHack96/dell-xps-9570-ubuntu-respin
-
-See []()
 
 ### Uninstalling a kernel
 
