@@ -4,7 +4,7 @@ After much testing this is the configuration that works well for me, most import
 
 | Author          | Dave Glover, Microsoft Australia |
 | --------------- | ------- |
-| Date            | 2 July 2018                                                                                                                                                                                             |
+| Date            | 24 August 2018                                                                                                                                                                                             |
 | System          | [Dell XPS 15](https://www.dell.com/en-au/shop/dell-laptops/new-xps-15/spd/xps-15-9570-laptop/b510521au) 9570 (2018), 8th Generation Intel® Core™ i7-8750H Processor, 16GB RAM, 512 GB SSD               |
 | WiFi            | I [upgraded](https://www.youtube.com/watch?v=hAKpjfc2hs8&t=146s) the standard Killer 1535 with an [Intel 9260]((https://ark.intel.com/products/99445/Intel-Wireless-AC-9260)) wireless/bluetooth module |
 | Kernel          | [4.16.18](http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.16.18/)                                                                                                                                      |
@@ -69,16 +69,23 @@ sudo update-grub
 
 ## Update the Linux Kernel
 
-4. Kernel 4.16.x worked best. 4.15.x did not work well with the Intel 9260 wireless card. 4.17.x did not play well with sleep/wake/resume.
-    1. See [How to Install Kernel 4.16 in Ubuntu / Linux Mint](http://ubuntuhandbook.org/index.php/2018/04/install-kernel-4-16-ubuntu-linux-mint/)
-    2. Download Linux Kernel [4.16.18](http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.16.18/)
+4. Kernel 4.17.x now works well. 4.15.x did not work well with the Intel 9260 wireless card.
+
+    1. See [How to Install Kernel 4.17 in Ubuntu / Linux Mint](http://ubuntuhandbook.org/index.php/2018/06/install-linux-kernel-4-17-ubuntu-18-04/)
+    2. Download Linux Kernel [4.17.19](http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.17.19/)
         1. Download the following files
-            1. linux-headers-4.16.18-041618_4.16.18-041618.201806252030_all.deb
-            2. linux-headers-4.16.18-041618-generic_4.16.18-041618.201806252030_amd64.deb
-            3. linux-image-unsigned-4.16.18-041618-generic_4.16.18-041618.201806252030_amd64.deb
-            4. linux-modules-4.16.18-041618-generic_4.16.18-041618.201806252030_amd64.deb
+            1. linux-headers-4.17.19-041719_4.17.19-041719.201808240919_all.deb
+            2. linux-headers-4.17.19-041719-generic_4.17.19-041719.201808240919_amd64.deb
+            3. linux-image-unsigned-4.17.19-041719-generic_4.17.19-041719.201808240919_amd64.deb
+            4. linux-modules-4.17.19-041719-generic_4.17.19-041719.201808240919_amd64.deb
         2. Install with sudo dpkg -i *.deb
         3. Reboot
+
+Notes.
+
+Alternative instructions at [DELL XPS 15 9570 Ubuntu 18.04 Respin]()https://github.com/JackHack96/dell-xps-9570-ubuntu-respin
+
+See []()
 
 ### Uninstalling a kernel
 
