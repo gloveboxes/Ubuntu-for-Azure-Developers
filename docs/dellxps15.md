@@ -17,6 +17,7 @@ After much testing this is the configuration that works well for me, most import
         - [Reboot tip](#reboot-tip)
     - [Update GRUB](#update-grub)
     - [Update the Linux Kernel](#update-the-linux-kernel)
+        - [Uninstalling a kernel](#uninstalling-a-kernel)
     - [Update nVidia Driver](#update-nvidia-driver)
     - [GNOME Tweaks](#gnome-tweaks)
     - [Increase swap file size](#increase-swap-file-size)
@@ -79,7 +80,7 @@ sudo update-grub
         2. Install with sudo dpkg -i *.deb
         3. Reboot
 
-    ### Uninstalling a kernel
+### Uninstalling a kernel
 
     1. Boot system to alternate kernel
     2. From terminal
