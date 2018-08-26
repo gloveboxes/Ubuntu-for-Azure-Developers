@@ -144,15 +144,19 @@ Notes.
 
 ### Install Azure Functions Core Tools
 
-At the May 2018 I used the Ubuntu 17.04 (artful) release of the Azure Function Core tools.
+As at August 2018 see [Install the Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#linux)
+
 
 ````bash
 cd ~/Downloads && \
-sudo apt install curl -y && \
-curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg && \
-sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg && \
-sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-xenial-artful-prod xenial main" > /etc/apt/sources.list.d/dotnetdev.list' && \
-sudo apt-get update && \
+sudo apt install curl -y
+
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-$(lsb_release -cs)-prod $(lsb_release -cs) main" > /etc/apt/sources.list.d/dotnetdev.list'
+sudo apt-get update
+
 sudo apt-get install azure-functions-core-tools
 
 ````

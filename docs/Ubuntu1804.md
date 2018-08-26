@@ -62,7 +62,7 @@ Head to [Visual Studio Code](https://code.visualstudio.com/) and download the .d
 
 There are a stack of great extensions for Visual Studio Code. These are the ones that I find most useful.
 
-1. Azure Account, Azure Functions, Azure CLI Tools, Azure Event Hub Explorer, Azure Cosmos DB, Azure IoT Edge, Azure IoT Toolkit, SQL Server, C#, Docker, Python, C/C++, JSON Tools, JSON Escaper, Powershell, Azure Application Insights, Azure App Services, Arduino, Azure Resource Manager Tools, Azure Storage, Tools for AI, Markdown TOC, Code Spell Checker, Docker  and more...
+1. Azure Account, Azure Functions, Azure CLI Tools, Azure Event Hub Explorer, Azure Cosmos DB, Azure IoT Edge, Azure IoT Toolkit, SQL Server, C#, Docker, Python, C/C++, JSON Tools, JSON Escaper, Powershell, Azure Application Insights, Azure App Services, Arduino, Azure Resource Manager Tools, Azure Storage, Tools for AI, Markdown TOC, Code Spell Checker, Docker, Docs Authoring Pack, and more...
 
 ### 1.1.3. GitHub Client
 
@@ -168,15 +168,18 @@ sudo apt install curl
 
 ### 1.2.1. Install Azure Functions Core Tools
 
-At the May 2018 I used the Ubuntu 17.04 (artful) release of the Azure Function Core tools.
+As at August 2018 see [Install the Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#linux)
 
 ````bash
 cd ~/Downloads && \
-sudo apt install curl -y && \
-curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg && \
-sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg && \
-sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-artful-prod artful main" > /etc/apt/sources.list.d/dotnetdev.list' && \
-sudo apt-get update && \
+sudo apt install curl -y
+
+curl https://packages.microsoft.com/keys/microsoft.asc | gpg --dearmor > microsoft.gpg
+sudo mv microsoft.gpg /etc/apt/trusted.gpg.d/microsoft.gpg
+
+sudo sh -c 'echo "deb [arch=amd64] https://packages.microsoft.com/repos/microsoft-ubuntu-$(lsb_release -cs)-prod $(lsb_release -cs) main" > /etc/apt/sources.list.d/dotnetdev.list'
+sudo apt-get update
+
 sudo apt-get install azure-functions-core-tools
 
 ````
