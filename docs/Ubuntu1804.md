@@ -219,7 +219,7 @@ Notes.
 
 It is a free, easy-to-install package manager, environment manager and Python distribution with a collection of 1,000+ open source packages with free community support. Anaconda is platform-agnostic, so you can use it whether you are on Windows, macOS or Linux.
 
-[Install Anaconda on Linux](https://docs.anaconda.com/anaconda/install/linux)
+[Installing Anaconda on Linux](https://docs.anaconda.com/anaconda/install/linux)
 
 Create an Anaconda Navigator Desktop Resource
 
