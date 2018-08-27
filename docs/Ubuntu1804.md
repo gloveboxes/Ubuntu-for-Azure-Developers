@@ -28,6 +28,8 @@
             - [1.3.3.1. Python Support](#1331-python-support)
             - [1.3.3.2. Installing locally with nVidia GPU support](#1332-installing-locally-with-nvidia-gpu-support)
             - [1.3.3.3. NVIDIA Container Runtime for Docker](#1333-nvidia-container-runtime-for-docker)
+        - [Microsoft Cognitive Toolkit](#microsoft-cognitive-toolkit)
+            - [With nVidia CPU Support](#with-nvidia-cpu-support)
         - [1.3.4. Postman](#134-postman)
         - [1.3.5. Fiddler](#135-fiddler)
         - [1.3.6. VirtualBox](#136-virtualbox)
@@ -253,7 +255,7 @@ If you want Tensorflow with GPU support for use with Python then by far the easi
     This would create a Anaconda environment with tensorflow-gpu support (requires an tensorflow capable nVida GPU, alternatively specify tersorflow-cpu), targeting Python 3.5, plus adds pylint useful in Visual Studio Code, and Jupyter Notebook support.
 
     ```bash
-    conda create -n <envName> python=3.5 tensorflow-gpu pylint scipy jupyter
+    conda create -n <envName> python=3.5 tensorflow-gpu pylint scipy jupyter requests scikit-learn
     ```
 
 2. Activate the Anaconda environment
@@ -292,6 +294,25 @@ Notes.
 
 1. [Using TensorFlow via Docker](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/docker/README.md)
 2. [NVIDIA Container Runtime for Docker](https://github.com/NVIDIA/nvidia-docker)
+
+
+### Microsoft Cognitive Toolkit
+
+For information on setting up [CNTK Docker Containers](https://docs.microsoft.com/en-us/cognitive-toolkit/CNTK-Docker-Containers).
+
+#### With nVidia CPU Support
+
+1. Ensure the [NVIDIA Container Runtime for Docker](https://github.com/nvidia/nvidia-docker) is installed.
+
+    ```bash
+    nvidia-docker run -d -p 8888:8888 --name cntk-jupyter-notebooks -t microsoft/cntk
+    ```
+
+2. Start Jupyter Notebook server in your Docker container:
+
+    ```bash
+    docker exec -it cntk-jupyter-notebooks bash -c "source /cntk/activate-cntk && jupyter-notebook --no-browser --port=8888 --ip=0.0.0.0 --notebook-dir=/cntk/Tutorials --allow-root"
+    ```
 
 ### 1.3.4. Postman
 
