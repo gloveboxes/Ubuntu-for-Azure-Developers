@@ -28,11 +28,11 @@
             - [1.3.3.1. Python Support](#1331-python-support)
             - [1.3.3.2. Installing locally with nVidia GPU support](#1332-installing-locally-with-nvidia-gpu-support)
             - [1.3.3.3. NVIDIA Container Runtime for Docker](#1333-nvidia-container-runtime-for-docker)
-        - [Microsoft Cognitive Toolkit](#microsoft-cognitive-toolkit)
-            - [With nVidia CPU Support](#with-nvidia-cpu-support)
-        - [1.3.4. Postman](#134-postman)
-        - [1.3.5. Fiddler](#135-fiddler)
-        - [1.3.6. VirtualBox](#136-virtualbox)
+        - [1.3.4. Microsoft Cognitive Toolkit](#134-microsoft-cognitive-toolkit)
+            - [1.3.4.1. With nVidia CPU Support](#1341-with-nvidia-cpu-support)
+        - [1.3.5. Postman](#135-postman)
+        - [1.3.6. Fiddler](#136-fiddler)
+        - [1.3.7. VirtualBox](#137-virtualbox)
     - [1.4. Internet of Things](#14-internet-of-things)
         - [1.4.1. Azure IoT Hub Explorer](#141-azure-iot-hub-explorer)
         - [1.4.2. Azure IoT Edge](#142-azure-iot-edge)
@@ -296,11 +296,11 @@ Notes.
 2. [NVIDIA Container Runtime for Docker](https://github.com/NVIDIA/nvidia-docker)
 
 
-### Microsoft Cognitive Toolkit
+### 1.3.4. Microsoft Cognitive Toolkit
 
 For information on setting up [CNTK Docker Containers](https://docs.microsoft.com/en-us/cognitive-toolkit/CNTK-Docker-Containers).
 
-#### With nVidia CPU Support
+#### 1.3.4.1. With nVidia CPU Support
 
 1. Ensure the [NVIDIA Container Runtime for Docker](https://github.com/nvidia/nvidia-docker) is installed.
 
@@ -314,7 +314,7 @@ For information on setting up [CNTK Docker Containers](https://docs.microsoft.co
     docker exec -it cntk-jupyter-notebooks bash -c "source /cntk/activate-cntk && jupyter-notebook --no-browser --port=8888 --ip=0.0.0.0 --notebook-dir=/cntk/Tutorials --allow-root"
     ```
 
-### 1.3.4. Postman
+### 1.3.5. Postman
 
 Install library dependency
 
@@ -353,11 +353,11 @@ Notes.
 
 * Follow instruction at [How to Install the Postman Native App in Ubuntu 16.04](https://blog.bluematador.com/posts/postman-how-to-install-on-ubuntu-1604/)
 
-### 1.3.5. Fiddler
+### 1.3.6. Fiddler
 
 See [Use Fiddler in Ubuntu](https://medium.com/@rajsek/use-fiddler-in-ubuntu-82b1dfd80848)
 
-### 1.3.6. VirtualBox
+### 1.3.7. VirtualBox
 
 ```bash
 sudo apt-get install virtualbox
