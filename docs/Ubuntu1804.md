@@ -23,14 +23,14 @@
         - [1.2.1. Install Azure Functions Core Tools](#121-install-azure-functions-core-tools)
     - [1.3. Toolkit](#13-toolkit)
         - [1.3.1. Docker](#131-docker)
-        - [Anaconda Distribution 5](#anaconda-distribution-5)
-        - [1.3.2. Tensorflow](#132-tensorflow)
-            - [Python Support](#python-support)
-            - [1.3.2.1. Installing locally with nVidia GPU support](#1321-installing-locally-with-nvidia-gpu-support)
-            - [1.3.2.2. NVIDIA Container Runtime for Docker](#1322-nvidia-container-runtime-for-docker)
-        - [1.3.3. Postman](#133-postman)
-        - [1.3.4. Fiddler](#134-fiddler)
-        - [1.3.5. VirtualBox](#135-virtualbox)
+        - [1.3.2. Anaconda Distribution 5](#132-anaconda-distribution-5)
+        - [1.3.3. Tensorflow](#133-tensorflow)
+            - [1.3.3.1. Python Support](#1331-python-support)
+            - [1.3.3.2. Installing locally with nVidia GPU support](#1332-installing-locally-with-nvidia-gpu-support)
+            - [1.3.3.3. NVIDIA Container Runtime for Docker](#1333-nvidia-container-runtime-for-docker)
+        - [1.3.4. Postman](#134-postman)
+        - [1.3.5. Fiddler](#135-fiddler)
+        - [1.3.6. VirtualBox](#136-virtualbox)
     - [1.4. Internet of Things](#14-internet-of-things)
         - [1.4.1. Azure IoT Hub Explorer](#141-azure-iot-hub-explorer)
         - [1.4.2. Azure IoT Edge](#142-azure-iot-edge)
@@ -215,7 +215,7 @@ Notes.
 
 * [How to Install and Use Docker on Ubuntu 18.04 ](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
 
-### Anaconda Distribution 5
+### 1.3.2. Anaconda Distribution 5
 
 It is a free, easy-to-install package manager, environment manager and Python distribution with a collection of 1,000+ open source packages with free community support. Anaconda is platform-agnostic, so you can use it whether you are on Windows, macOS or Linux.
 
@@ -237,9 +237,14 @@ Categories=Development;
 EOL
 ```
 
-### 1.3.2. Tensorflow
+Notes.
 
-#### Python Support
+1. [Anaconda Cheat Sheet](https://docs.anaconda.com/_downloads/Anaconda-Starter-Guide-Cheat-Sheet.pdf)
+2. [How to check your Anaconda version and updating](https://medium.com/@mauridb/how-to-check-your-anaconda-version-c092400c9978)
+
+### 1.3.3. Tensorflow
+
+#### 1.3.3.1. Python Support
 
 If you want Tensorflow with GPU support for use with Python then by far the easiest way to install is with Anaconda as it will install the complete CUDA toolkit and cuDNN library into your selected environment.
 
@@ -273,11 +278,11 @@ If you want Tensorflow with GPU support for use with Python then by far the easi
 
 4. Create your Python Project, open it with Visual Studio Code add a python file and select the Tensorflow environment you just created.
 
-#### 1.3.2.1. Installing locally with nVidia GPU support
+#### 1.3.3.2. Installing locally with nVidia GPU support
 
 See [Installing Tensorflow GPU on Ubuntu 18.04 LTS](https://medium.com/@taylordenouden/installing-tensorflow-gpu-on-ubuntu-18-04-89a142325138)
 
-#### 1.3.2.2. NVIDIA Container Runtime for Docker
+#### 1.3.3.3. NVIDIA Container Runtime for Docker
 
 If your PC has a nVidia GPU and you want to developer with  Docker and TensorFlow-GPU support. Simpler than installing CUDA Driver and Toolkit on to local system.
 
@@ -288,7 +293,7 @@ Notes.
 1. [Using TensorFlow via Docker](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/docker/README.md)
 2. [NVIDIA Container Runtime for Docker](https://github.com/NVIDIA/nvidia-docker)
 
-### 1.3.3. Postman
+### 1.3.4. Postman
 
 Install library dependency
 
@@ -327,11 +332,11 @@ Notes.
 
 * Follow instruction at [How to Install the Postman Native App in Ubuntu 16.04](https://blog.bluematador.com/posts/postman-how-to-install-on-ubuntu-1604/)
 
-### 1.3.4. Fiddler
+### 1.3.5. Fiddler
 
 See [Use Fiddler in Ubuntu](https://medium.com/@rajsek/use-fiddler-in-ubuntu-82b1dfd80848)
 
-### 1.3.5. VirtualBox
+### 1.3.6. VirtualBox
 
 ```bash
 sudo apt-get install virtualbox
