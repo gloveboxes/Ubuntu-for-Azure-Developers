@@ -224,7 +224,7 @@ As at August 2018 the Python tensorflow-gpu package is built against CUDA Toolki
 
 #### 1.3.2.2. NVIDIA Container Runtime for Docker
 
-If your PC has an nVidia GPU and you want to developer with  Docker and TensorFlow-GPU support. Simpler than installing CUDA Driver and Toolkit on to local system.
+If your PC has a nVidia GPU and you want to developer with  Docker and TensorFlow-GPU support. Simpler than installing CUDA Driver and Toolkit on to local system.
 
 ![](https://cloud.githubusercontent.com/assets/3028125/12213714/5b208976-b632-11e5-8406-38d379ec46aa.png)
 
