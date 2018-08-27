@@ -23,7 +23,9 @@
         - [1.2.1. Install Azure Functions Core Tools](#121-install-azure-functions-core-tools)
     - [1.3. Toolkit](#13-toolkit)
         - [1.3.1. Docker](#131-docker)
+        - [Anaconda Distribution 5](#anaconda-distribution-5)
         - [1.3.2. Tensorflow](#132-tensorflow)
+            - [Python Support](#python-support)
             - [1.3.2.1. Installing locally with nVidia GPU support](#1321-installing-locally-with-nvidia-gpu-support)
             - [1.3.2.2. NVIDIA Container Runtime for Docker](#1322-nvidia-container-runtime-for-docker)
         - [1.3.3. Postman](#133-postman)
@@ -213,14 +215,67 @@ Notes.
 
 * [How to Install and Use Docker on Ubuntu 18.04 ](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
 
+### Anaconda Distribution 5
+
+It is a free, easy-to-install package manager, environment manager and Python distribution with a collection of 1,000+ open source packages with free community support. Anaconda is platform-agnostic, so you can use it whether you are on Windows, macOS or Linux.
+
+[Install Anaconda on Linux](https://docs.anaconda.com/anaconda/install/linux)
+
+Create an Anaconda Navigator Desktop Resource
+
+```bash
+mkdir -p ~/.local/share/applications && \
+cat > ~/.local/share/applications/anaconda-navigator.desktop <<EOL
+[Desktop Entry]
+Encoding=UTF-8
+Name=Anaconda
+Exec=/home/dave/anaconda3/bin/anaconda-navigator
+Icon=/home/dave/anaconda3/lib/python3.6/site-packages/anaconda_navigator/static/images/anaconda-icon-256x256.png
+Terminal=false
+Type=Application
+Categories=Development;
+EOL
+```
+
 ### 1.3.2. Tensorflow
 
-You can install Tensorflow locally or run it in a container.
+#### Python Support
+
+If you want Tensorflow with GPU support for use with Python then by far the easiest way to install is with Anaconda as it will install the complete CUDA toolkit and cuDNN library into your selected environment.
+
+1. Create the Anaconda environment
+
+    This would create a Anaconda environment with tensorflow-gpu support (requires an tensorflow capable nVida GPU, alternatively specify tersorflow-cpu), targeting Python 3.5, plus adds pylint useful in Visual Studio Code, and Jupyter Notebook support.
+
+    ```bash
+    conda create -n <envName> python=3.5 tensorflow-gpu pylint scipy jupyter
+    ```
+
+2. Activate the Anaconda environment
+
+    Activate the Anaconda environment
+
+    ```bash
+    source activate <envName>
+    ```
+
+3. Deactivate an Anaconda Environment
+
+    ```bash
+    source deactivate
+    ```
+
+    Anaconda Navigator is the easiest way to manage Anaconda environments and launch environments.
+
+    ```bash
+    anaconda-navigator
+    ```
+
+4. Create your Python Project, open it with Visual Studio Code add a python file and select the Tensorflow environment you just created.
 
 #### 1.3.2.1. Installing locally with nVidia GPU support
 
-As at August 2018 the Python tensorflow-gpu package is built against CUDA Toolkit 9.0 so you need to follow the instructions for
-[Installing Tensorflow GPU on Ubuntu 18.04 LTS](https://medium.com/@taylordenouden/installing-tensorflow-gpu-on-ubuntu-18-04-89a142325138) carefully as there are version dependencies.
+See [Installing Tensorflow GPU on Ubuntu 18.04 LTS](https://medium.com/@taylordenouden/installing-tensorflow-gpu-on-ubuntu-18-04-89a142325138)
 
 #### 1.3.2.2. NVIDIA Container Runtime for Docker
 
