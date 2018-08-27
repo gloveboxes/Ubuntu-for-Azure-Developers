@@ -23,7 +23,7 @@
         - [1.2.1. Install Azure Functions Core Tools](#121-install-azure-functions-core-tools)
     - [1.3. Toolkit](#13-toolkit)
         - [1.3.1. Docker](#131-docker)
-        - [1.3.2. Anaconda Distribution 5](#132-anaconda-distribution-5)
+        - [1.3.2. Installing Anaconda Distribution 5](#132-installing-anaconda-distribution-5)
         - [1.3.3. Tensorflow](#133-tensorflow)
             - [1.3.3.1. Python Support](#1331-python-support)
             - [1.3.3.2. Installing locally with nVidia GPU support](#1332-installing-locally-with-nvidia-gpu-support)
@@ -215,7 +215,7 @@ Notes.
 
 * [How to Install and Use Docker on Ubuntu 18.04 ](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
 
-### 1.3.2. Anaconda Distribution 5
+### 1.3.2. Installing Anaconda Distribution 5
 
 It is a free, easy-to-install package manager, environment manager and Python distribution with a collection of 1,000+ open source packages with free community support. Anaconda is platform-agnostic, so you can use it whether you are on Windows, macOS or Linux.
 
