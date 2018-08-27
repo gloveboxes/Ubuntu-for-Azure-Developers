@@ -23,24 +23,26 @@
         - [1.2.1. Install Azure Functions Core Tools](#121-install-azure-functions-core-tools)
     - [1.3. Toolkit](#13-toolkit)
         - [1.3.1. Docker](#131-docker)
-        - [1.3.2. NVIDIA Container Runtime for Docker](#132-nvidia-container-runtime-for-docker)
-        - [1.3.3. Postman](#133-postman)
-        - [1.3.4. Fiddler](#134-fiddler)
-        - [1.3.5. VirtualBox](#135-virtualbox)
-    - [1.4. Internet of Things](#14-internet-of-things)
-        - [1.4.1. Azure IoT Hub Explorer](#141-azure-iot-hub-explorer)
-        - [1.4.2. Azure IoT Edge](#142-azure-iot-edge)
-            - [1.4.2.1. Building ARM Docker Images from an x64 Ubuntu Host](#1421-building-arm-docker-images-from-an-x64-ubuntu-host)
-    - [1.5. Microsoft SQL Server for Linux](#15-microsoft-sql-server-for-linux)
-        - [1.5.1. Microsoft SQL Server for Linux (Dockerised)](#151-microsoft-sql-server-for-linux-dockerised)
-        - [1.5.2. Microsoft SQL Server Operations Studio](#152-microsoft-sql-server-operations-studio)
-        - [1.5.3. Microsoft SQL Server Extension for Visual Studio Code](#153-microsoft-sql-server-extension-for-visual-studio-code)
-    - [1.6. Embedded Development](#16-embedded-development)
-        - [1.6.1. Arduino](#161-arduino)
-        - [1.6.2. Fritzing](#162-fritzing)
-    - [1.7. Samples](#17-samples)
-        - [1.7.1. Azure IoT Edge Samples](#171-azure-iot-edge-samples)
-        - [1.7.2. Debugging .NET Core apps in Docker Containers from Visual Studio Code on Linux](#172-debugging-net-core-apps-in-docker-containers-from-visual-studio-code-on-linux)
+        - [1.4. Tensorflow](#14-tensorflow)
+            - [1.4.1. Installing locally with nVidia GPU support](#141-installing-locally-with-nvidia-gpu-support)
+            - [1.4.2. NVIDIA Container Runtime for Docker](#142-nvidia-container-runtime-for-docker)
+        - [1.4.3. Postman](#143-postman)
+        - [1.4.4. Fiddler](#144-fiddler)
+        - [1.4.5. VirtualBox](#145-virtualbox)
+    - [1.5. Internet of Things](#15-internet-of-things)
+        - [1.5.1. Azure IoT Hub Explorer](#151-azure-iot-hub-explorer)
+        - [1.5.2. Azure IoT Edge](#152-azure-iot-edge)
+            - [1.5.2.1. Building ARM Docker Images from an x64 Ubuntu Host](#1521-building-arm-docker-images-from-an-x64-ubuntu-host)
+    - [1.6. Microsoft SQL Server for Linux](#16-microsoft-sql-server-for-linux)
+        - [1.6.1. Microsoft SQL Server for Linux (Dockerised)](#161-microsoft-sql-server-for-linux-dockerised)
+        - [1.6.2. Microsoft SQL Server Operations Studio](#162-microsoft-sql-server-operations-studio)
+        - [1.6.3. Microsoft SQL Server Extension for Visual Studio Code](#163-microsoft-sql-server-extension-for-visual-studio-code)
+    - [1.7. Embedded Development](#17-embedded-development)
+        - [1.7.1. Arduino](#171-arduino)
+        - [1.7.2. Fritzing](#172-fritzing)
+    - [1.8. Samples](#18-samples)
+        - [1.8.1. Azure IoT Edge Samples](#181-azure-iot-edge-samples)
+        - [1.8.2. Debugging .NET Core apps in Docker Containers from Visual Studio Code on Linux](#182-debugging-net-core-apps-in-docker-containers-from-visual-studio-code-on-linux)
 
 <!-- /TOC -->
 
@@ -211,18 +213,25 @@ Notes.
 
 * [How to Install and Use Docker on Ubuntu 18.04 ](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
 
-### 1.3.2. NVIDIA Container Runtime for Docker
+### 1.3.2. Tensorflow
+
+You can install Tensorflow locally or run it in a container.
+
+#### 1.3.2.1. Installing locally with nVidia GPU support
+
+As at August 2018 the Python tensorflow-gpu package is built against CUDA Toolkit 9.0 so you need to follow the instructions for
+[Installing Tensorflow GPU on Ubuntu 18.04 LTS](https://medium.com/@taylordenouden/installing-tensorflow-gpu-on-ubuntu-18-04-89a142325138) carefully as there are version dependencies.
+
+#### 1.3.2.2. NVIDIA Container Runtime for Docker
 
 If your PC has an nVidia GPU and you want to developer with  Docker and TensorFlow-GPU support. Simpler than installing CUDA Driver and Toolkit on to local system.
 
 ![](https://cloud.githubusercontent.com/assets/3028125/12213714/5b208976-b632-11e5-8406-38d379ec46aa.png)
 
-
 Notes.
 
 1. [Using TensorFlow via Docker](https://github.com/tensorflow/tensorflow/blob/master/tensorflow/tools/docker/README.md)
 2. [NVIDIA Container Runtime for Docker](https://github.com/NVIDIA/nvidia-docker)
-
 
 ### 1.3.3. Postman
 
