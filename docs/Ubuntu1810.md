@@ -99,13 +99,27 @@ If you are using Visual Studio Team Services then checkout [Use Git Credential M
 
 ### 1.1.4. Installing the latest .NET Core SDK
 
-1. Install the latest release of the [.NET Core SDK](https://www.microsoft.com/net/download/linux-package-manager/ubuntu18-04/sdk-current)
+1. Install the latest release of the [.NET Core SDK]
+
+```bash
+sudo snap install dotnet-sdk && \
+sudo snap alias dotnet-sdk.dotnet dotnet
+```
 
 2. Confirm successful installation of .NET Core SDK
 
 ```bash
 dotnet --version
 ```
+
+3. To refresh the installation on .NET Core
+
+```bash
+sudo snap refresh dotnet-sdk
+```
+
+[Set a Snap alias for dotnet](https://github.com/dotnet/core-setup/issues/4230)
+
 
 ### 1.1.5. Azure Storage Explorer
 
