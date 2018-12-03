@@ -12,7 +12,6 @@ After much testing this is the configuration that works well for me, most import
 |Kernel     |   [4.19.6](http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.19.6/)      |
 | OS | Ubuntu 18.04 |
 
-[[TOC]]
 
 ## Tips and Tricks for Dell XPS 15 9570 (2018 Model)
 
