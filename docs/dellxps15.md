@@ -12,7 +12,7 @@ After much testing this is the configuration that works well for me, most import
 |Kernel     |   [4.19.6](http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.19.6/)      |
 | OS | Ubuntu 18.04 |
 
-<!-- TOC -->autoauto- [Dell XPS 15 Stable Linux Configuration](#dell-xps-15-stable-linux-configuration)auto    - [Tips and Tricks for Dell XPS 15 9570 (2018 Model)](#tips-and-tricks-for-dell-xps-15-9570-2018-model)auto        - [Update BIOS](#update-bios)auto        - [Reboot tip](#reboot-tip)auto    - [Apply Power Management Script](#apply-power-management-script)auto    - [Update the Linux Kernel](#update-the-linux-kernel)auto        - [Ubuntu Kernel Update Utility](#ubuntu-kernel-update-utility)auto        - [Uninstalling a kernel](#uninstalling-a-kernel)auto    - [GNOME Tweaks](#gnome-tweaks)auto    - [Increase swap file size](#increase-swap-file-size)auto    - [Enable Touchpad Right Click](#enable-touchpad-right-click)auto    - [Cool Apps I install](#cool-apps-i-install)autoauto<!-- /TOC -->
+[[TOC]]
 
 ## Tips and Tricks for Dell XPS 15 9570 (2018 Model)
 
