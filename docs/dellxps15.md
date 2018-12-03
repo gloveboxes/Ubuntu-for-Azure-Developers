@@ -6,27 +6,13 @@ After much testing this is the configuration that works well for me, most import
 
 |Author  |Dave Glover, Microsoft Australia  |
 |---------|---------|
-|Date     | 24 August 2018 |
+|Date     | 3 Dec 2018 |
 |System     | [Dell XPS 15](https://www.dell.com/en-au/shop/dell-laptops/new-xps-15/spd/xps-15-9570-laptop/b510521au) 9570 (2018), 8th Generation Intel® Core™ i7-8750H Processor, 16GB RAM, 512 GB SSD        |
 |WiFi     | I [upgraded](https://www.youtube.com/watch?v=hAKpjfc2hs8&t=146s) the standard Killer 1535 with an [Intel 9260]((https://ark.intel.com/products/99445/Intel-Wireless-AC-9260)) wireless/bluetooth module      |
-|Kernel     |   [4.17.19](http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.17.19/)      |
+|Kernel     |   [4.19.6](http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.19.6/)      |
 | OS | Ubuntu 18.04 |
 
-<!-- TOC -->
-
-- [Dell XPS 15 Stable Linux Configuration](#dell-xps-15-stable-linux-configuration)
-    - [Tips and Tricks for Dell XPS 15 9570 (2018 Model)](#tips-and-tricks-for-dell-xps-15-9570-2018-model)
-        - [Update BIOS](#update-bios)
-        - [Reboot tip](#reboot-tip)
-    - [Apply Power Management Script](#apply-power-management-script)
-    - [Update the Linux Kernel](#update-the-linux-kernel)
-        - [Uninstalling a kernel](#uninstalling-a-kernel)
-    - [GNOME Tweaks](#gnome-tweaks)
-    - [Increase swap file size](#increase-swap-file-size)
-    - [Enable Touchpad Right Click](#enable-touchpad-right-click)
-    - [Cool Apps I install](#cool-apps-i-install)
-
-<!-- /TOC -->
+<!-- TOC -->autoauto- [Dell XPS 15 Stable Linux Configuration](#dell-xps-15-stable-linux-configuration)auto    - [Tips and Tricks for Dell XPS 15 9570 (2018 Model)](#tips-and-tricks-for-dell-xps-15-9570-2018-model)auto        - [Update BIOS](#update-bios)auto        - [Reboot tip](#reboot-tip)auto    - [Apply Power Management Script](#apply-power-management-script)auto    - [Update the Linux Kernel](#update-the-linux-kernel)auto        - [Ubuntu Kernel Update Utility](#ubuntu-kernel-update-utility)auto        - [Uninstalling a kernel](#uninstalling-a-kernel)auto    - [GNOME Tweaks](#gnome-tweaks)auto    - [Increase swap file size](#increase-swap-file-size)auto    - [Enable Touchpad Right Click](#enable-touchpad-right-click)auto    - [Cool Apps I install](#cool-apps-i-install)autoauto<!-- /TOC -->
 
 ## Tips and Tricks for Dell XPS 15 9570 (2018 Model)
 
@@ -63,7 +49,11 @@ The most complete script that I found for managing power and working sleep/resum
 
 Kernel 4.17.x works well with the XPS 15 and the Intel 9260 wireless card I installed.
 
-1. See [How to Install Kernel 4.17 in Ubuntu / Linux Mint](http://ubuntuhandbook.org/index.php/2018/06/install-linux-kernel-4-17-ubuntu-18-04/)
+### Ubuntu Kernel Update Utility
+
+[Ubuntu Kernel Upgrade Utility](http://www.teejeetech.in/p/ukuu-kernel-upgrade-utility.html) can be used to update to the latest mainline kernel. Mileage may vary.
+
+<!-- 1. See [How to Install Kernel 4.17 in Ubuntu / Linux Mint](http://ubuntuhandbook.org/index.php/2018/06/install-linux-kernel-4-17-ubuntu-18-04/)
 2. Download Linux Kernel [4.17.19](http://kernel.ubuntu.com/~kernel-ppa/mainline/v4.17.19/)
     1. Download the following files
         1. linux-headers-4.17.19-041719_4.17.19-041719.201808240919_all.deb
@@ -83,15 +73,24 @@ Kernel 4.17.x works well with the XPS 15 and the Intel 9260 wireless card I inst
     sudo dpkg --purge linux-headers-<version>
     sudo dpkg --purge linux-image-unsigned-<version>
     sudo dpkg --purge linux-modules-<version>-generic
-    ```
+    ``` -->
 
-## GNOME Tweaks
+## Tweaking GRUB 2
 
-GNOME Tweaks. I don't like the default Debian/Ubuntu 18.04 user experience so tweaked the desktop experience using the Firefox GNOME Shell integration and added "[Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/)". It is similar to Windows 10 user experience.
+1. Nice [4k GRUB Theme](https://github.com/arjmacedo/grub_theme_4k)
+2. Information on [updating GRUB theme](http://ubuntuguide.net/beautify-grub-2-boot-loader-by-installing-themes)
+
+## GNOME Extensions/Tweaks
+
+My favourite Gnome Extensions are
+
+1. [CPU Power Manager](https://extensions.gnome.org/extension/945/cpu-power-manager/)
+
+2. [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/). Icon spacing, size etc can also be tuned for a Windows 10 like user experience.
+
+3. [OpenWeather](https://extensions.gnome.org/extension/750/openweather/)
 
 ![Ubuntu Desktop with Dash to Panel](../resources/ubuntu-desktop.jpg)
-
-[Auto Hide Top Bar](https://extensions.gnome.org/extension/545/hide-top-bar/) is an alternate extension if you want something closer to the default Ubuntu experience.
 
 ## Increase swap file size
 
@@ -108,10 +107,9 @@ GNOME Tweaks. I don't like the default Debian/Ubuntu 18.04 user experience so tw
 ## Cool Apps I install
 
 1. Sticky Notes
-
-- [How Install Sticky Notes in Ubuntu](https://www.bettertechtips.com/ubuntu/install-sticky-notes-ubuntu/)
-- [5 Cool Sticky Notes Apps for Ubuntu](https://www.bettertechtips.com/ubuntu/sticky-notes-ubuntu/)
-
+    - [How Install Sticky Notes in Ubuntu](https://www.bettertechtips.com/ubuntu/install-sticky-notes-ubuntu/)
+    - [5 Cool Sticky Notes Apps for Ubuntu](https://www.bettertechtips.com/ubuntu/sticky-notes-ubuntu/)
 2. [Zoom Conferencing](https://support.zoom.us/hc/en-us/articles/204206269-Linux-Installation)
-
 3. [Freeplace (Mind Mapping)](https://www.freeplane.org/wiki/index.php/Freeplane_installation_for_Ubuntu_OS)
+4. [vokoscreen (SNAP Install)]() screencast capture
+5. [GIMP](https://itsfoss.com/gimp-2-10-release/)
