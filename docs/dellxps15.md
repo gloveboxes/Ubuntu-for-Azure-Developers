@@ -103,6 +103,20 @@ My favourite Gnome Extensions are
     gsettings set org.gnome.desktop.peripherals.touchpad click-method areas
     ```
 
+## Windows/Linux Dual Boot Time Sync
+
+Windows keeps system time as local, Linux keeps time as UTC. When you dual boot you need to resync time on Windows.
+
+As a work around I set Linux time to be maintained as local.
+
+```bash
+timedatectl set-local-rtc 1 --adjust-system-clock
+```
+
+Then reboot.
+
+Reference: https://www.howtogeek.com/323390/how-to-fix-windows-and-linux-showing-different-times-when-dual-booting/
+
 ## Cool Apps I install
 
 1. Sticky Notes
