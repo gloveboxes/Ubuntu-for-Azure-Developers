@@ -8,49 +8,7 @@
 |Date|As at May 2018|
 |System| Lenovo ThinkPad X1 Carbon Gen 1|
 
-<!-- TOC -->
-
-- [1. Ubuntu 18.04 for Azure Developers](#1-ubuntu-1804-for-azure-developers)
-    - [1.1. Installing the Essentials](#11-installing-the-essentials)
-        - [1.1.1. Visual Studio Code](#111-visual-studio-code)
-        - [1.1.2. Visual Studio Extensions](#112-visual-studio-extensions)
-        - [1.1.3. GitHub Client](#113-github-client)
-        - [1.1.4. Installing the latest .NET Core SDK](#114-installing-the-latest-net-core-sdk)
-        - [1.1.5. Azure Storage Explorer](#115-azure-storage-explorer)
-        - [1.1.6. Azure Storage Emulator](#116-azure-storage-emulator)
-        - [1.1.7. Azure CLI (Command Line Interface)](#117-azure-cli-command-line-interface)
-    - [1.2. Azure Functions with Visual Studio Code](#12-azure-functions-with-visual-studio-code)
-        - [1.2.1. Install Azure Functions Core Tools](#121-install-azure-functions-core-tools)
-    - [1.3. Toolkit](#13-toolkit)
-        - [1.3.1. Docker](#131-docker)
-        - [1.3.2. Installing Anaconda Distribution 5](#132-installing-anaconda-distribution-5)
-        - [1.3.3. Tensorflow](#133-tensorflow)
-            - [1.3.3.1. Python Support](#1331-python-support)
-            - [1.3.3.2. Installing locally with nVidia GPU support](#1332-installing-locally-with-nvidia-gpu-support)
-            - [1.3.3.3. NVIDIA Container Runtime for Docker](#1333-nvidia-container-runtime-for-docker)
-        - [1.3.4. Microsoft Cognitive Toolkit](#134-microsoft-cognitive-toolkit)
-            - [1.3.4.1. With nVidia CPU Support](#1341-with-nvidia-cpu-support)
-        - [1.3.5. Postman](#135-postman)
-        - [1.3.6. Fiddler](#136-fiddler)
-        - [1.3.7. VirtualBox](#137-virtualbox)
-    - [1.4. Internet of Things](#14-internet-of-things)
-        - [1.4.1. Azure IoT Hub Explorer](#141-azure-iot-hub-explorer)
-        - [1.4.2. Azure IoT Edge](#142-azure-iot-edge)
-            - [1.4.2.1. Building ARM Docker Images from an x64 Ubuntu Host](#1421-building-arm-docker-images-from-an-x64-ubuntu-host)
-    - [1.5. Microsoft SQL Server for Linux](#15-microsoft-sql-server-for-linux)
-        - [1.5.1. Microsoft SQL Server for Linux (Dockerised)](#151-microsoft-sql-server-for-linux-dockerised)
-        - [1.5.2. Microsoft SQL Server Operations Studio](#152-microsoft-sql-server-operations-studio)
-        - [1.5.3. Microsoft SQL Server Extension for Visual Studio Code](#153-microsoft-sql-server-extension-for-visual-studio-code)
-    - [1.6. Embedded Development](#16-embedded-development)
-        - [1.6.1. Arduino](#161-arduino)
-        - [1.6.2. Fritzing](#162-fritzing)
-    - [1.7. Samples](#17-samples)
-        - [1.7.1. Azure IoT Edge Samples](#171-azure-iot-edge-samples)
-        - [1.7.2. Debugging .NET Core apps in Docker Containers from Visual Studio Code on Linux](#172-debugging-net-core-apps-in-docker-containers-from-visual-studio-code-on-linux)
-
-<!-- /TOC -->
-
-
+<!-- TOC -->autoauto- [1. Ubuntu 18.04 for Azure Developers](#1-ubuntu-1804-for-azure-developers)auto    - [1.1. Installing the Essentials](#11-installing-the-essentials)auto        - [1.1.1. Visual Studio Code](#111-visual-studio-code)auto        - [1.1.2. Visual Studio Extensions](#112-visual-studio-extensions)auto        - [1.1.3. GitHub Client](#113-github-client)auto        - [1.1.4. Installing the latest .NET Core SDK](#114-installing-the-latest-net-core-sdk)auto        - [1.1.5. Azure Storage Explorer](#115-azure-storage-explorer)auto        - [1.1.6. Azure Storage Emulator](#116-azure-storage-emulator)auto        - [1.1.7. Azure CLI (Command Line Interface)](#117-azure-cli-command-line-interface)auto    - [1.2. Azure Functions with Visual Studio Code](#12-azure-functions-with-visual-studio-code)auto        - [1.2.1. Install Azure Functions Core Tools](#121-install-azure-functions-core-tools)auto    - [1.3. Toolkit](#13-toolkit)auto        - [1.3.1. Docker](#131-docker)auto        - [1.3.2. Installing Anaconda Distribution 5](#132-installing-anaconda-distribution-5)auto        - [1.3.3. Tensorflow](#133-tensorflow)auto            - [1.3.3.1. Python Support](#1331-python-support)auto            - [1.3.3.2. Installing locally with nVidia GPU support](#1332-installing-locally-with-nvidia-gpu-support)auto            - [1.3.3.3. NVIDIA Container Runtime for Docker](#1333-nvidia-container-runtime-for-docker)auto        - [1.3.4. Microsoft Cognitive Toolkit](#134-microsoft-cognitive-toolkit)auto            - [1.3.4.1. With nVidia CPU Support](#1341-with-nvidia-cpu-support)auto        - [1.3.5. Postman](#135-postman)auto        - [1.3.6. Fiddler](#136-fiddler)auto        - [1.3.7. VirtualBox](#137-virtualbox)auto    - [1.4. Internet of Things](#14-internet-of-things)auto        - [1.4.1. Azure IoT Hub Explorer](#141-azure-iot-hub-explorer)auto        - [1.4.2. Azure IoT Edge](#142-azure-iot-edge)auto            - [1.4.2.1. Building ARM Docker Images from an x64 Ubuntu Host](#1421-building-arm-docker-images-from-an-x64-ubuntu-host)auto    - [1.5. Microsoft SQL Server for Linux](#15-microsoft-sql-server-for-linux)auto        - [1.5.1. Microsoft SQL Server for Linux (Dockerised)](#151-microsoft-sql-server-for-linux-dockerised)auto        - [1.5.2. Microsoft SQL Server Operations Studio](#152-microsoft-sql-server-operations-studio)auto        - [1.5.3. Microsoft SQL Server Extension for Visual Studio Code](#153-microsoft-sql-server-extension-for-visual-studio-code)auto    - [1.6. Embedded Development](#16-embedded-development)auto        - [1.6.1. Arduino](#161-arduino)auto        - [1.6.2. Fritzing](#162-fritzing)auto    - [1.7. Samples](#17-samples)auto        - [1.7.1. Azure IoT Edge Samples](#171-azure-iot-edge-samples)auto        - [1.7.2. Debugging .NET Core apps in Docker Containers from Visual Studio Code on Linux](#172-debugging-net-core-apps-in-docker-containers-from-visual-studio-code-on-linux)autoauto<!-- /TOC -->
 
 This guide assumes you have some experience with Linux and you will open Terminal and Ctrl-Shift-V to paste in [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) commands.
 
@@ -216,6 +174,17 @@ sudo usermod <Your User Name> -aG docker
 Notes.
 
 * [How to Install and Use Docker on Ubuntu 18.04 ](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
+
+### Installing Node.js v10.x:
+
+```bash
+curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
+sudo apt-get install -y nodejs
+```
+
+Notes.
+
+* [Node.js Binary Distributions](https://github.com/nodesource/distributions/blob/master/README.md)
 
 ### 1.3.2. Installing Anaconda Distribution 5
 
