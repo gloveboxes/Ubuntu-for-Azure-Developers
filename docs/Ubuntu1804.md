@@ -212,6 +212,7 @@ Notes.
 
 1. [Anaconda Cheat Sheet](https://docs.anaconda.com/_downloads/Anaconda-Starter-Guide-Cheat-Sheet.pdf)
 2. [How to check your Anaconda version and updating](https://medium.com/@mauridb/how-to-check-your-anaconda-version-c092400c9978)
+3. [Stop Installing Tensorflow using pip for performance sake!](https://towardsdatascience.com/stop-installing-tensorflow-using-pip-for-performance-sake-5854f9d9eb0c)
 
 ### 1.3.3. Tensorflow
 
