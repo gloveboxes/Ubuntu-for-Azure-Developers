@@ -1,3 +1,13 @@
+# 1. Ubuntu 18.04 for Azure Developers
+
+[Ubuntu for Azure Developers](../README.md)
+
+|Author|Dave Glover, Microsoft Australia|
+|----|---|
+|Platform| [Ubuntu 18.04 for Azure Developers](../docs/Ubuntu1804.md), [Kubuntu 18.04 for Azure Developers](../docs/Kubuntu1804.md), [Ubuntu 16.04 for Azure Developers](../docs/Ubuntu1604.md)|
+|Date|As at Feb 2019|
+
+
 <!-- vscode-markdown-toc -->
 * 1. [1.1. Installing the Essentials](#InstallingtheEssentials)
 	* 1.1. [1.1.1. Visual Studio Code](#VisualStudioCode)
@@ -41,17 +51,7 @@
 	numbering=true
 	autoSave=true
 	/vscode-markdown-toc-config -->
-<!-- /vscode-markdown-toc --># 1. Ubuntu 18.04 for Azure Developers
-
-[Ubuntu for Azure Developers](../README.md)
-
-|Author|Dave Glover, Microsoft Australia|
-|----|---|
-|Platform| [Ubuntu 18.04 for Azure Developers](../docs/Ubuntu1804.md), [Kubuntu 18.04 for Azure Developers](../docs/Kubuntu1804.md), [Ubuntu 16.04 for Azure Developers](../docs/Ubuntu1604.md)|
-|Date|As at May 2018|
-|System| Lenovo ThinkPad X1 Carbon Gen 1|
-
-
+<!-- /vscode-markdown-toc -->
 
 This guide assumes you have some experience with Linux and you will open Terminal and Ctrl-Shift-V to paste in [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) commands.
 
