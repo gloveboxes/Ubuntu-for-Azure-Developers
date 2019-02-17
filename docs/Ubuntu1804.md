@@ -7,48 +7,51 @@
 |Platform| [Ubuntu 18.04 for Azure Developers](../docs/Ubuntu1804.md), [Kubuntu 18.04 for Azure Developers](../docs/Kubuntu1804.md), [Ubuntu 16.04 for Azure Developers](../docs/Ubuntu1604.md)|
 |Date|As at Feb 2019|
 
-
 <!-- vscode-markdown-toc -->
-* 1. [1.1. Installing the Essentials](#InstallingtheEssentials)
-	* 1.1. [1.1.1. Visual Studio Code](#VisualStudioCode)
-	* 1.2. [1.1.2. Visual Studio Extensions](#VisualStudioExtensions)
-	* 1.3. [1.1.3. GitHub Client](#GitHubClient)
-	* 1.4. [1.1.4. Installing the latest .NET Core SDK](#Installingthelatest.NETCoreSDK)
-	* 1.5. [1.1.5. Azure Storage Explorer](#AzureStorageExplorer)
-	* 1.6. [1.1.6. Azure Storage Emulator](#AzureStorageEmulator)
-	* 1.7. [1.1.7. Azure CLI (Command Line Interface)](#AzureCLICommandLineInterface)
-* 2. [1.2. Azure Functions with Visual Studio Code](#AzureFunctionswithVisualStudioCode)
-	* 2.1. [1.2.1. Install Azure Functions Core Tools](#InstallAzureFunctionsCoreTools)
-* 3. [1.3. Toolkit](#Toolkit)
-	* 3.1. [1.3.1. Docker](#Docker)
-	* 3.2. [Installing Node.js v10.x:](#InstallingNode.jsv10.x:)
-	* 3.3. [1.3.2. Installing Anaconda Distribution 5](#InstallingAnacondaDistribution5)
-	* 3.4. [1.3.3. Tensorflow](#Tensorflow)
-		* 3.4.1. [1.3.3.1. Python Support](#PythonSupport)
-		* 3.4.2. [1.3.3.2. Installing locally with nVidia GPU support](#InstallinglocallywithnVidiaGPUsupport)
-		* 3.4.3. [1.3.3.3. NVIDIA Container Runtime for Docker](#NVIDIAContainerRuntimeforDocker)
-	* 3.5. [1.3.4. Microsoft Cognitive Toolkit](#MicrosoftCognitiveToolkit)
-		* 3.5.1. [1.3.4.1. With nVidia CPU Support](#WithnVidiaCPUSupport)
-	* 3.6. [1.3.5. Postman](#Postman)
-	* 3.7. [1.3.6. Fiddler](#Fiddler)
-	* 3.8. [1.3.7. VirtualBox](#VirtualBox)
-* 4. [1.4. Internet of Things](#InternetofThings)
-	* 4.1. [1.4.1. Azure IoT Hub Explorer](#AzureIoTHubExplorer)
-	* 4.2. [1.4.2. Azure IoT Edge](#AzureIoTEdge)
-		* 4.2.1. [1.4.2.1. Building ARM Docker Images from an x64 Ubuntu Host](#BuildingARMDockerImagesfromanx64UbuntuHost)
-* 5. [1.5. Microsoft SQL Server for Linux](#MicrosoftSQLServerforLinux)
-	* 5.1. [1.5.1. Microsoft SQL Server for Linux (Dockerised)](#MicrosoftSQLServerforLinuxDockerised)
-	* 5.2. [1.5.2. Microsoft SQL Server Operations Studio](#MicrosoftSQLServerOperationsStudio)
-	* 5.3. [1.5.3. Microsoft SQL Server Extension for Visual Studio Code](#MicrosoftSQLServerExtensionforVisualStudioCode)
-* 6. [1.6. Embedded Development](#EmbeddedDevelopment)
-	* 6.1. [1.6.1. Arduino](#Arduino)
-	* 6.2. [1.6.2. Fritzing](#Fritzing)
-* 7. [1.7. Samples](#Samples)
-	* 7.1. [1.7.1. Azure IoT Edge Samples](#AzureIoTEdgeSamples)
-	* 7.2. [1.7.2. Debugging .NET Core apps in Docker Containers from Visual Studio Code on Linux](#Debugging.NETCoreappsinDockerContainersfromVisualStudioCodeonLinux)
+* [Installing the Essentials](#InstallingtheEssentials)
+	* [Visual Studio Code](#VisualStudioCode)
+	* [1.1.2. Visual Studio Extensions](#VisualStudioExtensions)
+	* [1.1.3. GitHub Client](#GitHubClient)
+	* [1.1.4. Installing the latest .NET Core SDK](#Installingthelatest.NETCoreSDK)
+	* [1.1.5. Azure Storage Explorer](#AzureStorageExplorer)
+	* [1.1.6. Azure Storage Emulator](#AzureStorageEmulator)
+	* [1.1.7. Azure CLI (Command Line Interface)](#AzureCLICommandLineInterface)
+* [1.2. Azure Functions with Visual Studio Code](#AzureFunctionswithVisualStudioCode)
+	* [1.2.1. Install Azure Functions Core Tools](#InstallAzureFunctionsCoreTools)
+* [1.3. Toolkit](#Toolkit)
+	* [1.3.1. Docker](#Docker)
+	* [Installing Node.js v10.x:](#InstallingNode.jsv10.x:)
+	* [1.3.2. Installing Anaconda Distribution 5](#InstallingAnacondaDistribution5)
+	* [1.3.3. Tensorflow](#Tensorflow)
+		* [1.3.3.1. Python Support](#PythonSupport)
+		* [1.3.3.2. Installing locally with nVidia GPU support](#InstallinglocallywithnVidiaGPUsupport)
+		* [1.3.3.3. NVIDIA Container Runtime for Docker](#NVIDIAContainerRuntimeforDocker)
+	* [1.3.4. Microsoft Cognitive Toolkit](#MicrosoftCognitiveToolkit)
+		* [1.3.4.1. With nVidia CPU Support](#WithnVidiaCPUSupport)
+	* [1.3.5. Postman](#Postman)
+	* [1.3.6. Fiddler](#Fiddler)
+	* [1.3.7. VirtualBox](#VirtualBox)
+* [1.4. Internet of Things](#InternetofThings)
+	* [1.4.1. Azure IoT Hub Explorer](#AzureIoTHubExplorer)
+	* [1.4.2. Azure IoT Edge](#AzureIoTEdge)
+		* [1.4.2.1. Building ARM Docker Images from an x64 Ubuntu Host](#BuildingARMDockerImagesfromanx64UbuntuHost)
+* [1.5. Microsoft SQL Server for Linux](#MicrosoftSQLServerforLinux)
+	* [1.5.1. Microsoft SQL Server for Linux (Dockerised)](#MicrosoftSQLServerforLinuxDockerised)
+	* [1.5.2. Microsoft SQL Server Operations Studio](#MicrosoftSQLServerOperationsStudio)
+	* [1.5.3. Microsoft SQL Server Extension for Visual Studio Code](#MicrosoftSQLServerExtensionforVisualStudioCode)
+* [1.6. Embedded Development](#EmbeddedDevelopment)
+	* [1.6.1. Arduino](#Arduino)
+	* [1.6.2. Fritzing](#Fritzing)
+* [1.7. Samples](#Samples)
+	* [1.7.1. Azure IoT Edge Samples](#AzureIoTEdgeSamples)
+	* [1.7.2. Debugging .NET Core apps in Docker Containers from Visual Studio Code on Linux](#Debugging.NETCoreappsinDockerContainersfromVisualStudioCodeonLinux)
+* [Useful Utilities](#UsefulUtilities)
+	* [grub customiser](#grubcustomiser)
+	* [Onedrive Support](#OnedriveSupport)
+	* [Windows 10 Stick Notes on the Web](#Windows10StickNotesontheWeb)
 
 <!-- vscode-markdown-toc-config
-	numbering=true
+	numbering=false
 	autoSave=true
 	/vscode-markdown-toc-config -->
 <!-- /vscode-markdown-toc -->
@@ -57,21 +60,21 @@ This guide assumes you have some experience with Linux and you will open Termina
 
 **Feel free to contribute to this guide.**
 
-##  1. <a name='InstallingtheEssentials'></a>1.1. Installing the Essentials
+## <a name='InstallingtheEssentials'></a>Installing the Essentials
 
-###  1.1. <a name='VisualStudioCode'></a>1.1.1. Visual Studio Code
+### <a name='VisualStudioCode'></a>Visual Studio Code
 
 [Visual Studio Code](https://code.visualstudio.com/) is a must have IDE, open source, extensible, great language, debugging and tooling support.  
 
 Head to [Visual Studio Code](https://code.visualstudio.com/) and download the .deb file for Debian and Ubuntu then install with QApt Package Installer.
 
-###  1.2. <a name='VisualStudioExtensions'></a>1.1.2. Visual Studio Extensions
+### <a name='VisualStudioExtensions'></a>1.1.2. Visual Studio Extensions
 
 There are a stack of great extensions for Visual Studio Code. These are the ones that I find most useful.
 
 1. Azure Account, Azure Functions, Azure CLI Tools, Azure Event Hub Explorer, Azure Cosmos DB, Azure IoT Edge, Azure IoT Toolkit, SQL Server, C#, Docker, Python, C/C++, JSON Tools, JSON Escaper, Powershell, Azure Application Insights, Azure App Services, Arduino, Azure Resource Manager Tools, Azure Storage, Tools for AI, Markdown TOC, Code Spell Checker, Docker, Docs Authoring Pack, and more...
 
-###  1.3. <a name='GitHubClient'></a>1.1.3. GitHub Client
+### <a name='GitHubClient'></a>1.1.3. GitHub Client
 
 When you start Visual Studio Code for the first time you'll be prompted to install the GitHub client.
 
@@ -98,7 +101,7 @@ git config --global credential.helper 'cache --timeout=3600'
 
 If you are using Visual Studio Team Services then checkout [Use Git Credential Managers to Authenticate to VSTS](https://docs.microsoft.com/en-gb/vsts/git/set-up-credential-managers?view=vsts)
 
-###  1.4. <a name='Installingthelatest.NETCoreSDK'></a>1.1.4. Installing the latest .NET Core SDK
+### <a name='Installingthelatest.NETCoreSDK'></a>1.1.4. Installing the latest .NET Core SDK
 
 1. Install the latest release of the [.NET Core SDK](https://www.microsoft.com/net/download/linux-package-manager/ubuntu18-04/sdk-current)
 
@@ -108,7 +111,7 @@ If you are using Visual Studio Team Services then checkout [Use Git Credential M
 dotnet --version
 ```
 
-###  1.5. <a name='AzureStorageExplorer'></a>1.1.5. Azure Storage Explorer
+### <a name='AzureStorageExplorer'></a>1.1.5. Azure Storage Explorer
 
 1. Install required dependency
 
@@ -149,7 +152,7 @@ Notes.
 * [Microsoft Azure Storage Explorer release notes](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-relnotes)
 * https://answers.launchpad.net/ubuntu/bionic/amd64/libcanberra-gtk0
 
-###  1.6. <a name='AzureStorageEmulator'></a>1.1.6. Azure Storage Emulator
+### <a name='AzureStorageEmulator'></a>1.1.6. Azure Storage Emulator
 
 Install [Azurite](https://github.com/azure/azurite), a lightweight server clone of Azure Blob, Queue, and Table Storage that simulates most of the commands supported by it with minimal dependencies.
 
@@ -157,7 +160,7 @@ Notes.
 * [Configure Azure Storage connection strings](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string)
 * [Connect to the emulator account using the well-known account name and key](https://docs.microsoft.com/en-us/azure/storage/common/storage-configure-connection-string#connect-to-the-emulator-account-using-the-well-known-account-name-and-key)
 
-###  1.7. <a name='AzureCLICommandLineInterface'></a>1.1.7. Azure CLI (Command Line Interface)
+### <a name='AzureCLICommandLineInterface'></a>1.1.7. Azure CLI (Command Line Interface)
 
 Be sure that 'curl' is installed.
 
@@ -167,13 +170,13 @@ sudo apt install curl
 
 [Install Azure CLI 2.0 with apt](https://docs.microsoft.com/en-us/cli/azure/install-azure-cli-apt?view=azure-cli-latest)
 
-##  2. <a name='AzureFunctionswithVisualStudioCode'></a>1.2. Azure Functions with Visual Studio Code
+## <a name='AzureFunctionswithVisualStudioCode'></a>1.2. Azure Functions with Visual Studio Code
 
 [Code and test Azure Functions locally](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local)
 
 [Azure Functions Core Tools (note updated instructions for Ubuntu 18.04)](https://github.com/Azure/azure-functions-core-tools/blob/master/README.md)
 
-###  2.1. <a name='InstallAzureFunctionsCoreTools'></a>1.2.1. Install Azure Functions Core Tools
+### <a name='InstallAzureFunctionsCoreTools'></a>1.2.1. Install Azure Functions Core Tools
 
 As at August 2018 see [Install the Azure Functions Core Tools](https://docs.microsoft.com/en-us/azure/azure-functions/functions-run-local#linux)
 
@@ -191,9 +194,9 @@ sudo apt-get install azure-functions-core-tools
 
 ````
 
-##  3. <a name='Toolkit'></a>1.3. Toolkit
+## <a name='Toolkit'></a>1.3. Toolkit
 
-###  3.1. <a name='Docker'></a>1.3.1. Docker
+### <a name='Docker'></a>1.3.1. Docker
 
 ```bash
 sudo apt update
@@ -218,7 +221,7 @@ Notes.
 
 * [How to Install and Use Docker on Ubuntu 18.04 ](https://www.digitalocean.com/community/tutorials/how-to-install-and-use-docker-on-ubuntu-18-04)
 
-###  3.2. <a name='InstallingNode.jsv10.x:'></a>Installing Node.js v10.x:
+### <a name='InstallingNode.jsv10.x:'></a>Installing Node.js v10.x:
 
 ```bash
 curl -sL https://deb.nodesource.com/setup_10.x | sudo -E bash -
@@ -229,7 +232,7 @@ Notes.
 
 * [Node.js Binary Distributions](https://github.com/nodesource/distributions/blob/master/README.md)
 
-###  3.3. <a name='InstallingAnacondaDistribution5'></a>1.3.2. Installing Anaconda Distribution 5
+### <a name='InstallingAnacondaDistribution5'></a>1.3.2. Installing Anaconda Distribution 5
 
 It is a free, easy-to-install package manager, environment manager and Python distribution with a collection of 1,000+ open source packages with free community support. Anaconda is platform-agnostic, so you can use it whether you are on Windows, macOS or Linux.
 
@@ -257,9 +260,9 @@ Notes.
 2. [How to check your Anaconda version and updating](https://medium.com/@mauridb/how-to-check-your-anaconda-version-c092400c9978)
 3. [Stop Installing Tensorflow using pip for performance sake!](https://towardsdatascience.com/stop-installing-tensorflow-using-pip-for-performance-sake-5854f9d9eb0c)
 
-###  3.4. <a name='Tensorflow'></a>1.3.3. Tensorflow
+### <a name='Tensorflow'></a>1.3.3. Tensorflow
 
-####  3.4.1. <a name='PythonSupport'></a>1.3.3.1. Python Support
+#### <a name='PythonSupport'></a>1.3.3.1. Python Support
 
 If you want Tensorflow with GPU support for use with Python then by far the easiest way to install is with Anaconda as it will install the complete CUDA toolkit and cuDNN library into your selected environment. But note, this is community supported, and not officially supported.
 
@@ -293,7 +296,7 @@ If you want Tensorflow with GPU support for use with Python then by far the easi
 
 4. Create your Python Project, open it with Visual Studio Code add a python file and select the Tensorflow environment you just created.
 
-####  3.4.2. <a name='InstallinglocallywithnVidiaGPUsupport'></a>1.3.3.2. Installing locally with nVidia GPU support
+#### <a name='InstallinglocallywithnVidiaGPUsupport'></a>1.3.3.2. Installing locally with nVidia GPU support
 
 See 
 
@@ -307,7 +310,7 @@ pip install --ignore-installed --upgrade https://storage.googleapis.com/tensorfl
 
 
 
-####  3.4.3. <a name='NVIDIAContainerRuntimeforDocker'></a>1.3.3.3. NVIDIA Container Runtime for Docker
+#### <a name='NVIDIAContainerRuntimeforDocker'></a>1.3.3.3. NVIDIA Container Runtime for Docker
 
 If your PC has a nVidia GPU and you want to developer with  Docker and TensorFlow-GPU support. Simpler than installing CUDA Driver and Toolkit on to local system.
 
@@ -319,11 +322,11 @@ Notes.
 2. [NVIDIA Container Runtime for Docker](https://github.com/NVIDIA/nvidia-docker)
 
 
-###  3.5. <a name='MicrosoftCognitiveToolkit'></a>1.3.4. Microsoft Cognitive Toolkit
+### <a name='MicrosoftCognitiveToolkit'></a>1.3.4. Microsoft Cognitive Toolkit
 
 For information on setting up [CNTK Docker Containers](https://docs.microsoft.com/en-us/cognitive-toolkit/CNTK-Docker-Containers).
 
-####  3.5.1. <a name='WithnVidiaCPUSupport'></a>1.3.4.1. With nVidia CPU Support
+#### <a name='WithnVidiaCPUSupport'></a>1.3.4.1. With nVidia CPU Support
 
 1. Ensure the [NVIDIA Container Runtime for Docker](https://github.com/nvidia/nvidia-docker) is installed.
 
@@ -337,7 +340,7 @@ For information on setting up [CNTK Docker Containers](https://docs.microsoft.co
     docker exec -it cntk-jupyter-notebooks bash -c "source /cntk/activate-cntk && jupyter-notebook --no-browser --port=8888 --ip=0.0.0.0 --notebook-dir=/cntk/Tutorials --allow-root"
     ```
 
-###  3.6. <a name='Postman'></a>1.3.5. Postman
+### <a name='Postman'></a>1.3.5. Postman
 
 Install library dependency
 
@@ -376,19 +379,19 @@ Notes.
 
 * Follow instruction at [How to Install the Postman Native App in Ubuntu 16.04](https://blog.bluematador.com/posts/postman-how-to-install-on-ubuntu-1604/)
 
-###  3.7. <a name='Fiddler'></a>1.3.6. Fiddler
+### <a name='Fiddler'></a>1.3.6. Fiddler
 
 See [Use Fiddler in Ubuntu](https://medium.com/@rajsek/use-fiddler-in-ubuntu-82b1dfd80848)
 
-###  3.8. <a name='VirtualBox'></a>1.3.7. VirtualBox
+### <a name='VirtualBox'></a>1.3.7. VirtualBox
 
 ```bash
 sudo apt-get install virtualbox
 ```
 
-##  4. <a name='InternetofThings'></a>1.4. Internet of Things
+## <a name='InternetofThings'></a>1.4. Internet of Things
 
-###  4.1. <a name='AzureIoTHubExplorer'></a>1.4.1. Azure IoT Hub Explorer
+### <a name='AzureIoTHubExplorer'></a>1.4.1. Azure IoT Hub Explorer
 
 ```bash
 az extension add --name azure-cli-iot-ext
@@ -408,11 +411,11 @@ Notes.
 * [Microsoft Azure IoT Extension for Azure CLI 2.0](https://github.com/Azure/azure-iot-cli-extension/blob/master/README.md)
 
 
-###  4.2. <a name='AzureIoTEdge'></a>1.4.2. Azure IoT Edge
+### <a name='AzureIoTEdge'></a>1.4.2. Azure IoT Edge
 
 * [Develop and deploy a C# IoT Edge module to your simulated device - preview](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-csharp-module)
 
-####  4.2.1. <a name='BuildingARMDockerImagesfromanx64UbuntuHost'></a>1.4.2.1. Building ARM Docker Images from an x64 Ubuntu Host
+#### <a name='BuildingARMDockerImagesfromanx64UbuntuHost'></a>1.4.2.1. Building ARM Docker Images from an x64 Ubuntu Host
 
 If you are targeting ARM for your Docker builds then you will need to run the following command before you do your Docker build.
 
@@ -425,9 +428,9 @@ Notes.
 * If your docker ARM base image is already built to include QEMU then register QEMU in the build agent as follows.
 * Otherwise follow the instruction on [How to Build ARM Docker Images on Intel host](http://www.hotblackrobotics.com/en/blog/2018/01/22/docker-images-arm/)
 
-##  5. <a name='MicrosoftSQLServerforLinux'></a>1.5. Microsoft SQL Server for Linux
+## <a name='MicrosoftSQLServerforLinux'></a>1.5. Microsoft SQL Server for Linux
 
-###  5.1. <a name='MicrosoftSQLServerforLinuxDockerised'></a>1.5.1. Microsoft SQL Server for Linux (Dockerised)
+### <a name='MicrosoftSQLServerforLinuxDockerised'></a>1.5.1. Microsoft SQL Server for Linux (Dockerised)
 
 [Install SQL Server and create a database on Ubuntu](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-ubuntu?view=sql-server-linux-2017)
 
@@ -456,21 +459,21 @@ Notes.
 
 * [Run the SQL Server 2017 container image with Docker](https://docs.microsoft.com/en-us/sql/linux/quickstart-install-connect-docker?view=sql-server-linux-2017)
 
-###  5.2. <a name='MicrosoftSQLServerOperationsStudio'></a>1.5.2. Microsoft SQL Server Operations Studio
+### <a name='MicrosoftSQLServerOperationsStudio'></a>1.5.2. Microsoft SQL Server Operations Studio
 
 Follow the notes for [Installing Microsoft SQL Operations Studio](https://docs.microsoft.com/en-gb/sql/sql-operations-studio/what-is?view=sql-server-linux-2017)
 
-###  5.3. <a name='MicrosoftSQLServerExtensionforVisualStudioCode'></a>1.5.3. Microsoft SQL Server Extension for Visual Studio Code
+### <a name='MicrosoftSQLServerExtensionforVisualStudioCode'></a>1.5.3. Microsoft SQL Server Extension for Visual Studio Code
 
 [Use Visual Studio Code to create and run Transact-SQL scripts for SQL Server](https://docs.microsoft.com/en-us/sql/linux/sql-server-linux-develop-use-vscode?view=sql-server-linux-2017)
 
-##  6. <a name='EmbeddedDevelopment'></a>1.6. Embedded Development
+## <a name='EmbeddedDevelopment'></a>1.6. Embedded Development
 
-###  6.1. <a name='Arduino'></a>1.6.1. Arduino
+### <a name='Arduino'></a>1.6.1. Arduino
 
 Download the [Arduino IDE](https://www.arduino.cc/en/Main/Software)
 
-###  6.2. <a name='Fritzing'></a>1.6.2. Fritzing
+### <a name='Fritzing'></a>1.6.2. Fritzing
 
 Download from [Fritzing Download Site](http://fritzing.org/download/).
 
@@ -506,12 +509,26 @@ EOL
 
 ```
 
-##  7. <a name='Samples'></a>1.7. Samples
+## <a name='Samples'></a>1.7. Samples
 
-###  7.1. <a name='AzureIoTEdgeSamples'></a>1.7.1. Azure IoT Edge Samples
+### <a name='AzureIoTEdgeSamples'></a>1.7.1. Azure IoT Edge Samples
 
 [Hands-on Grove Starter Kit for Azure IoT Edge](https://azure-samples.github.io/azure-iot-starter-kits/seeed/)
 
-###  7.2. <a name='Debugging.NETCoreappsinDockerContainersfromVisualStudioCodeonLinux'></a>1.7.2. Debugging .NET Core apps in Docker Containers from Visual Studio Code on Linux
+### <a name='Debugging.NETCoreappsinDockerContainersfromVisualStudioCodeonLinux'></a>1.7.2. Debugging .NET Core apps in Docker Containers from Visual Studio Code on Linux
 
 [This is a sample that demonstrates how to use vscode to build and debug dotnet core 2.0 console application in docker container](https://github.com/gloveboxes/docker.dotnet.debug)
+
+## <a name='UsefulUtilities'></a>Useful Utilities
+
+### <a name='grubcustomiser'></a>grub customiser
+
+[How to Install Grub Customizer](http://ubuntuhandbook.org/index.php/2018/10/install-grub-customizer-5-1-0-ubuntu-18-10/)
+
+### <a name='OnedriveSupport'></a>Onedrive Support
+
+[How To Mount OneDrive In Linux Using Rclone](https://www.linuxuprising.com/2018/07/how-to-mount-onedrive-in-linux-using.html)
+
+### <a name='Windows10StickNotesontheWeb'></a>Windows 10 Stick Notes on the Web
+
+[Access Windows 10 Stick Notes via your browser - very handy for casual note taking](www.onenote.com/stickynotes)
