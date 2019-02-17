@@ -532,3 +532,9 @@ EOL
 ### <a name='Windows10StickNotesontheWeb'></a>Windows 10 Stick Notes on the Web
 
 [Access Windows 10 Stick Notes via your browser - very handy for casual note taking](www.onenote.com/stickynotes)
+
+[Install The New Ubuntu Community Theme “Yaru”](https://itsfoss.com/ubuntu-community-theme/)
+
+[Gnome Tweak Tool](https://linuxconfig.org/how-to-install-tweak-tool-on-ubuntu-18-04-bionic-beaver-linux)
+
+[Todo after installing Ubuntu 18.04](https://linuxconfig.org/things-to-do-after-installing-ubuntu-18-04-bionic-beaver-linux)
