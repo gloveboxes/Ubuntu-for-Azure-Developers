@@ -214,7 +214,7 @@ sudo systemctl status docker
 It's useful to add your user sudo rights to Docker. Note, you'll need to restart your system for this setting to take effect.
 
 ```bash
-sudo usermod <Your User Name> -aG docker
+sudo usermod -aG docker $USER
 ```
 
 Notes.
