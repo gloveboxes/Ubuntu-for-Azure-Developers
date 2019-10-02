@@ -9,7 +9,11 @@ Developing on Linux for Azure is a great experience and there is superb open sou
 
 I've tended to stick with the LTS releases of Ubuntu Linux, better support, examples, documentation etc. With the release of [Ubuntu 18.04 LTS](https://www.ubuntu.com/desktop) I decided it was time to upgrade from Ubuntu 16.04 LTS system.
 
+## Installing Linux on a DELL XPS 15/Precision 5530
+
 See [Installing Ubuntu 18.04 on a DELL XPS 15 Model 9570 (2018)](docs/dellxps15.md).
+
+## Installing Apps for Azure Development
 
 The following documents the applications, command line tools and SDKs that I have installed for my Azure centric Ubuntu developer desktop. Enjoy:)
 
@@ -18,6 +22,10 @@ The following documents the applications, command line tools and SDKs that I hav
 3. [Ubuntu 16.04 for Azure Developers](docs/Ubuntu1604.md)
 
 **Feel free to contribute to these guides.**
+
+## Signing a Linux Kernel for Secure Boot
+
+[Signing a Linux Kernel for Secure Boot](docs/signing-kernel-for-secure-boot.md)
 
 ## Getting started with Azure Resources
 
