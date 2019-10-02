@@ -11,7 +11,9 @@ I've tended to stick with the LTS releases of Ubuntu Linux, better support, exam
 
 ## Installing Linux on a DELL XPS 15/Precision 5530
 
-See [Installing Ubuntu 18.04 on a DELL XPS 15 Model 9570 (2018)](docs/dellxps15.md).
+1. [Installing Ubuntu 18.04 on a DELL XPS 15 Model 9570 (2018)](docs/dellxps15.md)
+2. [Ubuntu Kernel Update Utility](https://www.omgubuntu.co.uk/2017/02/ukuu-easy-way-to-install-mainline-kernel-ubuntu)
+3. [Signing a Linux Kernel for Secure Boot](docs/signing-kernel-for-secure-boot.md)
 
 ## Installing Apps for Azure Development
 
@@ -23,9 +25,7 @@ The following documents the applications, command line tools and SDKs that I hav
 
 **Feel free to contribute to these guides.**
 
-## Signing a Linux Kernel for Secure Boot
 
-[Signing a Linux Kernel for Secure Boot](docs/signing-kernel-for-secure-boot.md)
 
 ## Getting started with Azure Resources
 
