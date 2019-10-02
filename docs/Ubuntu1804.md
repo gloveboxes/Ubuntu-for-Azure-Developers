@@ -117,10 +117,6 @@ dotnet --version
 sudo snap install storage-explorer
 ```
 
-Notes.
-* [Microsoft Azure Storage Explorer release notes](https://docs.microsoft.com/en-us/azure/vs-azure-tools-storage-explorer-relnotes)
-* https://answers.launchpad.net/ubuntu/bionic/amd64/libcanberra-gtk0
-
 ### <a name='AzureStorageEmulator'></a>1.1.6. Azure Storage Emulator
 
 Install [Azurite](https://github.com/azure/azurite), a lightweight server clone of Azure Blob, Queue, and Table Storage that simulates most of the commands supported by it with minimal dependencies.
