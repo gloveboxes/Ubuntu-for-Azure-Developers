@@ -3,7 +3,7 @@
 |Author|Dave Glover, Microsoft Australia|
 |----|---|
 |Platform| [Ubuntu 18.04 for Azure Developers](docs/Ubuntu1804.md), [Kubuntu 18.04 for Azure Developers](docs/Kubuntu1804.md), [Ubuntu 16.04 for Azure Developers](docs/Ubuntu1604.md)|
-|Date|As at May 2018|
+|Date|As at Oct 2019|
 
 Developing on Linux for Azure is a great experience and there is superb open source tooling support from Microsoft (and others) for Azure across Windows, Mac and Linux.
 
@@ -20,12 +20,10 @@ I've tended to stick with the LTS releases of Ubuntu Linux, better support, exam
 The following documents the applications, command line tools and SDKs that I have installed for my Azure centric Ubuntu developer desktop. Enjoy:)
 
 1. [Ubuntu 18.04 for Azure Developers](docs/Ubuntu1804.md)
-2. [Kubuntu 18.04 for Azure Developers](docs/Kubuntu1804.md)
-3. [Ubuntu 16.04 for Azure Developers](docs/Ubuntu1604.md)
+2. [Kubuntu 18.04 for Azure Developers (no longer maintaining)](docs/Kubuntu1804.md)
+3. [Ubuntu 16.04 for Azure Developers (no longer maintaining)](docs/Ubuntu1604.md)
 
 **Feel free to contribute to these guides.**
-
-
 
 ## Getting started with Azure Resources
 
