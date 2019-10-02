@@ -113,39 +113,8 @@ dotnet --version
 
 ### <a name='AzureStorageExplorer'></a>1.1.5. Azure Storage Explorer
 
-1. Install required dependency
-
 ```bash
-sudo apt install libgconf-2-4 libcanberra-gtk0 libgnome-keyring0
-```
-
-2. Next [Download and Install Storage Explorer. Be sure to select Linux from the drop-down.](https://azure.microsoft.com/en-au/features/storage-explorer/)
-
-5. The following Bash commands extract the Storage Explorer .tar.gz file to the /opt directory, and add a symbolic link to the StorageExplorer executable.
-
-```bash
-cd ~/Downloads && \
-sudo mkdir -p /opt/StorageExplorer-linux-x64 && \
-sudo tar -C $_ -zxvf StorageExplorer-linux-x64.tar.gz && \
-sudo ln -s /opt/StorageExplorer-linux-x64/StorageExplorer /usr/bin/StorageExplorer
-
-```
-
-6. Create Storage Explorer [Ubunutu/KDE](https://specifications.freedesktop.org/desktop-entry-spec/desktop-entry-spec-latest.html) Desktop Resource
-
-```bash
-mkdir -p ~/.local/share/applications && \
-cat > ~/.local/share/applications/StorageExplorer.desktop <<EOL
-[Desktop Entry]
-Encoding=UTF-8
-Name=Storage Explorer
-Exec=StorageExplorer
-Icon=/opt/StorageExplorer-linux-x64/resources/app/out/app/icon.png
-Terminal=false
-Type=Application
-Categories=Development;
-EOL
-
+sudo snap install storage-explorer
 ```
 
 Notes.
