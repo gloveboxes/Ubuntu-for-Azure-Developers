@@ -358,8 +358,10 @@ sudo apt-get install virtualbox
 
 ### <a name='AzureIoTHubExplorer'></a>1.4.1. Azure IoT Hub Explorer
 
+[Microsoft Azure IoT extension for Azure CLI](https://github.com/Azure/azure-iot-cli-extension)
+
 ```bash
-az extension add --name azure-cli-iot-ext
+az extension add --name azure-iot
 ```
 
 [az iot Command Guide](https://docs.microsoft.com/en-us/cli/azure/ext/azure-cli-iot-ext/iot?view=azure-cli-latest)
