@@ -29,10 +29,10 @@ The following documents the applications, command line tools and SDKs that I hav
 
 If you are new to Azure then the following resources are a great place to start.
 
-1. [Azure Architecture Center](https://docs.microsoft.com/en-us/azure/architecture/)
+1. [Azure Architecture Center](https://docs.microsoft.com/azure/architecture/?WT.mc_id=iot-0000-dglover)
 2. [Architecting Distributed Cloud Applications video series](https://www.youtube.com/watch?v=xJMbkZvuVO0&list=PL9XzOCngAkqs0Q8ZRdafnSYExKQurZrBY)
-3. [Microsoft Azure Blog](https://azure.microsoft.com/en-us/blog/)
-4. [Channel9 Technical Training](https://channel9.msdn.com/)
+3. [Microsoft Azure Blog](https://azure.microsoft.com/blog/?WT.mc_id=iot-0000-dglover)
+4. [Channel9 Technical Training](https://channel9.msdn.com/?WT.mc_id=iot-0000-dglover)
 
 ## My Ubuntu 18.04 Azure Developer Desktop
 
