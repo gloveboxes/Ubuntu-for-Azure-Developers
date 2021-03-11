@@ -47,9 +47,10 @@
 	- [Building ARM Docker Images from an x64 Ubuntu Host](#building-arm-docker-images-from-an-x64-ubuntu-host)
 	- [Fritzing](#fritzing)
 	- [Useful Utilities](#useful-utilities)
-		- [grub customiser](#grub-customiser)
+		- [grub customizer](#grub-customizer)
 		- [Onedrive Support](#onedrive-support)
 		- [Windows 10 Stick Notes on the Web](#windows-10-stick-notes-on-the-web)
+		- [Gnome Tweak](#gnome-tweak)
 
 This guide assumes you have some experience with Linux and you will open Terminal and Ctrl-Shift-V to paste in [Bash](https://en.wikipedia.org/wiki/Bash_(Unix_shell)) commands.
 
@@ -469,7 +470,6 @@ sudo apt-get install virtualbox
 
 ---
 
-
 ## Azure IoT Hub Explorer
 
 [Microsoft Azure IoT extension for Azure CLI](https://github.com/Azure/azure-iot-cli-extension)
@@ -498,6 +498,8 @@ Notes.
 
 * [Develop and deploy a C# IoT Edge module to your simulated device - preview](https://docs.microsoft.com/en-us/azure/iot-edge/tutorial-csharp-module)
 
+---
+
 ## Building ARM Docker Images from an x64 Ubuntu Host
 
 If you are targeting ARM for your Docker builds then you will need to run the following command before you do your Docker build.
@@ -511,7 +513,7 @@ Notes.
 * If your docker ARM base image is already built to include QEMU then register QEMU in the build agent as follows.
 * Otherwise follow the instruction on [How to Build ARM Docker Images on Intel host](http://www.hotblackrobotics.com/en/blog/2018/01/22/docker-images-arm/)
 
-
+---
 
 ## Fritzing
 
@@ -549,10 +551,11 @@ EOL
 
 ```
 
+---
 
 ## Useful Utilities
 
-### grub customiser
+### grub customizer
 
 [How to Install Grub Customizer](http://ubuntuhandbook.org/index.php/2018/10/install-grub-customizer-5-1-0-ubuntu-18-10/)
 
@@ -562,7 +565,9 @@ EOL
 
 ### Windows 10 Stick Notes on the Web
 
-[Access Windows 10 Stick Notes via your browser - very handy for casual note taking](www.onenote.com/stickynotes)
+[Access Windows 10 Sticky Notes via your browser - very handy for casual note taking](https://www.onenote.com/stickynotes)
+
+### Gnome Tweak
 
 [Gnome Tweak Tool](https://linuxconfig.org/how-to-install-tweak-tool-on-ubuntu-18-04-bionic-beaver-linux)
 
