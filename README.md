@@ -3,11 +3,11 @@
 |Author|Dave Glover, Microsoft Australia|
 |----|---|
 |Platform| [Ubuntu 18.04 for Azure Developers](docs/Ubuntu1804.md), [Kubuntu 18.04 for Azure Developers](docs/Kubuntu1804.md), [Ubuntu 16.04 for Azure Developers](docs/Ubuntu1604.md)|
-|Date|As at Oct 2019|
+|Date|As at July 2022|
 
 Developing on Linux for Azure is a great experience and there is superb open source tooling support from Microsoft (and others) for Azure across Windows, Mac and Linux.
 
-I've tended to stick with the LTS releases of Ubuntu Linux, better support, examples, documentation etc. With the release of [Ubuntu 18.04 LTS](https://www.ubuntu.com/desktop) I decided it was time to upgrade from Ubuntu 16.04 LTS system.
+I've tended to stick with the LTS releases of Ubuntu Linux, better support, examples, documentation etc. For that is Ubuntu 20.04.
 
 ## Installing Ubuntu 20.04 on a DELL Precision 5530
 
