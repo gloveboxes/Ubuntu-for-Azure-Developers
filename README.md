@@ -13,7 +13,7 @@ I've tended to stick with the LTS releases of Ubuntu Linux, better support, exam
 
 1. [Installing Ubuntu 20.04 on a DELL Precision 5530](./docs/dell-precision-5530.md)
 
-### Obsolete
+### No longer maintaining/Obsolete
 
 1. [Installing Ubuntu 18.04 on a DELL XPS 15 Model 9570 (2018)](docs/dellxps15.md)
 2. [Ubuntu Kernel Update Utility](https://www.omgubuntu.co.uk/2017/02/ukuu-easy-way-to-install-mainline-kernel-ubuntu)
