@@ -1,5 +1,8 @@
 # Dell XPS 15 Stable Linux Configuration
 
+**As at July 2022, I no longer have a DELL XPS 15. I suspect there is much better out of the box install experience for this laptop now. So below may be obsolete.**
+
+
 After much testing this is the configuration that works well for me, most importantly wake from sleep worked consistently well.
 
 
