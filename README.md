@@ -9,7 +9,7 @@ Developing on Linux for Azure is a great experience and there is superb open sou
 
 I've tended to stick with the LTS releases of Ubuntu Linux, better support, examples, documentation etc. With the release of [Ubuntu 18.04 LTS](https://www.ubuntu.com/desktop) I decided it was time to upgrade from Ubuntu 16.04 LTS system.
 
-## Installing Linux on a DELL XPS 15/Precision 5530
+## Installing Ubuntu 20.04 on a DELL Precision 5530
 
 1. [Installing Ubuntu 20.04 on a DELL Precision 5530](./docs/dell-precision-5530.md)
 
