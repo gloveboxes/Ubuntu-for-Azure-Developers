@@ -84,9 +84,11 @@ My favourite Gnome Extensions are
 
 1. [CPU Power Manager](https://extensions.gnome.org/extension/945/cpu-power-manager/)
 
-2. [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/). Icon spacing, size etc can also be tuned for a Windows 10 like user experience.
+1. [Dash to Panel](https://extensions.gnome.org/extension/1160/dash-to-panel/). Icon spacing, size etc can also be tuned for a Windows 10 like user experience.
 
-3. [OpenWeather](https://extensions.gnome.org/extension/750/openweather/)
+1. [Shell Tile](https://extensions.gnome.org/extension/657/shelltile/). Enhanced corner window snapping.
+
+1. [OpenWeather](https://extensions.gnome.org/extension/750/openweather/)
 
 ![Ubuntu Desktop with Dash to Panel](../resources/ubuntu-desktop.jpg)
 
