@@ -9,7 +9,7 @@
 As of July 2022 Ubuntu 20.04 installs and just works on the DELL Precision 5530. 
 
 1. The trackpad right mouse click works.
-1. NVidia propriety drivers required manual installation.
+1. NVidia propriety drivers require manual installation using **Additional Drivers**.
 
 ## Useful GNOME Extensions/Tweaks
 
