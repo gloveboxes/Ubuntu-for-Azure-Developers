@@ -21,6 +21,7 @@ My favorite Gnome Extensions are
 1. [OpenWeather](https://extensions.gnome.org/extension/750/openweather/)
 1. [Intel and NVidia GPU Selector](https://extensions.gnome.org/extension/5009/gpu-profile-selector/). ON Demand did not seem to work.
 1. [Battery percentage](https://extensions.gnome.org/extension/818/battery-percentage/)
+1. [Workspace indicator](https://extensions.gnome.org/extension/21/workspace-indicator/)
 
 
 ## Windows/Linux Dual Boot Time Sync
