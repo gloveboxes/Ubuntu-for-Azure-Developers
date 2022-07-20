@@ -22,6 +22,7 @@ My favorite Gnome Extensions are
 1. [Intel and NVidia GPU Selector](https://extensions.gnome.org/extension/5009/gpu-profile-selector/). ON Demand did not seem to work.
 1. [Battery percentage](https://extensions.gnome.org/extension/818/battery-percentage/)
 1. [Workspace indicator](https://extensions.gnome.org/extension/21/workspace-indicator/)
+1. [Clipboard indicator](https://extensions.gnome.org/extension/779/clipboard-indicator/)
 
 
 ## Windows/Linux Dual Boot Time Sync
