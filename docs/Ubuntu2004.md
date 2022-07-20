@@ -191,8 +191,11 @@ sudo apt-get install azure-functions-core-tools
 
 ## Docker
 
+[Install using the convenience script](https://docs.docker.com/engine/install/ubuntu/#install-using-the-convenience-script)
+
 ```bash
-sudo apt -y install docker.io && sudo usermod -aG docker $USER
+curl -fsSL https://get.docker.com -o get-docker.sh
+ sudo sh get-docker.sh
 ```
 
 Enable the docker service to start after reboot.
