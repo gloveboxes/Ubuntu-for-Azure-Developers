@@ -195,14 +195,30 @@ sudo apt-get install azure-functions-core-tools
 
 ```bash
 curl -fsSL https://get.docker.com -o get-docker.sh
- sudo sh get-docker.sh
+sudo sh get-docker.sh
 ```
 
-Enable the docker service to start after reboot.
+To run Docker without root privileges, see [Run the Docker daemon as a non-root user (Rootless mode)](https://docs.docker.com/engine/security/rootless/).
+
+To create the docker group and add your user:
+
+### Create the docker group.
+
+```bash
+sudo groupadd docker
+```
+
+### Add your user to the docker group.
+
+```bash
+sudo usermod -aG docker $USER
+```
+
+<!-- Enable the docker service to start after reboot.
 
 ```bash
 sudo systemctl enable docker.service
-```
+``` -->
 
 Followed with system reboot.
 
